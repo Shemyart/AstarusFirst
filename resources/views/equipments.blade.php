@@ -1,13 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layout')
 
-</body>
-</html>
+@section('content')
+    <div class="container">
+        <div class="row mt-3 mb-3">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col" style="font-size:20px;">Порядковый номер</th>
+                            <th scope="col" style="font-size:20px;">Наименование</th>
+                            <th scope="col" style="font-size:20px;">Количество</th>
+                            <th scope="col" style="font-size:20px;">Активность</th>
+                            <th scope="col" style="font-size:20px;">Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($equipments as $elem)
+                            <tr>
+                                <td>number</td>
+                                <td>{{$elem->name}}</td>
+                                <td>{{$elem->volume}}</td>
+                                <td>{{$elem->action}}</td>
+                                <td>Deistvie</td>
+                            </tr>
+                        @endforeach
+
+                        </tbody>
+                    </table>
+                </div><!-- ./table-responsive-->
+            </div><!-- ./col-md-12-->
+        </div><!-- ./row-->
+    </div>
+
+@endsection
