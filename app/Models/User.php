@@ -37,7 +37,7 @@ use Laravel\Sanctum\HasApiTokens;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
 
  */
-class User extends Authenticatable
+class User extends \TCG\Voyager\Models\User
 {
     use HasApiTokens, HasFactory, Notifiable;
 

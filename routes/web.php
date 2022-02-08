@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FirstController;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,8 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 */
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
