@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [FirstController::class, 'home']);
-
+Route::get('/', [FirstController::class, 'home'])->name('homepage');
+Route::resource('delete',FirstController::class)->names('delete');
 /*
 Route::get('/welcome', function () {
     return view('welcome');
