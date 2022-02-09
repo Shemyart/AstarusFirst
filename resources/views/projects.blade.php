@@ -28,8 +28,8 @@
                                 <td>{{$elem->name}}</td>
                                 <td>{{$elem->description}}</td>
                                 <td>{{$elem->image}}</td>
-                                <td>{{$elem->date_start}}</td>
-                                <td>{{$elem->date_finish}}</td>
+                                <td>{{$elem->start_date}}</td>
+                                <td>{{$elem->finish_date}}</td>
                                 <td>{{$elem->code}}</td>
                                 <td>{{$elem->status}}</td>
                                 <td>{{$elem->tasks}}</td>

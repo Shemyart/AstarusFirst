@@ -4,6 +4,7 @@
 
 @section('page_header')
     <h1 class="page-title">
+
         <i class="{{ $dataType->icon }}"></i> {{ __('voyager::generic.viewing') }} {{ ucfirst($dataType->getTranslatedAttribute('display_name_singular')) }} &nbsp;
 
         @can('edit', $dataTypeContent)
@@ -38,12 +39,8 @@
 
                 <div class="panel panel-bordered" style="padding-bottom:5px;">
                     <!-- form start -->
+
                     @foreach($dataType->readRows as $row)
-                        @php
-                            if ($dataTypeContent->{$row->field.'_read'}) {
-                                $dataTypeContent->{$row->field} = $dataTypeContent->{$row->field.'_read'};
-                            }
-                        @endphp
                         <div class="panel-heading" style="border-bottom:0;">
                             <h3 class="panel-title">{{ $row->getTranslatedAttribute('display_name') }}</h3>
                         </div>
@@ -133,7 +130,6 @@
                             <hr style="margin:0;">
                         @endif
                     @endforeach
-
                 </div>
             </div>
         </div>
