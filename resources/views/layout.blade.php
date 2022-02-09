@@ -13,9 +13,9 @@
 <div class="container">
     <header class="d-flex justify-content-left py-3">
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a></li>
-
-            <li class="nav-item"><a href="#" class="nav-link">О странице</a></li>
+            <li class="nav-item"><a href="http://astarusfirst.loc/" class="nav-link active" aria-current="page">Главная</a></li>
+            <li class="nav-item"><a href="http://astarusfirst.loc/admin" class="nav-link">Админка</a></li>
+            <li class="nav-item"><a href="http://astarusfirst.loc/projects" class="nav-link">Проекты</a></li>
         </ul>
     </header>
 </div>

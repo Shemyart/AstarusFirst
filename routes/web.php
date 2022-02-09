@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FirstController;
+use App\Http\Controllers\{FirstController, ProjectController};
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -15,12 +15,9 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 Route::get('/', [FirstController::class, 'home'])->name('homepage');
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 Route::resource('delete',FirstController::class)->names('delete');
-/*
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-*/
+
 
 
 Route::group(['prefix' => 'admin'], function () {
