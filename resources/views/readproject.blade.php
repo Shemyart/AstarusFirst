@@ -53,10 +53,21 @@
                                      src="{{ filter_var($dataTypeContent->{$row->field}, FILTER_VALIDATE_URL) ? $dataTypeContent->{$row->field} : Voyager::image($dataTypeContent->{$row->field}) }}">
                             @elseif($row->type == 'multiple_images')
                                 @if(json_decode($dataTypeContent->{$row->field}))
+                                    @php  $active = 1; @endphp
+                                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
                                     @foreach(json_decode($dataTypeContent->{$row->field}) as $file)
-                                        <img class="img-responsive"
-                                             src="{{ filter_var($file, FILTER_VALIDATE_URL) ? $file : Voyager::image($file) }}">
+                                            @if ($active == 0)
+                                                <div class="item">
+                                            @else
+                                                <div class="item active">
+                                            @endif
+                                                    <img class="img-fluid" src="{{ filter_var($file, FILTER_VALIDATE_URL) ? $file : Voyager::image($file) }}" alt="Нет изображения">
+                                                </div>
+                                            @php  $active = 0; @endphp
                                     @endforeach
+                                        </div>
+                                    </div>
                                 @else
                                     <img class="img-responsive"
                                          src="{{ filter_var($dataTypeContent->{$row->field}, FILTER_VALIDATE_URL) ? $dataTypeContent->{$row->field} : Voyager::image($dataTypeContent->{$row->field}) }}">

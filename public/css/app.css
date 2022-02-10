@@ -1,5 +1,13 @@
 th.tablehead{
     font-size:20px;
 }
+.carousel {
+    width: 80%;
+}
 
+.carousel-item img {
+    width: 60%;
+    height: 500px; /* высота изображения */
+    object-fit: cover;
+}
 

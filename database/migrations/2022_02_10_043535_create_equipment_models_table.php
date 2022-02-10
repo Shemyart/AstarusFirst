@@ -20,6 +20,8 @@ class CreateEquipmentModelsTable extends Migration
             $table->boolean('activity');
             $table->integer('project_id');
             $table->timestamps();
+            $table->binary('image')->nullable();
+            $table->binary('file')->nullable();
         });
     }
 
