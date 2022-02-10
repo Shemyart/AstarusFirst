@@ -16,6 +16,7 @@ use TCG\Voyager\Facades\Voyager;
 */
 Route::get('/', [FirstController::class, 'home'])->name('homepage');
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
+Route::get('/projects/{id}', [ProjectController::class, 'detail'])->name('detail');
 Route::resource('delete',FirstController::class)->names('delete');
 
 

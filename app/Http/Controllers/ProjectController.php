@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\FirstModel;
 use App\Models\ProjectsModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProjectController extends Controller
 {
@@ -18,6 +19,12 @@ class ProjectController extends Controller
         $projects = new ProjectsModel();
 
         return view('projects', ['projects'=>$projects->all()]);
+    }
+    public function detail($id)
+    {
+        $record = DB::table('projects_models')->where('id', '=', $id)->get();
+
+        return view('detail', ['record'=>$record]);
     }
 
     /**

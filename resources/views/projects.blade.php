@@ -25,7 +25,7 @@
                         @foreach($projects as $elem)
                             <tr>
                                 <td>{{$sch++}}</td>
-                                <td>{{$elem->name}}</td>
+                                <td><a href="http://astarusfirst.loc/projects/{{$elem->id}}}">{{$elem->name}}</a></td>
                                 <td>{{$elem->description}}</td>
                                 <td>{{$elem->image}}</td>
                                 <td>{{$elem->start_date}}</td>
