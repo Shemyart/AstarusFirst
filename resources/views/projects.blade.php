@@ -23,11 +23,19 @@
                         <tbody>
                         @php $sch=1; @endphp
                         @foreach($projects as $elem)
+                            @php
+                                $splitarrayimg = array();
+                                $splitimg = explode(',', $elem->image);
+                                    foreach ($splitimg as $splitelem){
+                                        $newsplit = trim($splitelem, '"[]');
+                                        array_push($splitarrayimg, $newsplit);
+                                    }
+                            @endphp
                             <tr>
                                 <td>{{$sch++}}</td>
                                 <td><a href="http://astarusfirst.loc/projects/{{$elem->id}}}">{{$elem->name}}</a></td>
                                 <td>{{$elem->description}}</td>
-                                <td><img class="image-circle" src="http://astarusfirst.loc/storage/{{$elem->image}}" alt="Не найдено"></td>
+                                <td><img class="img-fluid" src="http://astarusfirst.loc/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
                                 <td>{{$elem->start_date}}</td>
                                 <td>{{$elem->finish_date}}</td>
                                 <td>{{$elem->code}}</td>

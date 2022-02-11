@@ -28,6 +28,8 @@ class ProjectsObserver
     {
         if ($projectsModel->status == 'Закрыт' and $projectsModel->isDirty('status')){
             $projectsModel->finish_date = date('Y:m:d');
+        }else{
+            $projectsModel->finish_date = date('Y:m:d', strtotime($projectsModel->finish_date) + 86400);
         }
     }
 

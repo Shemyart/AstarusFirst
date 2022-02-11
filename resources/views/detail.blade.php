@@ -52,7 +52,7 @@
                         @php
                             $splitarrayimg = array();
                             $splitarrayfile = array();
-                            $active = 1;
+                            $active = 0;
                             $splitimg = explode(',', $elem->image);
                             $splitfile = explode(',', $elem->file);
                                 foreach ($splitimg as $splitelem){
@@ -119,7 +119,7 @@
                                     @endif
                                             <img class="img-fluid" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
                                         </div>
-                                    @php  $active = 0; @endphp
+                                    @php  $active = 1; @endphp
                                 @endforeach
                                     </div>
                                 </div>
