@@ -10,4 +10,8 @@ th.tablehead{
     height: 500px; /* высота изображения */
     object-fit: cover;
 }
+img{
+    width: 20%;
+    height: 40px;
+}
 

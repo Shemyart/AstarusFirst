@@ -27,7 +27,7 @@
                                 <td>{{$sch++}}</td>
                                 <td><a href="http://astarusfirst.loc/projects/{{$elem->id}}}">{{$elem->name}}</a></td>
                                 <td>{{$elem->description}}</td>
-                                <td>{{$elem->image}}</td>
+                                <td><img class="image-circle" src="http://astarusfirst.loc/storage/{{$elem->image}}" alt="Не найдено"></td>
                                 <td>{{$elem->start_date}}</td>
                                 <td>{{$elem->finish_date}}</td>
                                 <td>{{$elem->code}}</td>
@@ -35,6 +35,9 @@
                                 <td>{{$elem->tasks}}</td>
                             </tr>
                         @endforeach
+
+
+
                         </tbody>
                     </table>
                 </div><!-- ./table-responsive-->

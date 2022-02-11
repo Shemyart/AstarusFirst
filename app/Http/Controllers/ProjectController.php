@@ -22,9 +22,19 @@ class ProjectController extends Controller
     }
     public function detail($id)
     {
-        $record = DB::table('projects_models')->where('id', '=', $id)->get();
+        $record = DB::table('projects_models')
+            ->where('projects_models.id', '=', $id)
+            /*->Leftjoin('equipment_models', 'projects_models.id', '=','equipment_models.project_id')*/
+            ->get();
+        $equiprec = DB::table('equipment_models')
+            ->where('project_id', '=', $id)
+            /*->Leftjoin('equipment_models', 'projects_models.id', '=','equipment_models.project_id')*/
+            ->get();
 
-        return view('detail', ['record'=>$record]);
+        return view('detail', [
+            'record'=>$record,
+            'equiprec'=>$equiprec,
+            ]);
     }
 
     /**
