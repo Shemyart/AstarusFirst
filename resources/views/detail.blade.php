@@ -72,7 +72,7 @@
                             <div class="col p-4 d-flex flex-column position-static">
                                 <table>
                                     <tr>
-                                        <td>
+                                        <td class="newstyle">
                                             Наименование
                                         </td>
                                         <td class="newstyle">
@@ -80,26 +80,26 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="newstyle1">
+                                        <td class="newstyle">
                                             Количество
                                         </td>
-                                        <td>
+                                        <td class="newstyle">
                                             <strong class="d-inline-block mb-2 text-success">{{$elem->volume}}</strong>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="newstyle2">
+                                        <td class="newstyle">
                                             Активность
                                         </td>
-                                        <td>
+                                        <td class="newstyle">
                                             <strong class="d-inline-block mb-2 text-success">{{$elem->activity}}</strong>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td class="newstyle">
                                             Файл
                                         </td>
-                                        <td class="newstyle3">
+                                        <td class="newstyle">
                                             <a href="http://astarusfirst.loc/storage/{{$linkfile}}" class="nav-link">Ссылка на файл</a>
                                         </td>
                                     </tr>
