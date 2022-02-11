@@ -47,6 +47,11 @@
                         @endforeach
                     </table>
                     <hr>
+                    <br>
+                    <h1>
+                        Оборудование
+                    </h1>
+                    <br>
                     @php $count=0;  @endphp
                     @foreach($equiprec as $elem)
                         @php
