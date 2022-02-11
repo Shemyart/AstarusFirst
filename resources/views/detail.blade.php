@@ -75,12 +75,12 @@
                                         <td>
                                             Наименование
                                         </td>
-                                        <td>
+                                        <td class="newstyle">
                                             <strong class="d-inline-block mb-2">{{$elem->name}}</strong>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td class="newstyle1">
                                             Количество
                                         </td>
                                         <td>
@@ -88,7 +88,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td class="newstyle2">
                                             Активность
                                         </td>
                                         <td>
@@ -99,7 +99,7 @@
                                         <td>
                                             Файл
                                         </td>
-                                        <td>
+                                        <td class="newstyle3">
                                             <a href="http://astarusfirst.loc/storage/{{$linkfile}}" class="nav-link">Ссылка на файл</a>
                                         </td>
                                     </tr>

@@ -20,15 +20,15 @@ class ProjectController extends Controller
 
         return view('projects', ['projects'=>$projects->all()]);
     }
-    public function detail($id)
+
+    public function detail($slug)
     {
         $record = DB::table('projects_models')
-            ->where('projects_models.id', '=', $id)
-            /*->Leftjoin('equipment_models', 'projects_models.id', '=','equipment_models.project_id')*/
+            ->where('projects_models.slug', '=', $slug)
             ->get();
+
         $equiprec = DB::table('equipment_models')
-            ->where('project_id', '=', $id)
-            /*->Leftjoin('equipment_models', 'projects_models.id', '=','equipment_models.project_id')*/
+            ->where('project_id', '=', $record[0]->id)
             ->get();
 
         return view('detail', [

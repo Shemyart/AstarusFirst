@@ -3,10 +3,21 @@
 namespace App\Observers;
 
 use App\Models\ProjectsModel;
+use Illuminate\Support\Str;
 use phpDocumentor\Reflection\Types\Void_;
 
 class ProjectsObserver
 {
+    /**
+     * Handle the ProjectsModel "created" event.
+     *
+     * @param  \App\Models\ProjectsModel  $projectsModel
+     * @return void
+     */
+    public function creating(ProjectsModel $projectsModel)
+    {
+        $this->setSlug($projectsModel);
+    }
     /**
      * Handle the ProjectsModel "created" event.
      *
@@ -26,6 +37,7 @@ class ProjectsObserver
      */
     public function updating(ProjectsModel $projectsModel)
     {
+        $this->setSlug($projectsModel);
         if ($projectsModel->status == 'Закрыт' and $projectsModel->isDirty('status')){
             $projectsModel->finish_date = date('Y:m:d');
         }else{
@@ -43,6 +55,14 @@ class ProjectsObserver
     {
    //
     }
+
+    protected function setSlug(ProjectsModel $projectsModel)
+    {
+        if(empty($projectsModel->slug)){
+            $projectsModel->slug = Str::slug($projectsModel->name);
+        }
+    }
+
 
     /**
      * Handle the ProjectsModel "deleted" event.

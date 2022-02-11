@@ -23,7 +23,7 @@
                                     <td>{{$sch++}}</td>
                                     <td>{{$elem->name}}</td>
                                     <td>{{$elem->volume}}</td>
-                                    <td>{{$elem->action}}</td>
+                                    <td>{{$elem->activity}}</td>
                                     <td>
                                         <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
                                             @method('DELETE')

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\FirstModel;
+use App\Models\EquipmentModel;
 use Illuminate\Http\Request;
 
 
@@ -10,7 +10,7 @@ class FirstController extends Controller
 {
     public function home()
     {
-        $equipments = new FirstModel();
+        $equipments = new EquipmentModel();
 
         return view('equipments', ['equipments'=>$equipments->all()]);
     }

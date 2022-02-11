@@ -33,7 +33,7 @@
                             @endphp
                             <tr>
                                 <td>{{$sch++}}</td>
-                                <td><a href="http://astarusfirst.loc/projects/{{$elem->id}}}">{{$elem->name}}</a></td>
+                                <td><a href="http://astarusfirst.loc/projects/{{$elem->slug}}">{{$elem->name}}</a></td>
                                 <td>{{$elem->description}}</td>
                                 <td><img class="img-fluid" src="http://astarusfirst.loc/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
                                 <td>{{$elem->start_date}}</td>

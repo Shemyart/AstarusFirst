@@ -1,17 +1,14 @@
-th.tablehead{
-    font-size:20px;
-}
-.carousel {
-    width: 80%;
-}
 
-.carousel-item img {
-    width: 60%;
-    height: 500px; /* высота изображения */
-    object-fit: cover;
+td.newstyle{
+    background: #549DEA;
 }
-img{
-    width: 20%;
-    height: 40px;
+td.newstyle1{
+    background: aquamarine;
+}
+td.newstyle2{
+    background: #4a5568;
+}
+td.newstyle3{
+    background: #e2e8f0;
 }
 
