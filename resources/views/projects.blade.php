@@ -5,6 +5,8 @@
     <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">
+                    <h1>Проекты</h1>
+                <hr>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
                         <thead>

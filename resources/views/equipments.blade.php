@@ -5,6 +5,10 @@
     <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <h1>Оборудование</h1>
+                </div>
+                <hr>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
                         <thead>
@@ -20,7 +24,7 @@
                         @php $sch=1; @endphp
                             @foreach($equipments as $elem)
                                 <tr>
-                                    <td>{{$sch++}}</td>
+                                    <td class="">{{$sch++}}</td>
                                     <td>{{$elem->name}}</td>
                                     <td>{{$elem->volume}}</td>
                                     <td>{{$elem->activity}}</td>
@@ -28,7 +32,7 @@
                                         <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
                                             @method('DELETE')
                                             @csrf
-                                            <button type="submit" class="btn btn-primary" value="{{$elem->id}}">Удалить</button>
+                                            <button type="submit" class="btn btn-primary" value="{{$elem->id}}"><i class="fa-solid fa-trash-can fa-fade" style="--fa-animation-duration: 3s; --fa-fade-opacity: 0.6;"></i> Удалить</button>
                                         </form>
                                     </td>
                                 </tr>

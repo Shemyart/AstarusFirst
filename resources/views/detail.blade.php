@@ -7,42 +7,59 @@
             <div class="col-md-12">
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
-                        <tr>
-                            <td class="fontmax">Поле</td>
-                            <td class="fontmax">Значение</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <td>Поле</td>
+                                <td>Значение</td>
+                            </tr>
+                        </thead>
                         @foreach($record as $elem)
+
+                            @php
+                                $splitArrayImg = array();
+                                $active = 0;
+                                $splitImg = explode(',', $elem->image);
+                                    foreach ($splitImg as $splitelem){
+                                        $newSplit = trim($splitelem, '"[]');
+                                        array_push($splitArrayImg, $newSplit);
+                                    }
+                            @endphp
+
                             <tr>
-                                <td class="fontmax">Название</td>
-                                <td class="fontmax">{{$elem->name}}</td>
+                                <td>Название</td>
+                                <td>{{$elem->name}}</td>
                             </tr>
                             <tr>
-                                <td class="fontmax">Описание</td>
-                                <td class="fontmax">{{$elem->description}}</td>
+                                <td>Описание</td>
+                                <td>{{$elem->description}}</td>
+                            </tr>
+                            @foreach ($splitArrayImg as $img)
+                            <tr>
+                                <td>Изображение</td>
+                                <td>
+                                    <img class="img-fluid" width="100" height="100" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                </td>
+                            </tr>
+                            @endforeach
+                            <tr>
+                                <td>Дата начала</td>
+                                <td>{{$elem->start_date}}</td>
                             </tr>
                             <tr>
-                                <td class="fontmax">Изображение</td>
-                                <td class="fontmax"><img class="img-fluid" src="http://astarusfirst.loc/storage/{{$elem->image}}"></td>
+                                <td>Дата окончания</td>
+                                <td>{{$elem->finish_date}}</td>
                             </tr>
                             <tr>
-                                <td class="fontmax">Дата начала</td>
-                                <td class="fontmax">{{$elem->start_date}}</td>
+                                <td>Код</td>
+                                <td>{{$elem->code}}</td>
                             </tr>
                             <tr>
-                                <td class="fontmax">Дата окончания</td>
-                                <td class="fontmax">{{$elem->finish_date}}</td>
+                                <td>Статус</td>
+                                <td>{{$elem->status}}</td>
                             </tr>
                             <tr>
-                                <td class="fontmax">Код</td>
-                                <td class="fontmax" >{{$elem->code}}</td>
-                            </tr>
-                            <tr>
-                                <td class="fontmax">Статус</td>
-                                <td class="fontmax">{{$elem->status}}</td>
-                            </tr>
-                            <tr>
-                                <td class="fontmax">Задачи</td>
-                                <td class="fontmax">{{$elem->tasks}}</td>
+                                <td>Задачи</td>
+                                <td>{{$elem->tasks}}</td>
                             </tr>
                         @endforeach
                     </table>
@@ -52,25 +69,24 @@
                         Оборудование
                     </h1>
                     <br>
-                    @php $count=0;  @endphp
+
                     @foreach($equiprec as $elem)
                         @php
-                            $splitarrayimg = array();
-                            $splitarrayfile = array();
+                            $splitArrayImg = array();
+                            $splitArrayFile = array();
                             $active = 0;
-                            $splitimg = explode(',', $elem->image);
-                            $splitfile = explode(',', $elem->file);
-                                foreach ($splitimg as $splitelem){
-                                    $newsplit = trim($splitelem, '"[]');
-                                    array_push($splitarrayimg, $newsplit);
+                            $splitImg = explode(',', $elem->image);
+                            $splitFile = explode(',', $elem->file);
+                                foreach ($splitImg as $splitelem){
+                                    $newSplit = trim($splitelem, '"[]');
+                                    array_push($splitArrayImg, $newSplit);
                                 }
-                                foreach ($splitfile as $splitelem){
-                                    $newsplit = trim($splitelem, '"[]');
-                                    array_push($splitarrayfile, $newsplit);
+                                foreach ($splitFile as $splitelem){
+                                    $newSplit = trim($splitelem, '"[]');
+                                    array_push($splitArrayFile, $newSplit);
 
                                 }
-                                $linkfile = substr($splitarrayfile[0],18);
-
+                                $linkFile = substr($splitArrayFile[0],18);
                         @endphp
                     <div class="col-md-12">
                         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -105,24 +121,24 @@
                                             Файл
                                         </td>
                                         <td class="newstyle">
-                                            <a href="http://astarusfirst.loc/storage/{{$linkfile}}" class="nav-link">Ссылка на файл</a>
+                                            <a href="http://astarusfirst.loc/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <div class="col-10  d-lg-block">
+                            <div class="col-4  d-lg-block">
                                 <div id="carousel" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
 
 
-                                @foreach ($splitarrayimg as $img)
+                                @foreach ($splitArrayImg as $img)
 
                                     @if ($active == 0)
                                         <div class="carousel-item active">
                                     @else
                                         <div class="carousel-item">
                                     @endif
-                                            <img class="img-fluid" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                            <img class="img-fluid" width="250" height="250" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
                                         </div>
                                     @php  $active = 1; @endphp
                                 @endforeach

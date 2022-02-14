@@ -10,21 +10,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/23f3e04a5b.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 <body>
 <div class="container">
+    <div class="fa-3x">
+        <i class="fa-solid fa-cog fa-spin"></i>
+    </div>
     <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="http://astarusfirst.loc/" class="nav-link active" aria-current="page">Оборудование</a></li>
+
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item"><a href="http://astarusfirst.loc/" class="nav-link" aria-current="page">Оборудование</a></li>
 
             <li class="nav-item"><a href="http://astarusfirst.loc/projects" class="nav-link">Проекты</a></li>
         </ul>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-tabs">
             <li class="nav-item"><a href="http://astarusfirst.loc/admin" class="nav-link ">Админка</a></li>
         </ul>
+
     </header>
+
 </div>
+
 @yield('content')
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
