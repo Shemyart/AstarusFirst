@@ -23,7 +23,7 @@
 
         <ul class="nav nav-tabs">
 
-            <li class="nav-item"><a href="http://astarusfirst.loc/" class="nav-link" aria-current="page">Оборудование</a></li>
+            <li class="nav-item"><a href="http://shemyakin.astarus.ru.loc/" class="nav-link" aria-current="page">Оборудование</a></li>
 
             <li class="nav-item"><a href="http://astarusfirst.loc/projects" class="nav-link">Проекты</a></li>
         </ul>

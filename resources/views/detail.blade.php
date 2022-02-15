@@ -93,34 +93,38 @@
                             <div class="col p-4 d-flex flex-column position-static">
                                 <table>
                                     <tr>
-                                        <td class="newstyle">
+                                        <td>
                                             Наименование
                                         </td>
-                                        <td class="newstyle">
+                                        <td>
                                             <strong class="d-inline-block mb-2">{{$elem->name}}</strong>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="newstyle">
+                                        <td >
                                             Количество
                                         </td>
-                                        <td class="newstyle">
-                                            <strong class="d-inline-block mb-2 text-success">{{$elem->volume}}</strong>
+                                        <td >
+                                            <strong class="d-inline-block mb-2 text">{{$elem->volume}} шт.</strong>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="newstyle">
+                                        <td >
                                             Активность
                                         </td>
-                                        <td class="newstyle">
-                                            <strong class="d-inline-block mb-2 text-success">{{$elem->activity}}</strong>
+                                        <td >
+                                            @if($elem->activity == 0)
+                                                <strong class="d-inline-block mb-2 text">Неактивен</strong>
+                                            @else
+                                                <strong class="d-inline-block mb-2 text">Активен</strong>
+                                            @endif
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="newstyle">
+                                        <td>
                                             Файл
                                         </td>
-                                        <td class="newstyle">
+                                        <td >
                                             <a href="http://astarusfirst.loc/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
                                         </td>
                                     </tr>

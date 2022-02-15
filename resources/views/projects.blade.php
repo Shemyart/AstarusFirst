@@ -35,9 +35,9 @@
                             @endphp
                             <tr>
                                 <td>{{$sch++}}</td>
-                                <td><a href="http://astarusfirst.loc/projects/{{$elem->slug}}">{{$elem->name}}</a></td>
+                                <td><a class="link-dark" href="http://astarusfirst.loc/projects/{{$elem->slug}}">{{$elem->name}}</a></td>
                                 <td>{{$elem->description}}</td>
-                                <td><img class="img-fluid" src="http://astarusfirst.loc/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
+                                <td><img class="img-fluid" width="100" height="100" src="http://astarusfirst.loc/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
                                 <td>{{$elem->start_date}}</td>
                                 <td>{{$elem->finish_date}}</td>
                                 <td>{{$elem->code}}</td>

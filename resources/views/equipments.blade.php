@@ -13,7 +13,7 @@
                     <table class="table table-hover table-striped">
                         <thead>
                         <tr>
-                            <th scope="col" class="tablehead">Порядковый номер</th>
+                            <th scope="col" class="tablehead">№</th>
                             <th scope="col" class="tablehead">Наименование</th>
                             <th scope="col" class="tablehead">Количество</th>
                             <th scope="col" class="tablehead">Активность</th>
@@ -27,7 +27,13 @@
                                     <td class="">{{$sch++}}</td>
                                     <td>{{$elem->name}}</td>
                                     <td>{{$elem->volume}}</td>
-                                    <td>{{$elem->activity}}</td>
+                                    <td>
+                                    @if($elem->activity == 0)
+                                        <p class="d-inline-block mb-2 text">Неактивно</p>
+                                    @else
+                                        <p class="d-inline-block mb-2 text">Активно</p>
+                                    @endif
+                                    </td>
                                     <td>
                                         <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
                                             @method('DELETE')
