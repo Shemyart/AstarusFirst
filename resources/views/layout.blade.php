@@ -23,12 +23,12 @@
 
         <ul class="nav nav-tabs">
 
-            <li class="nav-item"><a href="http://shemyakin.astarus.ru.loc/" class="nav-link" aria-current="page">Оборудование</a></li>
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Оборудование</a></li>
 
-            <li class="nav-item"><a href="http://astarusfirst.loc/projects" class="nav-link">Проекты</a></li>
+            <li class="nav-item"><a href="/projects" class="nav-link">Проекты</a></li>
         </ul>
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a href="http://astarusfirst.loc/admin" class="nav-link ">Админка</a></li>
+            <li class="nav-item"><a href="/admin" class="nav-link ">Панель администратора</a></li>
         </ul>
 
     </header>
@@ -39,9 +39,6 @@
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
             <span class="text-muted">© 2022 Astarus</span>
         </div>
     </footer>
