@@ -40,7 +40,6 @@
                         @endif
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover">
-
                                 <thead>
                                 <tr>
                                     @if($showCheckboxColumn)
