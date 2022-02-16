@@ -2,7 +2,9 @@
 
 namespace App\Actions;
 
-class ActivityAction extends \TCG\Voyager\Actions\AbstractAction
+use TCG\Voyager\Actions\AbstractAction;
+
+class ActivityAction extends AbstractAction
 {
 
     public function getTitle()
@@ -12,13 +14,13 @@ class ActivityAction extends \TCG\Voyager\Actions\AbstractAction
 
     public function getIcon()
     {
-        return $this->data->{'activity'}=="1"?'voyager-x':'voyager-external';
+        return $this->data->{'activity'}=="1"?'voyager-external':'voyager-x';
     }
 
     public function shouldActionDisplayOnDataType()
     {
         // Показывать или скрыть кнопку действия. Отображается только для модели Equipment
-        return $this->dataType->slug == 'equipment_models';
+        return $this->dataType->slug == 'equipment-models';
     }
     public function getAttributes()
     {

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Voyager;
 
+use App\Models\EquipmentModel;
 use TCG\Voyager\Http\Controllers\VoyagerBaseController;
-use TCG\Voyager\Models\Post;
+
 use function request;
 
 class EquipmentController extends VoyagerBaseController
@@ -12,9 +13,11 @@ class EquipmentController extends VoyagerBaseController
     {
         // Получить запись по ID и переключить статус
 
-        $post = Post::where('id', request("id"))->first();
-        $post->status = $post->status=="1"?"Активно":"Неактивно";
-        $post->save();
+        $equip = EquipmentModel::where('id', request("id"))->first();
+
+        $equip->activity = $equip->activity=='0'?'1':'0';
+
+        $equip->save();
         return redirect(route('voyager.equipment-models.index'));
     }
 }
