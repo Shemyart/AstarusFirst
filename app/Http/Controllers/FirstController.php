@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\EquipmentModel;
 use App\Models\FirstModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 
 class FirstController extends Controller
@@ -24,7 +25,9 @@ class FirstController extends Controller
     {
         //dd(__METHOD__, $id, request()->all());
         //Полное удаление из БД
-        $result = FirstModel::find($id)->forceDelete();
+        $result = EquipmentModel::find($id)->forceDelete();
+
+        Log::debug('Удаление оборудования с id:'.$id);
 
         if($result){
             return redirect()

@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\ProjectsModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class ProjectController extends Controller
 {
@@ -24,7 +25,7 @@ class ProjectController extends Controller
     public function detail($slug)
     {
 
-
+        Log::debug('Детальный просмотр: '.$slug);
         $record = DB::table('projects_models')
             ->where('projects_models.slug', '=', $slug)
             ->get();
@@ -45,6 +46,7 @@ class ProjectController extends Controller
                 'equiprec'=>null,
             ]);
         }
+
     }
 
     /**
