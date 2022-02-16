@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\EquipmentModel;
+use App\Models\FirstModel;
 use Illuminate\Http\Request;
 
 
@@ -33,4 +34,5 @@ class FirstController extends Controller
             return back()->withErrors(['msg'=>'Ошибка удаления']);
         }
     }
+
 }

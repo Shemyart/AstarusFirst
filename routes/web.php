@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{FirstController, ProjectController};
+use App\Http\Controllers\{FirstController, ProjectController, Voyager\EquipmentController};
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -22,5 +22,10 @@ Route::resource('delete',FirstController::class)->names('delete');
 
 
 Route::group(['prefix' => 'admin'], function () {
+
+   // Route::post('login', ['uses' => 'MyAuthController@postLogin', 'as' => 'postlogin']);
+    //Route::get('equipment-models/activity',[EquipmentController::class, 'activity'])->name('equipment.activity');
+
     Voyager::routes();
+
 });
