@@ -23,7 +23,7 @@ Route::resource('delete',FirstController::class)->names('delete');
 
 Route::group(['prefix' => 'admin'], function () {
 
-   // Route::post('login', ['uses' => 'MyAuthController@postLogin', 'as' => 'postlogin']);
+
     Route::get('equipment-models/activity',[EquipmentController::class, 'activity'])->name('equipment-models.activity');
 
     Voyager::routes();

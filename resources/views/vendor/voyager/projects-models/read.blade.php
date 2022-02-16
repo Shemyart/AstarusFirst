@@ -1,6 +1,7 @@
 @extends('voyager::master')
 
 
+
 @section('content')
     <div class="page-content read container-fluid">
         <div class="row">
@@ -119,7 +120,6 @@
             </div>
         </div>
     </div>
-
     {{-- Single delete modal --}}
     <div class="modal modal-danger fade" tabindex="-1" id="delete_modal" role="dialog">
         <div class="modal-dialog">

@@ -1,5 +1,5 @@
 @extends('layout')
-
+@section('title')Проекты@endsection
 @section('content')
 
     <div class="container">

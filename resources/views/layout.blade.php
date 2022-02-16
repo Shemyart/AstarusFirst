@@ -12,7 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/23f3e04a5b.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
 <body>
 <div class="container">

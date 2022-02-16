@@ -1,5 +1,5 @@
 @extends('layout')
-
+@section('title')Детальный просмотр@endsection
 @section('content')
 
     <div class="container">
@@ -65,93 +65,95 @@
                     </table>
                     <hr>
                     <br>
-                    <h1>
-                        Оборудование
-                    </h1>
-                    <br>
+                    @if($equiprec)
+                        <h1>
+                            Оборудование
+                        </h1>
+                        <br>
 
-                    @foreach($equiprec as $elem)
-                        @php
-                            $splitArrayImg = array();
-                            $splitArrayFile = array();
-                            $active = 0;
-                            $splitImg = explode(',', $elem->image);
-                            $splitFile = explode(',', $elem->file);
-                                foreach ($splitImg as $splitelem){
-                                    $newSplit = trim($splitelem, '"[]');
-                                    array_push($splitArrayImg, $newSplit);
-                                }
-                                foreach ($splitFile as $splitelem){
-                                    $newSplit = trim($splitelem, '"[]');
-                                    array_push($splitArrayFile, $newSplit);
+                        @foreach($equiprec as $elem)
+                            @php
+                                $splitArrayImg = array();
+                                $splitArrayFile = array();
+                                $active = 0;
+                                $splitImg = explode(',', $elem->image);
+                                $splitFile = explode(',', $elem->file);
+                                    foreach ($splitImg as $splitelem){
+                                        $newSplit = trim($splitelem, '"[]');
+                                        array_push($splitArrayImg, $newSplit);
+                                    }
+                                    foreach ($splitFile as $splitelem){
+                                        $newSplit = trim($splitelem, '"[]');
+                                        array_push($splitArrayFile, $newSplit);
 
-                                }
-                                $linkFile = substr($splitArrayFile[0],18);
-                        @endphp
-                    <div class="col-md-12">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            Наименование
-                                        </td>
-                                        <td>
-                                            <strong class="d-inline-block mb-2">{{$elem->name}}</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td >
-                                            Количество
-                                        </td>
-                                        <td >
-                                            <strong class="d-inline-block mb-2 text">{{$elem->volume}} шт.</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td >
-                                            Активность
-                                        </td>
-                                        <td >
-                                            @if($elem->activity == 0)
-                                                <strong class="d-inline-block mb-2 text">Неактивен</strong>
-                                            @else
-                                                <strong class="d-inline-block mb-2 text">Активен</strong>
-                                            @endif
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Файл
-                                        </td>
-                                        <td >
-                                            <a href="http://astarusfirst.loc/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-4  d-lg-block">
-                                <div id="carousel" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
+                                    }
+                                    $linkFile = substr($splitArrayFile[0],18);
+                            @endphp
+                        <div class="col-md-12">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                Наименование
+                                            </td>
+                                            <td>
+                                                <strong class="d-inline-block mb-2">{{$elem->name}}</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                Количество
+                                            </td>
+                                            <td >
+                                                <strong class="d-inline-block mb-2 text">{{$elem->volume}} шт.</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                Активность
+                                            </td>
+                                            <td >
+                                                @if($elem->activity == 0)
+                                                    <strong class="d-inline-block mb-2 text">Неактивен</strong>
+                                                @else
+                                                    <strong class="d-inline-block mb-2 text">Активен</strong>
+                                                @endif
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Файл
+                                            </td>
+                                            <td >
+                                                <a href="http://astarusfirst.loc/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-4  d-lg-block">
+                                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
 
 
-                                @foreach ($splitArrayImg as $img)
+                                    @foreach ($splitArrayImg as $img)
 
-                                    @if ($active == 0)
-                                        <div class="carousel-item active">
-                                    @else
-                                        <div class="carousel-item">
-                                    @endif
-                                            <img class="img-fluid" width="250" height="250" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                        @if ($active == 0)
+                                            <div class="carousel-item active">
+                                        @else
+                                            <div class="carousel-item">
+                                        @endif
+                                                <img class="img-fluid" width="250" height="250" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                            </div>
+                                        @php  $active = 1; @endphp
+                                    @endforeach
                                         </div>
-                                    @php  $active = 1; @endphp
-                                @endforeach
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    @endforeach
+                        @endforeach
+                   @endif
                 </div><!-- ./table-responsive-->
             </div><!-- ./col-md-12-->
         </div><!-- ./row-->

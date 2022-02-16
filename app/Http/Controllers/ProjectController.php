@@ -23,18 +23,28 @@ class ProjectController extends Controller
 
     public function detail($slug)
     {
+
+
         $record = DB::table('projects_models')
             ->where('projects_models.slug', '=', $slug)
             ->get();
 
-        $equiprec = DB::table('equipment_models')
-            ->where('project_id', '=', $record[0]->id)
-            ->get();
+        if (setting('admin.project_equip') == 1) {
+            $equiprec = DB::table('equipment_models')
+                ->where('project_id', '=', $record[0]->id)
+                ->get();
 
-        return view('detail', [
-            'record'=>$record,
-            'equiprec'=>$equiprec,
+
+            return view('detail', [
+                'record' => $record,
+                'equiprec' => $equiprec,
             ]);
+        }else{
+            return view('detail', [
+                'record' => $record,
+                'equiprec'=>null,
+            ]);
+        }
     }
 
     /**
