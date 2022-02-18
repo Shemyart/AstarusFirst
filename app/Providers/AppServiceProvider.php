@@ -7,6 +7,7 @@ use App\Models\ProjectsModel;
 use App\Observers\ProjectsObserver;
 use Illuminate\Support\ServiceProvider;
 use TCG\Voyager\Facades\Voyager;
+use Illuminate\Support\Facades\Schema;
 
 
 class AppServiceProvider extends ServiceProvider
