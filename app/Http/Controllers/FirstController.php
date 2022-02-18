@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 
 class FirstController extends Controller
 {
-    public function home()
+    public function equip()
     {
         $equipments = new EquipmentModel();
 

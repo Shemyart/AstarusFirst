@@ -1,5 +1,7 @@
 require('./bootstrap');
 
-$('.carousel').carousel({
-    interval: 2000
-})
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
