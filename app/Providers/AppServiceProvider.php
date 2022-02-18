@@ -30,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
     {
         ProjectsModel::observe(ProjectsObserver::class);
         Voyager::addAction(ActivityAction::class);
+        Schema::defaultStringLength(191);
     }
 }
