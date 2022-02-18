@@ -29,6 +29,11 @@
 
             <li class="nav-item"><a href="/projects" class="nav-link">Проекты</a></li>
         </ul>
+        @if(Auth::user()->role_id == 1)
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="/admin" class="nav-link ">Панель администратора</a></li>
+            </ul>
+        @endif
 
 
 

@@ -105,14 +105,17 @@
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Профиль') }}
                             </x-jet-dropdown-link>
-
+                            @if(Auth::user()->role_id == 3)
                             <x-jet-dropdown-link href="{{ route('tester') }}">
                                 {{ __('Тестовая страница') }}
                             </x-jet-dropdown-link>
+                            @endif
 
+                            @if(Auth::user()->role_id == 1)
                             <x-jet-dropdown-link href="/admin">
                                 {{ __('Панель администратора') }}
                             </x-jet-dropdown-link>
+                            @endif
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
