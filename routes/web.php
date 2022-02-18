@@ -16,12 +16,13 @@ use TCG\Voyager\Facades\Voyager;
 */
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-    return view('profile.show');
-})->name('profile.show');
+    return view('dashboard');
+})->name('dashboard');
 
 
 Route::get('/equipment', [FirstController::class, 'equip'])->name('equipment');
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
+Route::get('/tester', [ProjectController::class, 'tester'])->name('tester');
 Route::get('/projects/{slug}', [ProjectController::class, 'detail'])->name('detail');
 Route::resource('delete',FirstController::class)->names('delete');
 

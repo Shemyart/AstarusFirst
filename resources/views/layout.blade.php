@@ -20,16 +20,17 @@
         <a href="/"> <i class="fa-solid fa-cog fa-spin"></i></a>
     </div>
     <header class="d-flex justify-content-center py-3">
-
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="/" class="nav-link ">Личный кабинет</a></li>
+        </ul>
         <ul class="nav nav-tabs">
 
             <li class="nav-item"><a href="/equipment" class="nav-link" aria-current="page">Оборудование</a></li>
 
             <li class="nav-item"><a href="/projects" class="nav-link">Проекты</a></li>
         </ul>
-        <ul class="nav nav-tabs">
-            <li class="nav-item"><a href="/admin" class="nav-link ">Панель администратора</a></li>
-        </ul>
+
+
 
     </header>
 

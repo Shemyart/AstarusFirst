@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\EquipmentModel;
 use App\Models\ProjectsModel;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -59,6 +60,18 @@ class ProjectController extends Controller
             ]);
         }
 
+    }
+
+    public function tester(){
+        if (Auth::user()->role_id == 3)
+        {
+            $projects = new ProjectsModel();
+            return view('projects', ['projects'=>$projects->all()]);
+        }else{
+
+
+            return view('dashboard');
+        }
     }
 
     /**

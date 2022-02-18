@@ -134,7 +134,7 @@
                                                 <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
                                                     @method('DELETE')
                                                     @csrf
-                                                    <button type="submit" class="btn btn-primary" value="{{$elem->id}}"><i class="fa-solid fa-trash-can fa-fade" style="--fa-animation-duration: 3s; --fa-fade-opacity: 0.6;"></i> Удалить</button>
+                                                    <button onclick="return confirm('Вы уверены?')" type="submit" class="btn btn-primary" value="{{$elem->id}}"><i class="fa-solid fa-trash-can fa-fade" style="--fa-animation-duration: 3s; --fa-fade-opacity: 0.6;"></i> Удалить</button>
                                                 </form>
                                             </td>
                                         </tr>

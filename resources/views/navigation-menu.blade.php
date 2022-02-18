@@ -106,6 +106,14 @@
                                 {{ __('Профиль') }}
                             </x-jet-dropdown-link>
 
+                            <x-jet-dropdown-link href="{{ route('tester') }}">
+                                {{ __('Тестовая страница') }}
+                            </x-jet-dropdown-link>
+
+                            <x-jet-dropdown-link href="/admin">
+                                {{ __('Панель администратора') }}
+                            </x-jet-dropdown-link>
+
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
                                     {{ __('API Токен') }}
