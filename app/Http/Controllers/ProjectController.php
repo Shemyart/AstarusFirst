@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 
 use App\Models\ProjectsModel;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
@@ -17,9 +19,19 @@ class ProjectController extends Controller
      */
     public function index()
     {
+
         $projects = new ProjectsModel();
 
-        return view('projects', ['projects'=>$projects->all()]);
+        switch(Auth::user()->role_id){
+            case 3:
+            case 1:
+                return view('projects', ['projects'=>$projects->all()]);
+            case 2:
+                $validprojects = DB::table('projects_models')
+                    ->where('projects_models.user_id', '=', Auth::user()->id )
+                    ->get();
+                return view('projects', ['projects'=>$validprojects]);
+        }
     }
 
     public function detail($slug)

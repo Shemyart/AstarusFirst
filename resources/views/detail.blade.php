@@ -126,7 +126,16 @@
                                                 Файл
                                             </td>
                                             <td >
-                                                <a href="http://astarusfirst.loc/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
+                                                <a href="/storage/{{$linkFile}}" class="nav-link">Ссылка на файл</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-primary" value="{{$elem->id}}"><i class="fa-solid fa-trash-can fa-fade" style="--fa-animation-duration: 3s; --fa-fade-opacity: 0.6;"></i> Удалить</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     </table>
@@ -149,8 +158,11 @@
                                     @endforeach
                                         </div>
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
                         @endforeach
                    @endif

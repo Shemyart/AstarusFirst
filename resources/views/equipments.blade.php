@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title')Оборудование@endsection
 @section('content')
-
+    @include('result_message')
     <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">

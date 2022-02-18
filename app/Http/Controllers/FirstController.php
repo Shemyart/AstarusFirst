@@ -31,7 +31,7 @@ class FirstController extends Controller
 
         if($result){
             return redirect()
-                ->route('homepage')
+                ->route('equipment')
                 ->with(['success'=>"Запись удалена"]);
         }else{
             return back()->withErrors(['msg'=>'Ошибка удаления']);
