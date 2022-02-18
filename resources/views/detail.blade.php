@@ -37,7 +37,7 @@
                             <tr>
                                 <td>Изображение</td>
                                 <td>
-                                    <img class="img-fluid" width="100" height="100" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                    <img class="img-fluid" width="100" height="100" src="/storage/{{$img}}" alt="Не найдено">
                                 </td>
                             </tr>
                             @endforeach
@@ -152,7 +152,7 @@
                                         @else
                                             <div class="carousel-item">
                                         @endif
-                                                <img class="img-fluid" width="250" height="250" src="http://astarusfirst.loc/storage/{{$img}}" alt="Не найдено">
+                                                <img class="img-fluid" width="250" height="250" src="/storage/{{$img}}" alt="Не найдено">
                                             </div>
                                         @php  $active = 1; @endphp
                                     @endforeach
