@@ -92,44 +92,12 @@
                                 </div>
                             @endforeach
 
+
+                        <div class="input_fields_wrap form-group">
+                            <button class="add_field_button btn btn-primary save">Добавить оборудование</button>
+
+                        </div>
                         </div><!-- panel-body -->
-                        <div class="panel-footer">
-                            @section('new-equip-button')
-                                <button type ="button" onclick="appendEquipment()" value="Add new equipment" class="btn btn-primary save">Добавить оборудование</button>
-                            @stop
-                            @yield('new-equip-button')
-                        </div>
-
-                        <div id="add-equip" class="form-group" style="display:none">
-
-                            <div class="panel-body">
-
-                            <!-- Добавление оборудования -->
-                                <div class="form-group  hidden col-md-12">
-                                    <label class="control-label" for="id-eq">id</label>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label class="control-label" for="nameeq">Name</label>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <input name="nameeq" id="nameeq" class="form-control">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label class="control-label" for="name">Volume</label>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <input name="volume" id="volume" class="form-control">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label class="control-label" for="name">Activity</label>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <input type="checkbox" name="activity" value="1" class="checkbox">
-                                </div>
-
-
-                            </div><!-- panel-body -->
-                        </div>
                         <div class="panel-footer">
                             @section('submit-buttons')
                                 <button type="submit" class="btn btn-primary save">{{ __('voyager::generic.save') }}</button>
@@ -179,23 +147,38 @@
 
 @section('javascript')
     <script>
+        $(document).ready(function()
+        {
+            var max_fields      = 10; //maximum input boxes allowed
+            var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+            var add_button      = $(".add_field_button"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(add_button).click(function(e){ //on add input button click
+                e.preventDefault();
+                if(x < max_fields){ //max input box allowed
+                     //text box increment
+                    $(wrapper).append('<div id="divs_'+x+'" class="form-group col-md-12" data-action="insert">' +
+                                        '<label class="control-label" for="nameeq_'+x+'">Наименование</label>' +
+                                        '<input type="text" class="form-control" name="nameeq_'+x+'" placeholder="Наименование"/><br>' +
+                                        '<label class="control-label" for="volume_'+x+'">Количество</label>' +
+                                        '<input type="number" class="form-control" name="volume_'+x+'" id="volume_'+x+'" placeholder="Количество"/><br>' +
+                                        '<label class="control-label" for="activity_'+x+'">Активность</label>' +
+                                        '<input type="checkbox" class="checkbox" name="activity_'+x+'" id="activity_'+x+'" placeholder="Активность"/><br>' +
+                                        '<a href="#" id="'+x+'" class="remove_field btn btn-danger">Удалить</a><br>' +
+                                        '</div>'); //add input box
+                    x++;
+                }
+            });
+            $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+                e.preventDefault();
+                $("#divs_"+e.currentTarget.id).remove();
+            })
+        });
+
         var params = {};
         var $file;
 
-        function appendEquipment()
-        {
-            document.getElementById('add-equip').style.display = 'block';
-            //переменная позиции появления формы
-            /*var x = document.getElementById("add-equip");
-            var new_field = document.createElement("input");
-            new_field.setAttribute("type", "text");
-            new_field.setAttribute("class", "form-control");
-            new_field.setAttribute("placeholder", "Введите текст");
-            // определим место вствки нового поля ввода (перед каким элементом его вставить)
-            var pos = x.childElementCount;
-            // добавим поле ввода в форму
-            x.insertBefore(new_field, x.childNodes[pos]);*/
-        };
 
         function deleteHandler(tag, isMulti) {
             return function() {

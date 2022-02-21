@@ -436,15 +436,27 @@ class VoyagerProjectController extends VoyagerBaseController
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
 
-        if($request->nameeq != null){
+        $schEquip=1;
+        $nameeq = "nameeq_".$schEquip;
+        While($request->$nameeq != null):
+            $volume = "volume_".$schEquip;
+            $activity = "activity_".$schEquip;
+            if($request->$activity == "on"){
+                $request->$activity = 1;
+            }else{
+                $request->$activity = 0;
+            }
             EquipmentModel::insert(array(
-                'name'      => $request->nameeq,
-                'volume'    => $request->volume,
-                'activity'  => $request->activity,
+                'name'      => $request->$nameeq,
+                'volume'    => $request->$volume,
+                'activity'  => $request->$activity,
                 'created_at'=> $data->created_at,
                 'project_id'=> $data->id
             ));
-        }
+            $schEquip++;
+            $nameeq = "nameeq_".$schEquip;
+        endwhile;
+
 
         event(new BreadDataAdded($dataType, $data));
 

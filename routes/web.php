@@ -25,18 +25,13 @@ Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 Route::get('/tester', [ProjectController::class, 'tester'])->name('tester');
 Route::get('/projects/{slug}', [ProjectController::class, 'detail'])->name('detail');
 Route::resource('delete',FirstController::class)->names('delete');
-
+Route::delete('/projects/{slug}/{id}', [ProjectController::class, 'destroy']);
 
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('equipment-models/activity',[EquipmentController::class, 'activity'])->name('equipment-models.activity');
-
     Voyager::routes();
 
 });
 
 
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');

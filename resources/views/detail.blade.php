@@ -16,6 +16,7 @@
                         @foreach($record as $elem)
 
                             @php
+                                $slug = $elem->slug;
                                 $splitArrayImg = array();
                                 $active = 0;
                                 $splitImg = explode(',', $elem->image);
@@ -28,9 +29,11 @@
                             <tr>
                                 <td>Название</td>
                                 <td>{{$elem->name}}</td>
+
                             </tr>
                             <tr>
                                 <td>Описание</td>
+
                                 <td>{{$elem->description}}</td>
                             </tr>
                             @foreach ($splitArrayImg as $img)
@@ -89,10 +92,10 @@
                                     }
                                     $linkFile = substr($splitArrayFile[0],18);
                             @endphp
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="equipid{{$elem->id}}">
                             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                 <div class="col p-4 d-flex flex-column position-static">
-                                    <table>
+                                    <table >
                                         <tr>
                                             <td>
                                                 Наименование
@@ -131,11 +134,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <form method="POST" action="{{route('delete.destroy', $elem->id)}}">
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <button onclick="return confirm('Вы уверены?')" type="submit" class="btn btn-primary" value="{{$elem->id}}"><i class="fa-solid fa-trash-can fa-fade" style="--fa-animation-duration: 3s; --fa-fade-opacity: 0.6;"></i> Удалить</button>
-                                                </form>
+                                                <a class="btn btn-danger" href="javascript:void(0)" data-token="{{ csrf_token() }}" onclick="destroy({{$elem->id}}, '{{$slug}}')">Удалить</a>
                                             </td>
                                         </tr>
                                     </table>
@@ -154,7 +153,7 @@
                                         @endif
                                                 <img class="img-fluid" width="250" height="250" src="/storage/{{$img}}" alt="Не найдено">
                                             </div>
-                                        @php  $active = 1; @endphp
+                                        @php  $active = 1;@endphp
                                     @endforeach
                                         </div>
                                     </div>
@@ -170,5 +169,27 @@
             </div><!-- ./col-md-12-->
         </div><!-- ./row-->
     </div>
-
+        <script>
+            function destroy(id, slug)
+            {
+                if(confirm('Вы действительно хотите удалить?'))
+                {
+                    $.ajax({
+                       url: "/projects/"+slug+'/'+id,
+                        type: 'DELETE',
+                        headers: {
+                            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        data:{
+                          id:id,
+                          slug:slug,
+                        },
+                        success:function (response)
+                        {
+                            $("#equipid"+id).remove();
+                        }
+                    });
+                }
+            }
+        </script>
 @endsection
