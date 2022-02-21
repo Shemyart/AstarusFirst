@@ -24,16 +24,21 @@ class ProjectController extends Controller
 
         $projects = new ProjectsModel();
 
-        switch(Auth::user()->role_id){
-            case 3:
-            case 1:
-                return view('projects', ['projects'=>$projects->all()]);
-            case 2:
-                $validprojects = DB::table('projects_models')
-                    ->where('projects_models.user_id', '=', Auth::user()->id )
-                    ->get();
-                return view('projects', ['projects'=>$validprojects]);
+        if(Auth::user()){
+            switch(Auth::user()->role_id){
+                case 3:
+                case 1:
+                    return view('projects', ['projects'=>$projects->all()]);
+                case 2:
+                    $validprojects = DB::table('projects_models')
+                        ->where('projects_models.user_id', '=', Auth::user()->id )
+                        ->get();
+                    return view('projects', ['projects'=>$validprojects]);
+            }
+        }else{
+            return view('projects', ['projects'=>$projects->all()]);
         }
+
     }
 
     public function detail($slug)
@@ -64,15 +69,18 @@ class ProjectController extends Controller
     }
 
     public function tester(){
-        if (Auth::user()->role_id == 3)
-        {
-            $projects = new ProjectsModel();
-            return view('projects', ['projects'=>$projects->all()]);
+        if (Auth::user()){
+            if (Auth::user()->role_id == 3)
+            {
+                $projects = new ProjectsModel();
+                return view('projects', ['projects'=>$projects->all()]);
+            }else{
+                return view('dashboard');
+            }
         }else{
-
-
             return view('dashboard');
         }
+
     }
 
     /**
