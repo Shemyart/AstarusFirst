@@ -10,12 +10,10 @@
                         <li> {{$errorTxt}} </li>
                     @endforeach
                 </ul>
-
             </div>
         </div>
     </div>
 @endif
-
 @if(session('success'))
     <div class="row justify-content-center">
         <div class="col-md-11">

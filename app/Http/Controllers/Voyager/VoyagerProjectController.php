@@ -420,6 +420,18 @@ class VoyagerProjectController extends VoyagerBaseController
         return Voyager::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable'));
     }
 
+    //***************************************
+    //
+    //
+    //
+    //
+    //                  STORE
+    //
+    //
+    //
+    //
+    //
+    //****************************************
 
     public function store(Request $request)
     {
@@ -436,8 +448,10 @@ class VoyagerProjectController extends VoyagerBaseController
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
 
+        //Добавил динамическое добавление оборудования из проектов
         $schEquip=1;
         $nameeq = "nameeq_".$schEquip;
+
         While($request->$nameeq != null):
             $volume = "volume_".$schEquip;
             $activity = "activity_".$schEquip;

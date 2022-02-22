@@ -23,31 +23,28 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @php $sch=1; @endphp
-                        @foreach($projects as $elem)
-                            @php
-                                $splitarrayimg = array();
-                                $splitimg = explode(',', $elem->image);
-                                    foreach ($splitimg as $splitelem){
-                                        $newsplit = trim($splitelem, '"[]');
-                                        array_push($splitarrayimg, $newsplit);
-                                    }
-                            @endphp
-                            <tr>
-                                <td>{{$sch++}}</td>
-                                <td><a class="link-dark" href="/projects/{{$elem->slug}}">{{$elem->name}}</a></td>
-                                <td>{{$elem->description}}</td>
-                                <td><img class="img-fluid" width="100" height="100" src="/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
-                                <td>{{$elem->start_date}}</td>
-                                <td>{{$elem->finish_date}}</td>
-                                <td>{{$elem->code}}</td>
-                                <td>{{$elem->status}}</td>
-                                <td>{{$elem->tasks}}</td>
-                            </tr>
-                        @endforeach
-
-
-
+                            @php $sch=1; @endphp
+                            @foreach($projects as $elem)
+                                @php
+                                    $splitarrayimg = array();
+                                    $splitimg = explode(',', $elem->image);
+                                        foreach ($splitimg as $splitelem){
+                                            $newsplit = trim($splitelem, '"[]');
+                                            array_push($splitarrayimg, $newsplit);
+                                        }
+                                @endphp
+                                <tr>
+                                    <td>{{$sch++}}</td>
+                                    <td><a class="link-dark" href="/projects/{{$elem->slug}}">{{$elem->name}}</a></td>
+                                    <td>{{$elem->description}}</td>
+                                    <td><img class="img-fluid" width="100" height="100" src="/storage/{{$splitarrayimg[0]}}" alt="Не найдено"></td>
+                                    <td>{{$elem->start_date}}</td>
+                                    <td>{{$elem->finish_date}}</td>
+                                    <td>{{$elem->code}}</td>
+                                    <td>{{$elem->status}}</td>
+                                    <td>{{$elem->tasks}}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div><!-- ./table-responsive-->

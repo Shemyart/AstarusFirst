@@ -23,7 +23,6 @@ class FirstController extends Controller
      */
     public function destroy($id)
     {
-        //dd(__METHOD__, $id, request()->all());
         //Полное удаление из БД
         $result = EquipmentModel::find($id)->forceDelete();
 

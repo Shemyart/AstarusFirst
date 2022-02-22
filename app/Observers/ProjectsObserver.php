@@ -16,6 +16,7 @@ class ProjectsObserver
      */
     public function creating(ProjectsModel $projectsModel)
     {
+        //Создание слага при создании новой записи
         $this->setSlug($projectsModel);
     }
     /**
@@ -37,6 +38,7 @@ class ProjectsObserver
      */
     public function updating(ProjectsModel $projectsModel)
     {
+        //Создание слага при обновлении записи и простановка даты в зависимости от статуса
         $this->setSlug($projectsModel);
         if ($projectsModel->status == 'Закрыт' and $projectsModel->isDirty('status')){
             $projectsModel->finish_date = date('Y:m:d');

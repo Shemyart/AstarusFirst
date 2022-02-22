@@ -23,16 +23,16 @@ class ProjectController extends Controller
     {
 
         $projects = new ProjectsModel();
-
+        //Выдача результатов зависит от роли пользователя, а также, если пользователь не залогинен, выдается вся доступная информация
         if(Auth::user()){
             switch(Auth::user()->role_id){
                 case 3:
                 case 1:
                     return view('projects', ['projects'=>$projects->all()]);
                 case 2:
-                    $validprojects = DB::table('projects_models')
-                        ->where('projects_models.user_id', '=', Auth::user()->id )
+                    $validprojects = ProjectsModel::where('user_id', Auth::user()->id)
                         ->get();
+
                     return view('projects', ['projects'=>$validprojects]);
             }
         }else{
@@ -43,15 +43,14 @@ class ProjectController extends Controller
 
     public function detail($slug)
     {
-
+        //Детальный просмотр
         Log::debug('Детальный просмотр: '.$slug);
-        $record = DB::table('projects_models')
-            ->where('projects_models.slug', '=', $slug)
-            ->get();
+
+            $record = ProjectsModel::where('slug', $slug )
+                ->get();
 
         if (setting('admin.project_equip') == 1) {
-            $equiprec = DB::table('equipment_models')
-                ->where('project_id', '=', $record[0]->id)
+            $equiprec = EquipmentModel::where('project_id', $record[0]->id )
                 ->get();
 
 
@@ -69,6 +68,7 @@ class ProjectController extends Controller
     }
 
     public function tester(){
+        //Страничка тестировщика, отображает все проекты
         if (Auth::user()){
             if (Auth::user()->role_id == 3)
             {
@@ -146,6 +146,7 @@ class ProjectController extends Controller
      */
     public function destroy($slug, $id)
     {
+        //Динамическое удаление на странице детального просмотра
         EquipmentModel::find($id)->delete();
         return response()->json(['success'=>'Запись удалена']);
     }

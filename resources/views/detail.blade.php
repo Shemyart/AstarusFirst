@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title')Детальный просмотр@endsection
 @section('content')
-
     <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">
@@ -14,7 +13,6 @@
                             </tr>
                         </thead>
                         @foreach($record as $elem)
-
                             @php
                                 $slug = $elem->slug;
                                 $splitArrayImg = array();
@@ -25,15 +23,12 @@
                                         array_push($splitArrayImg, $newSplit);
                                     }
                             @endphp
-
                             <tr>
                                 <td>Название</td>
                                 <td>{{$elem->name}}</td>
-
                             </tr>
                             <tr>
                                 <td>Описание</td>
-
                                 <td>{{$elem->description}}</td>
                             </tr>
                             @foreach ($splitArrayImg as $img)
@@ -73,7 +68,6 @@
                             Оборудование
                         </h1>
                         <br>
-
                         @foreach($equiprec as $elem)
                             @php
                                 $splitArrayImg = array();
@@ -88,7 +82,6 @@
                                     foreach ($splitFile as $splitelem){
                                         $newSplit = trim($splitelem, '"[]');
                                         array_push($splitArrayFile, $newSplit);
-
                                     }
                                     $linkFile = substr($splitArrayFile[0],18);
                             @endphp
@@ -142,10 +135,7 @@
                                 <div class="col-4  d-lg-block">
                                     <div id="carousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
-
-
                                     @foreach ($splitArrayImg as $img)
-
                                         @if ($active == 0)
                                             <div class="carousel-item active">
                                         @else
@@ -157,11 +147,8 @@
                                     @endforeach
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
                         @endforeach
                    @endif
