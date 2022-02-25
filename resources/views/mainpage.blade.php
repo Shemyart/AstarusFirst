@@ -45,11 +45,12 @@
             <div class="hero_section" >
                 <div class="row justify-left">
                     <div class="col-md-12 col-md-offset-1 col-xs-12 col-xs-offset-1">
-                        <h2><strong>Разработка мобильных приложений<br> и веб-сервисов</strong> </h2>
-                        <p>Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
-                            автомаизации и оптимизации <br>бизнес-процессов с помощью <br>мобильных приложений и
+                        <h2 class="h2Main"><strong>Разработка мобильных<br> приложений и веб-сервисов</strong> </h2>
+                        <p class="p2Main">Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
+                            автоматизации и оптимизации бизнес-процессов  с <br>помощью мобильных приложений и
                             веб-сервисов.</p>
                         <a href="#service" class="read_more2">Рассчитать проект</a>
+                        <img class="img2Main need-hide" src="img/groupimg.png">
                     </div>
                 </div>
             </div>
@@ -61,9 +62,12 @@
 <section id="aboutUs">
     <div class="inner_wrapper">
         <div class="container-fluid">
+            <div class="col-md-offset-10">
+            <img class="img2Main need-hide" src="img/Group263.png">
+            </div>
             <div class="row justify-content-center">
-                <div class="col-md-12 col-md-offset-1">
-                    <h2><strong>Кейсы</strong></h2>
+                <div class="col-md-12 col-md-offset-1 col-xs-offset-1">
+                    <h2 class="h2Sec"><strong>Кейсы</strong></h2>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
@@ -76,7 +80,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -87,7 +91,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +102,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,33 +113,33 @@
                                     <div class="col-xs-12 col-md-3">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
-                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-3">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
-                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-3">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
-                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -146,11 +150,11 @@
                                     <div class="col-xs-12 col-md-3">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
-                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>Castrol</h4>
-                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Carousel controls -->
+                        <!-- Carousel controls
                         <div class="row">
                             <div class="col-xs-6 col-md-3 col-xs-offset-4 col-md-offset-3"  >
                                 <a class="carousel-control left" href="#myCarousel" data-slide="prev">
@@ -168,7 +172,7 @@
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div>-->
                         <!-- Carousel indicators -->
                         <div class="row">
                             <div class="col-xs-12 col-md-3 col-xs-offset-1 col-md-offset-3">
@@ -190,10 +194,14 @@
 <!--Консультация-->
 <section  id="service">
     <div class="container-fluid">
+        <div>
+            <img class="img2Main need-hide" src="img/Group264.png">
+        </div>
+
         <div class="service_wrapper">
             <div class="row">
                 <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1">
-                    <h2><strong>Получить консультацию</strong></h2>
+                    <h2 class="h2Sec"><strong>Получить консультацию</strong></h2>
                     <p>Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
                 <div class="col-md-5 col-md-offset-1  col-xs-offset-1 col-xs-12">
@@ -209,17 +217,20 @@
 <section  id="clients"><!--page_section-->
     <div class="inner_wrapper">
      <div class="container-fluid">
+         <div class="col-md-offset-10">
+             <img class="img2Main need-hide" src="img/Group266.png">
+         </div>
          <div class="col-md-12  col-xs-12 col-md-offset-1 col-xs-offset-1">
-             <h2><strong>Как мы работаем</strong></h2>
+             <h2 class="morePad h2Sec"><strong>Как мы работаем</strong></h2>
          </div>
      </div>
     <!--page_section-->
     <div class="client_logos"><!--client_logos-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
                 <div class="row">
                     <div class="col-md-2">
-                        <h3><strong>Анализ</strong></h3>
+                        <h3 ><strong>Анализ</strong></h3>
                     </div>
                     <div class="col-md-9">
                         <p>Анализируем и прорабатываем бизнес-модель проекта, его потребности. Проводим бенчмаркинг и анализ конкурентов. Дорабатываем концепцию. Определяем роли пользователей, функционал для каждой роли. Результаты сводим в документе, называемом "бэклог".</p>
@@ -269,11 +280,11 @@
     <!-- Container -->
     <div class="container-fluid portfolio_title">
         <div class="col-md-12  col-xs-12 col-md-offset-1 col-xs-offset-1">
-            <h2><strong>Выбор пакета</strong></h2>
+            <h2 class="h2Sec"><strong>Выбор пакета</strong></h2>
         </div>
     </div>
     <!-- Container -->
-<div class="container-fluid">
+<div class="container">
     <div class="row" >
         <div class="col-xs-12 col-md-4 ">
             <a href="#" class="thumbnail">
@@ -316,7 +327,7 @@
 <section class="page_section" id="clients"><!--page_section-->
     <div class="container-fluid">
         <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
-        <h2><strong>Наши клиенты</strong></h2>
+        <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
         </div>
     <!--page_section-->
     <div class="client_logos"><!--client_logos-->
@@ -344,7 +355,7 @@
     <div class="row">
         <div class='container-fluid'>
             <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
-                <h2><strong>Отзывы</strong></h2>
+                <h2 class="h2Sec"><strong>Отзывы</strong></h2>
             </div>
         </div>
     </div>

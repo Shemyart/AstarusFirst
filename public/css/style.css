@@ -75,7 +75,7 @@ h2 {
     font-size: 30px;
 
     color: #000000;
-    font-family: 'MuseoSansCyrl100', sans-serif;
+    font-family: 'MuseoSansCyrl100';
     font-weight: normal;
     margin: 20px 40px 30px 0;
     text-align: left;
@@ -104,7 +104,7 @@ h6 {
 }
 p {
     line-height: 24px;
-    margin: 15px;
+
     font-size: 25px;
     color: #0e0d0d;
 }
@@ -226,13 +226,36 @@ p {
 }
 /* Top_content
 ---------------------------------*/
+.h2Main{
+    font-size: 56px;
+    line-height: 67px;
+    text-shadow: 2px 2px 3px black;
+
+}
+.h2Sec{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+
+
+}
+.p2Main{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    /*text-shadow: 0px 0px 2px black;
+*/
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
 
 .top_cont_outer {
     background-image: url("../img/bgimg.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 1080px;
     position: relative;
 }
 
@@ -266,7 +289,8 @@ p {
     right: 0;
 }
 .carousel .item h4 {
-    font-size: 18px;
+    font-size: 26px;
+    line-height: 32px;
     margin: 10px 0;
 }
 .carousel .item .btn {
@@ -298,6 +322,11 @@ p {
 .carousel .thumb-content {
     padding: 15px;
 }
+.thumb-content{
+    text-align: left;
+    color: black;
+
+}
 .carousel .carousel-control {
     height: 10px;
     width: 30px;
@@ -319,8 +348,9 @@ p {
     font-weight: bold;
 }
 .carousel .item-price {
-    font-size: 13px;
+    font-size: 20px;
     padding: 2px 0;
+    text-align: left;
 }
 .carousel .item-price strike {
     color: #999;
@@ -343,21 +373,25 @@ p {
      margin-bottom: -80px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
     margin: 4px;
     border-radius: 50%;
-    border-color: transparent;
-    color: #1a202c;
+    border-color: #aaaaaa;
+    color: #ffffff;
 }
 
 
-.carousel-indicators li {
-    background: #8ed9b8;
-}
+
 
 .carousel-indicators li.active {
     background: #2FE99C;
+    width: 18px;
+    height: 18px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: #aaaaaa;
+
 }
 
 
@@ -406,7 +440,7 @@ p {
     color: #000000;
     line-height: 100px;
     margin: 0 0 26px 0;
-    font-family: 'MuseoSansCyrl100', sans-serif;
+    font-family: 'MuseoSansCyrl100';
     text-align: left;
 }
 
@@ -431,15 +465,16 @@ a.read_more2 {
     line-height: 60px;
     border-radius: 6px;
     text-align: center;
-    margin: 10px;
+    box-shadow: 2px 8px 1em #2fe99c;
     font-weight: 400;
+    padding-bottom: 20px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    background: linear-gradient(#2FE99C, #33B8B6);;
+    background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-    border: 1px solid #fff;
+
 }
 button.read_more2 {
     font-family: 'MuseoSansCyrl100', sans-serif;
@@ -447,21 +482,21 @@ button.read_more2 {
 
     font-size: 20px;
     width: auto;
-    height: 80px;
-    line-height: 60px;
+    height: 60px;
+    line-height: 40px;
     border-radius: 6px;
     text-align: center;
 margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
     font-weight: 400;
-
+    box-shadow: 1px 5px 1em #2fe99c;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    background: linear-gradient(#2FE99C, #33B8B6);;
+    background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-    border: 1px solid #fff;
+    border: 1px solid #2FE99C;
 }
 
 a.read_more2:hover {
@@ -481,7 +516,7 @@ button.read_more2:hover {
 ---------------------------------*/
 
 #service {
-    padding: 60px 0px;
+    padding: 20px 0px;
     background: #F9F9F9;
 }
 
@@ -636,7 +671,9 @@ a.contact_btn:hover {
 .input-text {
     background: transparent;
 }
-
+.morePad{
+    padding-top: 50px ;
+}
 
 /* Portfolio
 ---------------------------------*/
@@ -969,6 +1006,8 @@ img {
 
 #aboutUs {
     padding: 60px 0;
+    width:100%;
+    height: 1222px;
 }
 
 /* Contact
@@ -1830,6 +1869,12 @@ div.mc-image {
 .marginImg{
     margin-top:50px;
 }
+.img2Main{
+    height: 93px;
+    width: 93px;
+    margin-top: 20px;
+}
+
 
 /*
    Media Queries
@@ -1850,7 +1895,7 @@ div.mc-image {
     }
     .carousel-indicators{
         padding: 20px;
-        bottom: -60px;
+        bottom: -80px;
     }
 }
 @media (max-width: 768px) {
@@ -1864,6 +1909,9 @@ p{
     .carousel-indicators{
         padding: 20px;
         bottom: -60px;
+    }
+    .need-hide{
+        display:none;
     }
 .hero_section {
 position: relative;
