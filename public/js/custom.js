@@ -4,30 +4,12 @@ Note:
 Licence under Creative Commons Attribution 3.0
 Do not remove the back-link in this web template
 -------------------------------------------------------*/
-
-$(window).load(function() {
-    jQuery('#all').click();
-    return false;
-});
-
-$('#multiCarousel').carousel({
-    interval: 10000
-})
-$('.carousel .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i=0;i<2;i++) {
-        next=next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
-    }
+$(document).ready(function() {
+    //Set the carousel options
+    $('#quote-carousel').carousel({
+        pause: true,
+        interval: 4000,
+    });
 });
 
 $(document).ready(function() {

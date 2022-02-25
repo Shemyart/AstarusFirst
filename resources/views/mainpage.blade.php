@@ -5,12 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
-    <title>Unique</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Astarus Projects</title>
+    <link rel="icon" src="img/logo.png" type="image/png">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylename.css" rel="stylesheet" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -20,447 +22,435 @@
 </head>
 <body>
 
-<!--Header_section
-<header id="header_wrapper">
-    <div class="container">
-        <div class="header_box">
-            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<!--Первый слайд-->
+<section id="hero_section"  class="top_cont_outer">
+    <div class="hero_wrapper top_cont_outer">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-xs-offset-1">
+                    <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
-                <div id="main-nav" class="collapse navbar-collapse navStyle">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <li><a href="#service" class="scroll-link">Services</a></li>
-                        <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
-                        <li><a href="#clients" class="scroll-link">Clients</a></li>
-                        <li><a href="#team" class="scroll-link">Team</a></li>
-                        <li><a href="#contact" class="scroll-link">Contact</a></li>
-                    </ul>
+                <div class="col-md-offset-10 col-md-3 col-xs-offset-10 col-xs-3">
+                    <div class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img src="img/GroupDrop.png">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/dashboard">Личный кабинет</a></li>
+                            <li><a href="/admin">Панель администратора</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-</header>
--->
-<!--Header_section-->
-
-<!--Hero_Section-->
-<section id="hero_section"  class="top_cont_outer" >
-    <div class="hero_wrapper top_cont_outer"  >
-        <div class="container" >
-            <div>
-                <h1><a href="#"><img src="img/logo.png" alt="logo"></a><p align="right">drop</p></h1>
-
             </div>
             <div class="hero_section" >
                 <div class="row justify-left">
-
-                    <div class="col-lg-8 col-sm-9 ">
-                        <div>
-
-                            <h2><strong>Разработка мобильных приложений и веб-сервисов</strong> </h2>
-                            <p> Повышаем лояльность и продажи, улучшаем сервис, снижаем расходы за счет
-                                автомаизации и оптимизации бизнес-процессов с помощью мобильных приложений и
-                                веб-сервисов.</p>
-                            <a href="#service" class="read_more2">Рассчитать проект</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-sm-5">
-
+                    <div class="col-md-12 col-md-offset-1 col-xs-12 col-xs-offset-1">
+                        <h2><strong>Разработка мобильных приложений<br> и веб-сервисов</strong> </h2>
+                        <p>Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
+                            автомаизации и оптимизации <br>бизнес-процессов с помощью <br>мобильных приложений и
+                            веб-сервисов.</p>
+                        <a href="#service" class="read_more2">Рассчитать проект</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--Hero_Section-->
-
+<!--Первый слайд-->
 <!--Кейсы-->
 <section id="aboutUs">
     <div class="inner_wrapper">
-        <div id="multiCarousel" class="carousel slide w-100" data-ride="carousel">
-            <div class="carousel-inner w-100" role="listbox">
-                <div class="carousel-item active">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=1">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=2">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=3">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=4">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=5">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block col-4" src="http://placehold.it/350x180?text=6">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Предыдущий</span>
-            </a>
-            <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Cледующий</span>
-            </a>
-        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-md-offset-1">
+                    <h2><strong>Кейсы</strong></h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/portfolio_pic6.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Castrol</h4>
+                                                <p class="item">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-
-
-
-
-        <!--
-        <div class="container">
-            <h2>Кейсы</h2>
-            <div class="inner_section">
-                <div class="row">
-                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
-                    <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
-                        <div class=" delay-01s animated fadeInDown wow animated">
-                            <h3>Lorem Ipsum has been the industry's standard dummy text ever..</h3><br/>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.PageMaker including versions of Lorem Ipsum.</p> <br/>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="work_bottom"> <span>Want to know more..</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>
+                        <!-- Carousel controls -->
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 col-xs-offset-4 col-md-offset-3"  >
+                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Carousel indicators -->
+                        <div class="row">
+                            <div class="col-xs-12 col-md-3 col-xs-offset-1 col-md-offset-3">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1" ></li>
+                                    <li data-target="#myCarousel" data-slide-to="2" ></li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-
             </div>
         </div>
-        -->
     </div>
 </section>
-<!--Aboutus-->
+<!--Кейсы-->
 
-
-<!--Service-->
+<!--Консультация-->
 <section  id="service">
-    <div class="container">
-        <h2>Services</h2>
+    <div class="container-fluid">
         <div class="service_wrapper">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="service_block">
-                        <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">Android</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
+                <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1">
+                    <h2><strong>Получить консультацию</strong></h2>
+                    <p>Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
-                <div class="col-lg-4 borderLeft">
-                    <div class="service_block">
-                        <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">Apple IOS</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 borderLeft">
-                    <div class="service_block">
-                        <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">Design</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row borderTop">
-                <div class="col-lg-4 mrgTop">
-                    <div class="service_block">
-                        <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-dropbox"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">Concept</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 borderLeft mrgTop">
-                    <div class="service_block">
-                        <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-slack"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">User Research</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 borderLeft mrgTop">
-                    <div class="service_block">
-                        <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-users"></i></span> </div>
-                        <h3 class="animated fadeInUp wow">User Experience</h3>
-                        <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    </div>
+                <div class="col-md-5 col-md-offset-1  col-xs-offset-1 col-xs-12">
+                    <a href="#service" class="read_more2">Рассчитать проект</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--Service-->
+<!--Консультация-->
 
-
-
-
-<!-- Portfolio -->
-<section id="Portfolio" class="content">
-
-    <!-- Container -->
-    <div class="container portfolio_title">
-
-        <!-- Title -->
-        <div class="section-title">
-            <h2>Portfolio</h2>
-        </div>
-        <!--/Title -->
-
-    </div>
-    <!-- Container -->
-
-    <div class="portfolio-top"></div>
-
-    <!-- Portfolio Filters -->
-    <div class="portfolio">
-
-        <div id="filters" class="sixteen columns">
-            <ul class="clearfix">
-                <li><a id="all" href="#" data-filter="*" class="active">
-                        <h5>All</h5>
-                    </a></li>
-                <li><a class="" href="#" data-filter=".prototype">
-                        <h5>Prototype</h5>
-                    </a></li>
-                <li><a class="" href="#" data-filter=".design">
-                        <h5>Design</h5>
-                    </a></li>
-                <li><a class="" href="#" data-filter=".android">
-                        <h5>Android</h5>
-                    </a></li>
-                <li><a class="" href="#" data-filter=".appleIOS">
-                        <h5>Apple IOS</h5>
-                    </a></li>
-                <li><a class="" href="#" data-filter=".web">
-                        <h5>Web App</h5>
-                    </a></li>
-            </ul>
-        </div>
-        <!--/Portfolio Filters -->
-
-        <!-- Portfolio Wrapper -->
-        <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
-
-            <!-- Portfolio Item -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">SMS Mobile App</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item -->
-
-            <!-- Portfolio Item-->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">Finance App</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">GPS Concept</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item-->
-
-            <!-- Portfolio Item-->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">Shopping</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">Managment</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">iPhone</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item -->
-
-            <!-- Portfolio Item  -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">Nexus Phone</h4>
-                    </div>
-                </div>
-            </div>
-            <!--/Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-                <div class="item_overlay">
-                    <div class="item_info">
-                        <h4 class="project_name">Android</h4>
-                    </div>
-                </div>
-                </a> </div>
-            <!--/Portfolio Item -->
-
-        </div>
-        <!--/Portfolio Wrapper -->
-
-    </div>
-    <!--/Portfolio Filters -->
-
-    <div class="portfolio_btm"></div>
-
-
-    <div id="project_container">
-        <div class="clear"></div>
-        <div id="project_data"></div>
-    </div>
-
-
-</section>
-<!--/Portfolio -->
-
-<section class="page_section" id="clients"><!--page_section-->
-    <h2>Clients</h2>
+<!--Как мы работаем-->
+<section  id="clients"><!--page_section-->
+    <div class="inner_wrapper">
+     <div class="container-fluid">
+         <div class="col-md-12  col-xs-12 col-md-offset-1 col-xs-offset-1">
+             <h2><strong>Как мы работаем</strong></h2>
+         </div>
+     </div>
     <!--page_section-->
     <div class="client_logos"><!--client_logos-->
-        <div class="container">
-            <ul class="fadeInRight animated wow">
-                <li><a href="javascript:void(0)"><img src="img/client_logo1.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo2.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo3.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo5.png" alt=""></a></li>
-            </ul>
+        <div class="container-fluid">
+            <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h3><strong>Анализ</strong></h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Анализируем и прорабатываем бизнес-модель проекта, его потребности. Проводим бенчмаркинг и анализ конкурентов. Дорабатываем концепцию. Определяем роли пользователей, функционал для каждой роли. Результаты сводим в документе, называемом "бэклог".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bs-callout" id="callout-glyphicons-dont-mix">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h3><strong>UX</strong></h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>После этого UX-специалист создаёт интерактивные прототипы. Мы приводим в соответствие визуальную часть и функционал из бэклога . На этом этапе интерфейс выглядит схематично. Это путь, по которому пользователь будет "ходить" по приложению.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bs-callout" id="callout-glyphicons-dont-mix">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h3><strong>UI</strong></h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Далее — UI. Рисуем приятный интерфейс и уникальный корпоративный стиль для вашего проекта. Отрисовываем анимации, инфографику, иконки и логотип.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bs-callout" id="callout-glyphicons-dont-mix">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h3><strong>Dev</strong></h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Когда макеты созданы, мы приступаем к разработке программной части приложения.
+                            Когда проект готов и полностью протестирован, размещаем его на Google Play и AppStore.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+        </div>
 </section>
-<!--client_logos-->
+<!--Как мы работаем-->
+
+
+<!-- Выбор пакета -->
+<section id="Portfolio" class="content">
+    <!-- Container -->
+    <div class="container-fluid portfolio_title">
+        <div class="col-md-12  col-xs-12 col-md-offset-1 col-xs-offset-1">
+            <h2><strong>Выбор пакета</strong></h2>
+        </div>
+    </div>
+    <!-- Container -->
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-xs-12 col-md-4 ">
+            <a href="#" class="thumbnail">
+                <img class="imgHow" src="/img/Vector.png" alt="...">
+                <h2 class="align-center">Демоверсия</h2>
+                <p class="pNew">
+                    Демоверсия включает в себя не только схемы и прототипы, но и живой функционал - реализованную механику работы приложения или важнейший функционал по бэклогу.
+                    Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете потестировать функционал и показать его инвесторам.
+                </p>
+                <button href="#service" class="read_more2">Рассчитать проект</button>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <a href="#" class="thumbnail">
+                <img class="imgHow" src="/img/Outline.png" alt="...">
+                <h2 class="align-center">Разработка <br> полного продукта</h2>
+                <p class="pNew" >
+                    Это полный цикл создания продукта. Мы реализуем весь функционал, который согласовали в бэклоге. Вы получаете целостный продукт без "заглушек".
+                    Пакет содержит анализ, описание требований, и обработку идеи, подготовку технической документации, проектирование, разработку фирменного стиля и всех интерфейсов, разработку мобильных приложений. После этого мы размещаем приложение на AppStore, Google Play, продвигаем в сети, помогаем собирать и анализировать статистику.
+                </p>
+                <button href="#service" class="read_more2">Рассчитать проект</button>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <a href="#" class="thumbnail">
+                <img class="imgHow" src="/img/Group.png" alt="...">
+                <h2 class="align-center">MVP</h2>
+                <p class="pNew">
+                    Приложение с минимальным набором функционала, которое можно использовать на мобильных устройствах. К примеру, мессенджер, с помощью которого можно только переписываться, но не обмениваться файлами и тому подобное.
+                    В отличие от демоверсии, это полноценная разработка, хотя и с минимальным дизайном и функционалом.
+                </p>
+                <button href="#service" class="read_more2">Рассчитать проект</button>
+            </a>
+        </div>
+    </div>
+
+</div>
+</section>
+<!--/Portfolio -->
+<section class="page_section" id="clients"><!--page_section-->
+    <div class="container-fluid">
+        <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+        <h2><strong>Наши клиенты</strong></h2>
+        </div>
+    <!--page_section-->
+    <div class="client_logos"><!--client_logos-->
+        <div class="container-fluid">
+            <div class="col-md-12 col-xs-12">
+                <ul class="fadeInRight animated wow">
+                    <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
+
+                </ul>
+                <ul class="fadeInRight animated wow">
+                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 
 <section class="page_section team" id="team"><!--main-section team-start-->
-    <div class="container">
-        <h2>Team</h2>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
-        <div class="team_section clearfix">
-            <div class="team_area">
-                <div class="team_box wow fadeInDown delay-03s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic1.jpg" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Tom Rensed</h3>
-                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team_area">
-                <div class="team_box  wow fadeInDown delay-06s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic2.jpg" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Kathren Mory</h3>
-                <span class="wow fadeInDown delay-06s">Vice President</span>
-                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team_area">
-                <div class="team_box wow fadeInDown delay-09s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic3.jpg" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Lancer Jack</h3>
-                <span class="wow fadeInDown delay-09s">Senior Manager</span>
-                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+    <div class="row">
+        <div class='container-fluid'>
+            <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+                <h2><strong>Отзывы</strong></h2>
             </div>
         </div>
     </div>
-</section>
-<!--/Team-->
-<!--Footer-->
-<footer class="footer_wrapper" id="contact">
-    <div class="container">
-        <section class="page_section contact" id="contact">
-            <div class="contact_section">
-                <h2>Contact Us</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-
+    <div class='row'>
+        <div class="container-fluid">
+        <div class='col-md-offset-2 col-md-8'>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner">
+                    <!-- Quote 1 -->
+                    <div class="item active">
+                        <blockquote>
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-xs-12">
+                                    <img class="img-circle" src="img/photo.png" >
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-11 col-xs-11">
+                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                    <small>Someone famous</small>
+                                    <div class="col-md-12 col-xs-12">
+                                        <img  src="img/1c-bitrix-logo 1.png" alt="" width="25%" height="25%">
+                                    </div>
+                                </div>
+                            </div>
+                        </blockquote>
                     </div>
-                    <div class="col-lg-4">
-
+                    <!-- Quote 2 -->
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-xs-12">
+                                    <img class="img-circle" src="img/photo.png" >
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-11 col-xs-11">
+                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                    <small>Someone famous</small>
+                                    <div class="col-md-12 col-xs-12">
+                                        <img  src="img/1c-bitrix-logo 1.png" alt="" width="25%" height="25%">
+                                    </div>
+                                </div>
+                            </div>
+                        </blockquote>
                     </div>
-                    <div class="col-lg-4">
-
+                    <!-- Quote 3 -->
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-xs-12">
+                                    <img class="img-circle" src="img/photo.png" >
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-11 col-xs-11">
+                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                    <small>Someone famous</small>
+                                    <div class="col-md-12 col-xs-12">
+                                        <img  src="img/1c-bitrix-logo 1.png" alt="" width="25%" height="25%">
+                                    </div>
+                                </div>
+                            </div>
+                        </blockquote>
                     </div>
                 </div>
+                <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators myIndicator">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+
+                <!-- Carousel Buttons Next/Prev -->
+                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
             </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+    <div class="container-fluid">
+        <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+        <section class="page_section contact" id="contact">
+            <div class="contact_section">
+
+                <h2>Есть проект? Напишите нам!</h2>
+
+                </div>
             <div class="row">
                 <div class="col-lg-4 wow fadeInLeft">
                     <div class="contact_info">
                         <div class="detail">
-                            <h4>UNIQUE Infoway</h4>
-                            <p>104, Some street, NewYork, USA</p>
-                        </div>
-                        <div class="detail">
-                            <h4>call us</h4>
                             <p>+1 234 567890</p>
                         </div>
-                        <div class="detail">
-                            <h4>Email us</h4>
-                            <p>support@sitename.com</p>
+                        <div class="detail supportEmail">
+                            <p >support@sitename.com</p>
                         </div>
                     </div>
-
-
-
                     <ul class="social_links">
                         <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                         <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
@@ -468,19 +458,11 @@
                         <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-8 wow fadeInLeft delay-06s">
-                    <div class="form">
-                        <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                        <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                        <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                        <input class="input-btn" type="submit" value="send message">
-                    </div>
-                </div>
+
             </div>
+            <div class="footer_bottom"><span>© 2022</span> </div>
         </section>
-    </div>
-    <div class="container">
-        <div class="footer_bottom"><span>Copyright © 2014,    Template by <a href="http://webthemez.com">WebThemez.com</a>. </span> </div>
+        </div>
     </div>
 </footer>
 
