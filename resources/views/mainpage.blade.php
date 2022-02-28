@@ -26,12 +26,28 @@
 <section id="hero_section"  class="top_cont_outer">
     <div class="hero_wrapper top_cont_outer">
         <div class="container-fluid" >
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-xs-offset-1">
+            <div class="row need-hideDesc WhiteBack">
+                <div class="col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-3">
                     <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
-                <div class="col-md-offset-10 col-md-3 col-xs-offset-10 col-xs-3">
-                    <div class="dropdown">
+                <div class="col-md-offset-10 col-md-6 col-xs-offset-10 col-xs-3 ">
+                    <div class="dropdown marginDrop">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img src="img/GroupDrop.png">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/dashboard">Личный кабинет</a></li>
+                            <li><a href="/admin">Панель администратора</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row need-hide">
+                <div class="col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-3">
+                    <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-md-offset-10 col-md-6 col-xs-offset-10 col-xs-3 ">
+                    <div class="dropdown marginDrop">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
                             <img src="img/GroupDrop.png">
                         </a>
@@ -84,7 +100,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-3  need-hide">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -95,7 +111,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-3  need-hide">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -121,7 +137,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-3  need-hide">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -132,7 +148,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-3  need-hide">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -143,6 +159,44 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3 ">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3 need-hide">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3 need-hide">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="item">
@@ -161,10 +215,27 @@
 
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- Carousel controls
-                        <div class="row">
-                            <div class="col-xs-6 col-md-3 col-xs-offset-4 col-md-offset-3"  >
+                        <!-- Carousel controls -->
+                        <div class="row need-hideDesc">
+                            <div class="col-xs-4  col-xs-offset-3  controls"  >
                                 <a class="carousel-control left" href="#myCarousel" data-slide="prev">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
@@ -172,7 +243,7 @@
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
-                        </div>-->
+                        </div>
                         <!-- Carousel indicators -->
                         <div class="row">
                             <div class="col-xs-12 col-md-3 col-xs-offset-1 col-md-offset-3">
@@ -180,6 +251,7 @@
                                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel" data-slide-to="1" ></li>
                                     <li data-target="#myCarousel" data-slide-to="2" ></li>
+
                                 </ol>
                             </div>
                         </div>
@@ -195,17 +267,17 @@
 <section  id="service">
     <div class="container-fluid">
         <div>
-            <img class="img2Main need-hide" src="img/Group264.png">
+            <img class="img2Main" src="img/Group264.png">
         </div>
 
         <div class="service_wrapper">
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1">
-                    <h2 class="h2Sec"><strong>Получить консультацию</strong></h2>
-                    <p>Краткий текст информация, описание акции или просто призыв к действию</p>
+                <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1 ">
+                    <h2 class="h2Sec">Получить консультацию</h2>
+                    <p class="pCons">Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
-                <div class="col-md-5 col-md-offset-1  col-xs-offset-1 col-xs-12">
-                    <a href="#service" class="read_more2">Рассчитать проект</a>
+                <div class="col-md-4 col-md-offset-2 col-xs-offset-1 col-xs-12 ButtonCons">
+                    <a href="#service" class="read_more2 ">Рассчитать проект</a>
                 </div>
             </div>
         </div>
@@ -215,7 +287,7 @@
 
 <!--Как мы работаем-->
 <section  id="clients"><!--page_section-->
-    <div class="inner_wrapper">
+    <div class="inner_wrapper size">
      <div class="container-fluid">
          <div class="col-md-offset-10">
              <img class="img2Main need-hide" src="img/Group266.png">
@@ -225,7 +297,7 @@
          </div>
      </div>
     <!--page_section-->
-    <div class="client_logos"><!--client_logos-->
+    <div class="client_logos newWidth"><!--client_logos-->
         <div class="container">
             <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
                 <div class="row">
@@ -284,9 +356,9 @@
         </div>
     </div>
     <!-- Container -->
-<div class="container">
+<div class="container newWidth">
     <div class="row" >
-        <div class="col-xs-12 col-md-4 ">
+        <div class="col-xs-12 col-md-4 thumbnail2">
             <a href="#" class="thumbnail">
                 <img class="imgHow" src="/img/Vector.png" alt="...">
                 <h2 class="align-center">Демоверсия</h2>
@@ -294,7 +366,7 @@
                     Демоверсия включает в себя не только схемы и прототипы, но и живой функционал - реализованную механику работы приложения или важнейший функционал по бэклогу.
                     Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете потестировать функционал и показать его инвесторам.
                 </p>
-                <button href="#service" class="read_more2">Рассчитать проект</button>
+                <button href="#service" class="read_more2gray">Рассчитать проект</button>
             </a>
         </div>
         <div class="col-xs-12 col-md-4">
@@ -308,7 +380,7 @@
                 <button href="#service" class="read_more2">Рассчитать проект</button>
             </a>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 thumbnail2">
             <a href="#" class="thumbnail">
                 <img class="imgHow" src="/img/Group.png" alt="...">
                 <h2 class="align-center">MVP</h2>
@@ -316,7 +388,7 @@
                     Приложение с минимальным набором функционала, которое можно использовать на мобильных устройствах. К примеру, мессенджер, с помощью которого можно только переписываться, но не обмениваться файлами и тому подобное.
                     В отличие от демоверсии, это полноценная разработка, хотя и с минимальным дизайном и функционалом.
                 </p>
-                <button href="#service" class="read_more2">Рассчитать проект</button>
+                <button href="#service" class="read_more2gray">Рассчитать проект</button>
             </a>
         </div>
     </div>
@@ -329,25 +401,151 @@
         <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
         <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
         </div>
-    <!--page_section-->
-    <div class="client_logos"><!--client_logos-->
-        <div class="container-fluid">
-            <div class="col-md-12 col-xs-12">
-                <ul class="fadeInRight animated wow">
-                    <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
-                    <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
-                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
-
-                </ul>
-                <ul class="fadeInRight animated wow">
-                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
-                    <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
-                    <li><a href="javascript:void(0)"><img src="img/LG.png" alt=""></a></li>
-
-                </ul>
+        <div class='row need-hideDesc'>
+            <div class="container-fluid">
+                <div class='col-md-offset-2 col-md-8'>
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
+                                        </div>
+                                        <div class="col-xs-6 marginImg">
+                                            <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators myIndicator">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        <div class="need-hide">
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    <!--page_section-->
+        <div class="client_logos need-hide"><!--client_logos-->
+            <div class="container-fluid">
+                <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Second row -->
+            <div class="container-fluid">
+                <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fadeInRight animated wow">
+                        <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -369,12 +567,12 @@
                     <div class="item active">
                         <blockquote>
                             <div class="row justify-content-center">
-                                <div class="col-md-12 col-xs-12">
+                                <div class="col-md-12 col-xs-12 marginImgBot">
                                     <img class="img-circle" src="img/photo.png" >
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-md-11 col-xs-11">
+                                <div class="col-md-12 col-xs-12">
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
                                     <small>Someone famous</small>
                                     <div class="col-md-12 col-xs-12">
@@ -388,12 +586,12 @@
                     <div class="item">
                         <blockquote>
                             <div class="row justify-content-center">
-                                <div class="col-md-12 col-xs-12">
+                                <div class="col-md-12 col-xs-12 marginImgBot">
                                     <img class="img-circle" src="img/photo.png" >
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-md-11 col-xs-11">
+                                <div class="col-md-12 col-xs-12">
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
                                     <small>Someone famous</small>
                                     <div class="col-md-12 col-xs-12">
@@ -407,12 +605,12 @@
                     <div class="item">
                         <blockquote>
                             <div class="row justify-content-center">
-                                <div class="col-md-12 col-xs-12">
+                                <div class="col-md-12 col-xs-12 marginImgBot">
                                     <img class="img-circle" src="img/photo.png" >
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-md-11 col-xs-11">
+                                <div class="col-md-12 col-xs-12">
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
                                     <small>Someone famous</small>
                                     <div class="col-md-12 col-xs-12">
@@ -431,11 +629,12 @@
                         <li data-target="#quote-carousel" data-slide-to="2"></li>
                     </ol>
                 </div>
-
-                <!-- Carousel Buttons Next/Prev -->
-                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-            </div>
+                <div class="need-hide">
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+                </div>
         </div>
     </div>
     </div>
@@ -444,25 +643,77 @@
 
 <!--Footer-->
 <footer class="footer_wrapper" id="contact">
-    <div class="container-fluid">
+    <div class="container-fluid need-hideDesc">
         <div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+            <section class="page_section contact" id="contact">
+                <div class="row">
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">О нас</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">Блог</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">Поддержка</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">Контакты</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">Портфолио</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeInLeft">
+                        <div class="contact_info center">
+                            <div class="detail">
+                                <p class="pLeft">Карьера</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-12 col-xs-12 col-md-offset-1 center">
         <section class="page_section contact" id="contact">
             <div class="contact_section">
 
-                <h2>Есть проект? Напишите нам!</h2>
+                <h2 class="fontNew center">Есть проект? Напишите нам!</h2>
 
                 </div>
             <div class="row">
                 <div class="col-lg-4 wow fadeInLeft">
                     <div class="contact_info">
                         <div class="detail">
-                            <p>+1 234 567890</p>
+                            <p class="pCons">+1 234 567890</p>
                         </div>
                         <div class="detail supportEmail">
-                            <p >support@sitename.com</p>
+                            <p class="pCons">support@sitename.com</p>
                         </div>
                     </div>
-                    <ul class="social_links">
+
+                    <ul class="social_links center">
                         <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                         <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
                         <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>

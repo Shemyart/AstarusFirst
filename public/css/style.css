@@ -33,6 +33,9 @@ img {
 
 
 }
+.WhiteBack{
+    background-color: #FFF;
+}
 
 a, a:hover, a:active {
     outline: 0px !important;
@@ -81,6 +84,10 @@ h2 {
     text-align: left;
 
 }
+.fontNew{
+    font-size: 40px;
+    line-height: 48px;
+}
 
 h3 {
     font-family: 'MuseoSansCyrl100', sans-serif;
@@ -105,7 +112,7 @@ h6 {
 p {
     line-height: 24px;
 
-    font-size: 25px;
+    font-size: 26px;
     color: #0e0d0d;
 }
 
@@ -261,8 +268,9 @@ p {
 
 .hero_section {
     position: relative;
-    padding-top: 120px;
+    padding-top: 170px;
 }
+
 
 .carousel {
     margin: 80px auto;
@@ -292,6 +300,7 @@ p {
     font-size: 26px;
     line-height: 32px;
     margin: 10px 0;
+    font-weight: 900;
 }
 .carousel .item .btn {
     color: #333;
@@ -348,7 +357,7 @@ p {
     font-weight: bold;
 }
 .carousel .item-price {
-    font-size: 20px;
+    font-size: 16px;
     padding: 2px 0;
     text-align: left;
 }
@@ -367,11 +376,6 @@ p {
     margin-right: -3px;
 }
 
-
-
-.myIndicator {
-     margin-bottom: -80px;
-}
 .carousel-indicators li, .carousel-indicators li.active {
     width: 18px;
     height: 18px;
@@ -411,12 +415,16 @@ p {
 }
 
 
+
 .white_pad {
     position: relative;
     right: 0px;
     bottom: 0px;
 }
-
+.size{
+    width: 100%;
+    height: 1211px;
+}
 .white_pad img {
     position: absolute;
     right: 0px;
@@ -463,7 +471,7 @@ a.read_more2 {
     width: 350px;
     height: 60px;
     line-height: 60px;
-    border-radius: 6px;
+
     text-align: center;
     box-shadow: 2px 8px 1em #2fe99c;
     font-weight: 400;
@@ -484,7 +492,7 @@ button.read_more2 {
     width: auto;
     height: 60px;
     line-height: 40px;
-    border-radius: 6px;
+
     text-align: center;
 margin-right: auto;
     margin-left: auto;
@@ -497,6 +505,25 @@ margin-right: auto;
     background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
     border: 1px solid #2FE99C;
+}
+button.read_more2gray {
+    font-family: 'MuseoSansCyrl100', sans-serif;
+    display: block;
+
+    font-size: 20px;
+    width: auto;
+    height: 60px;
+    line-height: 40px;
+
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+    background: #F5F5F5;
+    color: #000000;
+    border: 1px solid #F5F5F5;
 }
 
 a.read_more2:hover {
@@ -518,10 +545,15 @@ button.read_more2:hover {
 #service {
     padding: 20px 0px;
     background: #F9F9F9;
+    height: 400px;
+    width: 100%;
+}
+.ButtonCons{
+    padding-top: 45px;
 }
 
 .service_wrapper {
-    padding: 40px 0 40px;
+    padding: 0px 0 40px;
 }
 
 .service_section {
@@ -681,6 +713,8 @@ a.contact_btn:hover {
 
 #Portfolio {
     padding: 60px 60px;
+    width:100%;
+    height: 1259px;
 }
 
 .Portfolio-nav {
@@ -859,8 +893,8 @@ img {
 
 
 .client_logos ul {
-    padding: 0;
-    margin: 30px;
+
+
     list-style: none;
     text-align: center;
 }
@@ -872,7 +906,7 @@ img {
 
 .client_logos ul a {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 0;
 }
 
 .page_section.team {
@@ -1007,7 +1041,7 @@ img {
 #aboutUs {
     padding: 60px 0;
     width:100%;
-    height: 1222px;
+
 }
 
 /* Contact
@@ -1017,13 +1051,13 @@ img {
 }
 
 .contact_section {
-    margin: 0 0 60px 0;
+    margin: 0 0 20px 0;
 }
 
 .contact_section h2 {
     font-size: 40px;
     color: #000000;
-    margin: 0 0 50px 0;
+    margin: 0 0 10px 0;
 
 }
 
@@ -1099,7 +1133,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .contact_info {
     font-size: 15px;
-    margin: 0 0 0 20px;
+
     padding-left: 0;
 }
 
@@ -1117,15 +1151,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .contact_info p {
     line-height: 28px;
     display: block;
-    font-size: 16px;
-
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 
 .social_links {
-    padding:0;
-    margin: 0;
+    padding:10px;
+    margin: 10px;
     display: block;
     overflow: hidden;
     list-style: none;
@@ -1140,10 +1172,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     display: block;
     width: 50px;
     height: 50px;
-    text-align: center;
+
     line-height: 50px;
     font-size: 25px;
-    color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 80px;
 }
 
 .social_links li a:hover, .social_links li a:focus {
@@ -1867,13 +1902,21 @@ div.mc-image {
     padding: 0;
 }
 .marginImg{
-    margin-top:50px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.marginDrop{
+    margin-top:-70px;
+}
+.marginImgBot{
+    padding-bottom:50px;
 }
 .img2Main{
     height: 93px;
     width: 93px;
     margin-top: 20px;
 }
+
 
 
 /*
@@ -1885,10 +1928,18 @@ div.mc-image {
         font-size: 20px;
         color: black;
     }
+    .pCons{
+        font-size: 26px;
+        color: black;
+    }
     .pNew{
         font-size: 20px;
         color: black;
         text-align: center;
+        padding: 30px;
+    }
+    .newWidth{
+        width: 80%;
     }
     .col-sm-3 {
         width: 60%;
@@ -1897,25 +1948,67 @@ div.mc-image {
         padding: 20px;
         bottom: -80px;
     }
+    .thumbnail2 {
+        padding-top: 80px;
+    }
+    .need-hideDesc{
+        display:none;
+    }
 }
+
+
+
 @media (max-width: 768px) {
 p{
     font-size: 20px;
     color: black;
 }
+    .pCons{
+        font-size: 26px;
+        color: black;
+    }
+    .pLeft{
+        font-size: 26px;
+        color: black;
+        text-align: left;
+    }
+    .center{
+        text-align: center;
+    }
+    .pNew{
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        padding: 30px;
+    }
     .col-sm-3 {
         width: 60%;
     }
     .carousel-indicators{
         padding: 20px;
-        bottom: -60px;
+        bottom: -80px;
+        width: 100%;
+        text-align: left;
     }
     .need-hide{
         display:none;
     }
+    .top_cont_outer {
+        background-color: #F8F8FA;
+        background-image: url("../img/bg1.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+.controls{
+    bottom: -35px;
+}
+
 .hero_section {
 position: relative;
-padding-top: 100px;
+padding-top: 300px;
 }
 .top_left_cont {
 padding: 38px 0;
@@ -1955,7 +2048,8 @@ padding: 40px 0;
 }
 
 #clients {
-padding: 40px 0;
+    padding: 40px 0;
+
 }
 .client_logos ul li {
 display: inline;
@@ -1963,9 +2057,24 @@ margin: 0 25px;
 padding: 11px 0;
 display: inline-block;
 }
+    .social_links {
+        margin-right: auto;
+        display: inline-block;
+    }
 .social_links li {
-float: left;
+display: inline-block;
 }
+    .social_links li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        line-height: 50px;
+        font-size: 25px;
+        color: #FFFFFF;
+        background-color: black;
+        border-radius: 80px;
+    }
 .contact_section{
 margin:0;
 }
