@@ -243,6 +243,14 @@ p {
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
+    padding-bottom: 70px;
+    padding-top: 60px;
+
+}
+.h2Third{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
 
 
 }
@@ -473,7 +481,7 @@ a.read_more2 {
     line-height: 60px;
 
     text-align: center;
-    box-shadow: 2px 8px 1em #2fe99c;
+    box-shadow: 2px 8px 1em #d4e3d9;
     font-weight: 400;
     padding-bottom: 20px;
     text-decoration: none;
@@ -488,17 +496,18 @@ button.read_more2 {
     font-family: 'MuseoSansCyrl100', sans-serif;
     display: block;
 
-    font-size: 20px;
+    font-size: 18px;
     width: auto;
     height: 60px;
-    line-height: 40px;
-
+    line-height: 26px;
+    margin-bottom: 40px;
     text-align: center;
 margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-weight: 400;
-    box-shadow: 1px 5px 1em #2fe99c;
+    box-shadow: 1px 5px 1em #d1e4de;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -510,15 +519,16 @@ button.read_more2gray {
     font-family: 'MuseoSansCyrl100', sans-serif;
     display: block;
 
-    font-size: 20px;
+    font-size: 18px;
     width: auto;
     height: 60px;
-    line-height: 40px;
-
+    line-height: 26px;
+    margin-bottom: 40px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-weight: 400;
 
     background: #F5F5F5;
@@ -1916,6 +1926,14 @@ div.mc-image {
     width: 93px;
     margin-top: 20px;
 }
+.img2MainSecond{
+    height: 93px;
+    width: 93px;
+    margin-top: -60px;
+}
+.marginForCons{
+    margin-top: -40px
+}
 
 
 
@@ -1939,7 +1957,9 @@ div.mc-image {
         padding: 30px;
     }
     .newWidth{
-        width: 80%;
+        width: 90%;
+        margin-left: 150px;
+        margin-right: 150px;
     }
     .col-sm-3 {
         width: 60%;
@@ -2005,6 +2025,13 @@ p{
 .controls{
     bottom: -35px;
 }
+    .marginImg{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .marginDrop{
+        margin-top:-60px;
+    }
 
 .hero_section {
 position: relative;

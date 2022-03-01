@@ -65,7 +65,7 @@
                         <p class="p2Main">Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
                             автоматизации и оптимизации бизнес-процессов  с <br>помощью мобильных приложений и
                             веб-сервисов.</p>
-                        <a href="#service" class="read_more2">Рассчитать проект</a>
+                        <a href="#service" class="read_more2">  Рассчитать проект  </a>
                         <img class="img2Main need-hide" src="img/groupimg.png">
                     </div>
                 </div>
@@ -79,7 +79,7 @@
     <div class="inner_wrapper">
         <div class="container-fluid">
             <div class="col-md-offset-10">
-            <img class="img2Main need-hide" src="img/Group263.png">
+            <img class="img2MainSecond need-hide" src="img/Group263.png">
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-12 col-md-offset-1 col-xs-offset-1">
@@ -272,8 +272,8 @@
 
         <div class="service_wrapper">
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1 ">
-                    <h2 class="h2Sec">Получить консультацию</h2>
+                <div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-1 marginForCons">
+                    <h2 class="h2Third">Получить консультацию</h2>
                     <p class="pCons">Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-xs-offset-1 col-xs-12 ButtonCons">
@@ -293,12 +293,12 @@
              <img class="img2Main need-hide" src="img/Group266.png">
          </div>
          <div class="col-md-12  col-xs-12 col-md-offset-1 col-xs-offset-1">
-             <h2 class="morePad h2Sec"><strong>Как мы работаем</strong></h2>
+             <h2 class="morePad h2Third"><strong>Как мы работаем</strong></h2>
          </div>
      </div>
     <!--page_section-->
     <div class="client_logos newWidth"><!--client_logos-->
-        <div class="container">
+        <div class="container-fluid">
             <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
                 <div class="row">
                     <div class="col-md-2">
@@ -366,7 +366,7 @@
                     Демоверсия включает в себя не только схемы и прототипы, но и живой функционал - реализованную механику работы приложения или важнейший функционал по бэклогу.
                     Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете потестировать функционал и показать его инвесторам.
                 </p>
-                <button href="#service" class="read_more2gray">Рассчитать проект</button>
+                <button href="#service" class="read_more2gray"> Рассчитать проект </button>
             </a>
         </div>
         <div class="col-xs-12 col-md-4">
@@ -377,7 +377,7 @@
                     Это полный цикл создания продукта. Мы реализуем весь функционал, который согласовали в бэклоге. Вы получаете целостный продукт без "заглушек".
                     Пакет содержит анализ, описание требований, и обработку идеи, подготовку технической документации, проектирование, разработку фирменного стиля и всех интерфейсов, разработку мобильных приложений. После этого мы размещаем приложение на AppStore, Google Play, продвигаем в сети, помогаем собирать и анализировать статистику.
                 </p>
-                <button href="#service" class="read_more2">Рассчитать проект</button>
+                <button href="#service" class="read_more2">Рассчитать проект </button>
             </a>
         </div>
         <div class="col-xs-12 col-md-4 thumbnail2">
