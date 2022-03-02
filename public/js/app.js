@@ -22896,7 +22896,197 @@ function cleanUpNextTick() {
         drainQueue();
     }
 }
+/*Feedback*/
+            const DATA = [
+                {
+                    question: 'Приложение нужно для действующего бизнеса или стартапа?',
+                    answers: [
+                        {
+                            id: '1',
+                            value: 'Действующий бизнес',
+                            correct: false,
+                        },
+                        {
+                            id: '2',
+                            value: 'Стартап',
+                            correct: false,
+                        },
+                    ]
+                },
+                {
+                    question: 'Вопрос 2',
+                    answers: [
+                        {
+                            id: '3',
+                            value: 'Ответ 3',
+                            correct: false,
+                        },
+                        {
+                            id: '4',
+                            value: 'Ответ 4',
+                            correct: false,
+                        },
+                    ]
+                },
+                {
+                    question: 'Вопрос 3',
+                    answers: [
+                        {
+                            id: '5',
+                            value: 'Ответ 5',
+                            correct: false,
+                        },
+                        {
+                            id: '6',
+                            value: 'Ответ 6',
+                            correct: false,
+                        },
+                    ]
+                },
+                {
+                    question: 'Вопрос 4',
+                    answers: [
+                        {
+                            id: '7',
+                            value: 'Ответ 7',
+                            correct: false,
+                        },
+                        {
+                            id: '8',
+                            value: 'Ответ 8',
+                            correct: false,
+                        },
+                    ]
+                },
+            ];
 
+            let localResults = {};
+
+            const quiz = document.getElementById('quiz');
+            const questions = document.getElementById('questions');
+            const indicator = document.getElementById('indicator');
+            const results = document.getElementById('results');
+            const next = document.getElementById('next');
+            const back = document.getElementById('back');
+            const restart = document.getElementById('restart');
+
+
+            const renderQuestions = (index) => {
+                renderIndicator(index + 1);
+
+                questions.dataset.currentStep = index;
+
+                const renderAnswers = () => DATA[index].answers
+                    //Закинуть разветвление по полям, если не только чекбоксы будут использоваться.
+                    .map((answer)=> `
+                        <li>
+                            <label>
+                                    <input class="answer-input" type="radio" name=${index} value=${answer.id}>  ${answer.value}
+                             </label>
+                        </li>
+                    `)
+                    .join('');
+
+                questions.innerHTML = `
+                    <div class="quiz-questions-item">
+                          <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>
+                                <ul class="quiz-questions-item__answers">
+                                    ${renderAnswers()}
+                                </ul>
+                            </div>
+                `;
+            };
+
+            const renderResults = () => {
+                let content = '';
+
+                const getClassname = (answer, questionIndex) =>{
+                    let classname="";
+                    //нажатые ответы
+                    if( answer.id === localResults[questionIndex]){
+                        classname= 'answer--valid';
+                    }
+                    return classname;
+                };
+                    content =`
+                        <div class="quiz-results-item">
+                            <label>
+                                <div class="quiz-questions-item__question">
+                                    <h2 class="marginFeedbackResult">
+                                        Спасибо, с Вами обязательно свяжутся
+                                    </h2>
+                                </div>
+                            </label>
+                        </div>
+                        `;
+
+
+                results.innerHTML = content;
+                console.log(localResults);
+            };
+
+            const renderIndicator = (currentStep) => {
+                indicator.innerHTML = `${currentStep}/${DATA.length}`;
+            };
+
+            quiz.addEventListener('change', (event) => {
+                //Логика ответа
+                if(event.target.classList.contains('answer-input')){
+
+                    localResults[event.target.name] = event.target.value;
+                    next.disabled = false;
+                    back.disabled = false;
+
+                }
+            });
+
+            quiz.addEventListener('click', (event) => {
+                //Вперед или сначала
+                if(event.target.classList.contains('next')){
+                    const nextQuestionIndex = Number(questions.dataset.currentStep) +1 ;
+
+                    if(DATA.length === nextQuestionIndex){
+                        //переход к результатам
+                        questions.classList.add('questions--hidden');
+                        indicator.classList.add('indicator--hidden');
+                        results.classList.add('results--visible');
+                        next.classList.add('next--hidden');
+                        back.classList.add('back--hidden');
+                        restart.classList.add('restart--hidden');
+                        renderResults();
+                    }else{
+                        //следующий вопрос
+                        renderQuestions(nextQuestionIndex);
+                    }
+                    next.disabled = true;
+                }
+                if(event.target.classList.contains('back')){
+                    const nextQuestionIndex = Number(questions.dataset.currentStep) - 1 ;
+
+                    if(nextQuestionIndex === -1){
+                        back.disabled = true;
+                    }else{
+                        //следующий вопрос
+                        renderQuestions(nextQuestionIndex);
+                    }
+
+                }
+                if(event.target.classList.contains('restart')){
+
+                    results.innerHTML = '';
+                    localResults = {};
+                    questions.classList.remove('questions--hidden');
+                    indicator.classList.remove('indicator--hidden');
+                    results.classList.remove('results--visible');
+                    next.classList.remove('next--hidden');
+                    restart.classList.remove('restart--visible');
+                    renderQuestions(0);
+                }
+            });
+
+            renderQuestions(0);
+
+/*Feedback*/
 function drainQueue() {
     if (draining) {
         return;
