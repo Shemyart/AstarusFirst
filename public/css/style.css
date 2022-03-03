@@ -652,7 +652,8 @@ label{
     text-decoration: none;
     background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-    border-color: #2FE99C;
+
+    border: 1px solid #2FE99C;
 }
 .back{
     font-family: 'MuseoSansCyrl700';
@@ -666,8 +667,9 @@ label{
     text-decoration: none;
     background: linear-gradient( 90deg, #f4f5f5, #eeecec);
     color: #000000;
-    border-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
     margin-right: 20px;
+
 
 }
 

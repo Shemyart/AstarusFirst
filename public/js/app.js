@@ -22897,6 +22897,7 @@ function cleanUpNextTick() {
     }
 }
 /*Feedback*/
+
             const DATA = [
                 {
                     question: 'Приложение нужно для действующего бизнеса или стартапа?',
@@ -22914,48 +22915,36 @@ function cleanUpNextTick() {
                     ]
                 },
                 {
-                    question: 'Вопрос 2',
+                    question: 'Введите, пожалуйста, Ваше Имя',
                     answers: [
                         {
                             id: '3',
-                            value: 'Ответ 3',
+                            value: 'Имя',
                             correct: false,
                         },
-                        {
-                            id: '4',
-                            value: 'Ответ 4',
-                            correct: false,
-                        },
+
                     ]
                 },
                 {
-                    question: 'Вопрос 3',
+                    question: 'Введите, пожалуйста, Ваш телефон',
                     answers: [
                         {
                             id: '5',
-                            value: 'Ответ 5',
+                            value: 'Телефон',
                             correct: false,
                         },
-                        {
-                            id: '6',
-                            value: 'Ответ 6',
-                            correct: false,
-                        },
+
                     ]
                 },
                 {
-                    question: 'Вопрос 4',
+                    question: 'Введите, пожалуйста, Ваш Email',
                     answers: [
                         {
                             id: '7',
-                            value: 'Ответ 7',
+                            value: 'Email',
                             correct: false,
                         },
-                        {
-                            id: '8',
-                            value: 'Ответ 8',
-                            correct: false,
-                        },
+
                     ]
                 },
             ];
@@ -22972,29 +22961,85 @@ function cleanUpNextTick() {
 
 
             const renderQuestions = (index) => {
+                //Закинуть разветвление по полям, если не только чекбоксы будут использоваться.
                 renderIndicator(index + 1);
-
                 questions.dataset.currentStep = index;
 
-                const renderAnswers = () => DATA[index].answers
-                    //Закинуть разветвление по полям, если не только чекбоксы будут использоваться.
+                const renderAnswers0 = () =>
+                    DATA[index].answers
                     .map((answer)=> `
                         <li>
                             <label>
                                     <input class="answer-input" type="radio" name=${index} value=${answer.id}>  ${answer.value}
                              </label>
-                        </li>
-                    `)
+                        </li>`)
                     .join('');
+                const renderAnswers1 = () =>
+                    DATA[index].answers
+                        .map((answer)=> `
+                        <li>
+                            <label>
+                                    <input class="answer-input" name=${index} placeholder="Имя">
+                             </label>
+                        </li>`)
+                        .join('');
+                const renderAnswers2 = () =>
+                    DATA[index].answers
+                        .map((answer)=> `
+                        <li>
+                            <label>
+                                    <input class="answer-input" name=${index} placeholder="Телефон">
+                             </label>
+                        </li>`)
+                        .join('');
+                const renderAnswers3 = () =>
+                    DATA[index].answers
+                        .map((answer)=> `
+                        <li>
+                            <label>
+                                    <input class="answer-input" name=${index} placeholder="Email">
+                             </label>
+                        </li>`)
+                        .join('');
 
-                questions.innerHTML = `
+
+                if(index==0){
+                    questions.innerHTML = `
                     <div class="quiz-questions-item">
                           <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>
                                 <ul class="quiz-questions-item__answers">
-                                    ${renderAnswers()}
+                                    ${renderAnswers0()}
                                 </ul>
                             </div>
-                `;
+                    `;
+                }else if(index==1){
+                    questions.innerHTML = `
+                    <div class="quiz-questions-item">
+                          <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>
+                                <ul class="quiz-questions-item__answers">
+                                    ${renderAnswers1()}
+                                </ul>
+                            </div>
+                    `;
+                }else if(index==2){
+                    questions.innerHTML = `
+                    <div class="quiz-questions-item">
+                          <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>
+                                <ul class="quiz-questions-item__answers">
+                                    ${renderAnswers2()}
+                                </ul>
+                            </div>
+                    `;
+                }else if(index==3){
+                    questions.innerHTML = `
+                    <div class="quiz-questions-item">
+                          <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>
+                                <ul class="quiz-questions-item__answers">
+                                    ${renderAnswers3()}
+                                </ul>
+                            </div>
+                    `;
+                }
             };
 
             const renderResults = () => {
@@ -23015,14 +23060,24 @@ function cleanUpNextTick() {
                                     <h2 class="marginFeedbackResult">
                                         Спасибо, с Вами обязательно свяжутся
                                     </h2>
+                                    <form method="GET"  action="/submitform" id="form" hidden>
+                                        @csrf
+                                       <input name="forwhat" value="${localResults[0]}">
+                                       <input name="name" value="${localResults[1]}">
+                                       <input name="phone" value="${localResults[2]}">
+                                       <input name="email" value="${localResults[3]}">
+                                    </form>
                                 </div>
                             </label>
                         </div>
                         `;
-
-
                 results.innerHTML = content;
+
+                const form = document.getElementById('form');
+                form.submit();
+
                 console.log(localResults);
+
             };
 
             const renderIndicator = (currentStep) => {
@@ -23058,7 +23113,7 @@ function cleanUpNextTick() {
                         //следующий вопрос
                         renderQuestions(nextQuestionIndex);
                     }
-                    next.disabled = true;
+                    next.disabled = false;
                 }
                 if(event.target.classList.contains('back')){
                     const nextQuestionIndex = Number(questions.dataset.currentStep) - 1 ;

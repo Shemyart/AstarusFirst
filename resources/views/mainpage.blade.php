@@ -25,6 +25,7 @@
 <body>
 
 <!--Первый слайд-->
+@include('result_message')
 <section id="hero_section"  class="top_cont_outer">
     <div class="hero_wrapper top_cont_outer">
         <div class="container-fluid" >
@@ -32,6 +33,7 @@
                 <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-3">
                     <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
+
                 <div class="col-md-offset-10 col-md-2 col-xs-offset-10 col-xs-2 ">
                     <div class="dropdown marginDrop">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -719,9 +721,8 @@
 
                         <div class="quiz-controls">
                             <button class="restart" id="restart">С начала</button>
-                            <button class="back" id="back" disabled>Назад</button>
-                            <button class="next" id="next" disabled>Далее</button>
-
+                            <button class=" back " id="back" disabled>Назад</button>
+                            <button class=" next " id="next" disabled>Далее</button>
                         </div>
                     </div>
                 </div>
