@@ -1,5 +1,4 @@
 <!-- Верстка главной страницы -->
-
 <!doctype html>
 <html>
 <head>
@@ -316,7 +315,6 @@
     </div>
 </section>
 <!--Кейсы-->
-
 <!--Консультация-->
 <section  id="service">
     <div class="container-fluid">
@@ -338,9 +336,8 @@
     </div>
 </section>
 <!--Консультация-->
-
 <!--Как мы работаем-->
-<section  id="clients"><!--page_section-->
+<section  id="clients">
     <div class="inner_wrapper size">
      <div class="container-fluid">
          <div class="col-md-offset-10">
@@ -350,8 +347,7 @@
              <h2 class="morePad h2Third"><strong>Как мы работаем</strong></h2>
          </div>
      </div>
-    <!--page_section-->
-    <div class="client_logos newWidth"><!--client_logos-->
+    <div class="client_logos newWidth">
         <div class="container-fluid">
             <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
                 <div class="row">
@@ -399,17 +395,13 @@
         </div>
 </section>
 <!--Как мы работаем-->
-
-
 <!-- Выбор пакета -->
 <section id="Portfolio" class="content">
-    <!-- Container -->
     <div class="container-fluid portfolio_title">
         <div class="col-md-11  col-xs-11 col-md-offset-1 col-xs-offset-1">
             <h2 class="h2Sec"><strong>Выбор пакета</strong></h2>
         </div>
     </div>
-    <!-- Container -->
 <div class="container newWidth">
     <div class="row" >
         <div class="col-xs-12 col-md-4 thumbnail2">
@@ -449,8 +441,8 @@
 
 </div>
 </section>
-<!--/Portfolio -->
-<section class="page_section" id="clients"><!--page_section-->
+<!--Наши клиенты -->
+<section class="page_section" id="clients">
     <div class="container-fluid">
         <div class="col-md-11 col-xs-11 col-md-offset-1 col-xs-offset-1">
         <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
@@ -459,9 +451,8 @@
             <div class="container-fluid">
                 <div class='col-md-offset-2 col-md-8'>
                     <div class="carousel slide" data-ride="carousel" id="quote-carousel3">
-                        <!-- Carousel Slides / Quotes -->
                         <div class="carousel-inner">
-                            <!-- Quote 1 -->
+                            <!-- Клиент 1 -->
                             <div class="item active">
                                 <blockquote>
                                     <div class="row justify-content-center">
@@ -482,7 +473,7 @@
                                     </div>
                                 </blockquote>
                             </div>
-                            <!-- Quote 2 -->
+                            <!-- Клиент 2 -->
                             <div class="item">
                                 <blockquote>
                                     <div class="row justify-content-center">
@@ -503,7 +494,7 @@
                                     </div>
                                 </blockquote>
                             </div>
-                            <!-- Quote 3 -->
+                            <!-- Клиент 3 -->
                             <div class="item">
                                 <blockquote>
                                     <div class="row justify-content-center">
@@ -526,7 +517,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
-                            <!-- Bottom Carousel Indicators -->
+                            <!-- Точечные индикаторы -->
                             <ol class="carousel-indicators myIndicator">
                                 <li data-target="#quote-carousel3" data-slide-to="0" class="active"></li>
                                 <li data-target="#quote-carousel3" data-slide-to="1"></li>
@@ -534,7 +525,7 @@
                             </ol>
                         </div>
                         <div class="need-hide">
-                            <!-- Carousel Buttons Next/Prev -->
+                            <!-- Кнопки След.Пред. -->
                             <a data-slide="prev" href="#quote-carousel3" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
                             <a data-slide="next" href="#quote-carousel3" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
                         </div>
@@ -542,8 +533,9 @@
                 </div>
             </div>
         </div>
-    <!--page_section-->
-        <div class="client_logos need-hide"><!--client_logos-->
+    <!--Наши клиенты -->
+    <!-- Логотипы -->
+        <div class="client_logos need-hide">
             <div class="container-fluid">
                 <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
                     <ul class="fadeInRight animated wow">
@@ -571,7 +563,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- Second row -->
+            <!-- Второй ряд -->
             <div class="container-fluid">
                 <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
                     <ul class="fadeInRight animated wow">
@@ -602,8 +594,9 @@
         </div>
     </div>
 </section>
-
-<section class="page_section team" id="team"><!--main-section team-start-->
+<!-- Логотипы -->
+<!-- Отзывы -->
+<section class="page_section team" id="team">
     <div class="row">
         <div class="container-fluid" style="width: 100%">
             <div class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1">
@@ -615,9 +608,9 @@
         <div class="container-fluid">
         <div class='col-md-offset-2 col-md-8'>
             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                <!-- Carousel Slides / Quotes -->
+                <!-- Карусель отзывов -->
                 <div class="carousel-inner">
-                    <!-- Quote 1 -->
+                    <!-- Отзыв 1 -->
                     <div class="item active">
                         <blockquote>
                             <div class="row justify-content-center">
@@ -636,7 +629,7 @@
                             </div>
                         </blockquote>
                     </div>
-                    <!-- Quote 2 -->
+                    <!-- Отзыв 2 -->
                     <div class="item">
                         <blockquote>
                             <div class="row justify-content-center">
@@ -655,7 +648,7 @@
                             </div>
                         </blockquote>
                     </div>
-                    <!-- Quote 3 -->
+                    <!-- Отзыв 3 -->
                     <div class="item">
                         <blockquote>
                             <div class="row justify-content-center">
@@ -676,7 +669,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
-                    <!-- Bottom Carousel Indicators -->
+                    <!-- Точечные индикаторы -->
                     <ol class="carousel-indicators myIndicator">
                         <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#quote-carousel" data-slide-to="1"></li>
@@ -684,7 +677,7 @@
                     </ol>
                 </div>
                 <div class="need-hide">
-                    <!-- Carousel Buttons Next/Prev -->
+                    <!-- Кнопки След.Пред. -->
                     <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
                     <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
                 </div>
@@ -692,10 +685,14 @@
         </div>
     </div>
     </div>
-
 </section>
+<!-- Отзывы -->
 <!--Форма обратной связи-->
+
+
+
 <section id="feedback-form">
+
     <div class="feedback-form">
             <div class="container-fluid portfolio_title">
                 <div class="col-md-8  col-xs-10 col-md-offset-1 col-xs-offset-1">
@@ -731,7 +728,7 @@
     </div>
 </section>
 <!--Форма обратной связи-->
-<!--Footer-->
+<!--Подвал-->
 <footer class="footer_wrapper" id="contact">
     <div class="container-fluid need-hideDesc">
         <div class="col-md-11 col-xs-11 col-md-offset-1 col-xs-offset-1">
@@ -817,7 +814,8 @@
         </div>
     </div>
 </footer>
-
+<!-- Подвал -->
+<!-- Скрипты -->
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
@@ -827,6 +825,6 @@
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
-
+<!-- Скрипты -->
 </body>
 </html>
