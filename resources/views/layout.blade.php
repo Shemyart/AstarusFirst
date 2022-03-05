@@ -34,6 +34,7 @@
         </div>
     </footer>
 </div>
+
 @livewireScripts
 
 </body>
