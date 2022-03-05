@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\EquipmentModel;
 use App\Models\FirstModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 
@@ -14,7 +15,14 @@ class FirstController extends Controller
     {
         $equipments = new EquipmentModel();
 
-        return view('equipments', ['equipments'=>$equipments->all()]);
+        if(Auth::user())
+        {
+            return view('equipments', ['equipments'=>$equipments->all()]);
+        }else{
+            return view('mainpage');
+        }
+
+
     }
 
     /**

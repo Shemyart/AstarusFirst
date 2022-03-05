@@ -36,7 +36,7 @@ class ProjectController extends Controller
                     return view('projects', ['projects'=>$validprojects]);
             }
         }else{
-            return view('projects', ['projects'=>$projects->all()]);
+            return view('mainpage');
         }
 
     }
@@ -49,8 +49,8 @@ class ProjectController extends Controller
             $record = ProjectsModel::where('slug', $slug )
                 ->get();
 
-        if (setting('admin.project_equip') == 1) {
-            $equiprec = EquipmentModel::where('project_id', $record[0]->id )
+        if (setting('projects.project_equip') == 1) {
+            $equiprec = EquipmentModel::where('project_id', $record[0]->id )->where('activity', 1)
                 ->get();
 
 

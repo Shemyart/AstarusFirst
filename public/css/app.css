@@ -88,6 +88,11 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+.btn-primary {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #f0f0f0;
+}
 
 /*
 Add the correct font weight in Edge and Safari.

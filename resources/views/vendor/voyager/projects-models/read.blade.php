@@ -1,7 +1,4 @@
 @extends('voyager::master')
-
-
-
 @section('content')
     <div class="page-content read container-fluid">
         <div class="row">

@@ -2,13 +2,10 @@
 @section('title')Оборудование@endsection
 @section('content')
     @include('result_message')
-    <div class="container">
+    <div class="min-h-screen bg-gray-100">
+        <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">
-                <div class="row justify-content-center">
-                    <h1>Оборудование</h1>
-                </div>
-                <hr>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
                         <thead>
@@ -48,6 +45,7 @@
                 </div><!-- ./table-responsive-->
             </div><!-- ./col-md-12-->
         </div><!-- ./row-->
+    </div>
     </div>
 
 @endsection

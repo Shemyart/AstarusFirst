@@ -2,11 +2,10 @@
 @section('title')Проекты@endsection
 @section('content')
 
-    <div class="container">
+    <div class="min-h-screen bg-gray-100">
+        <div class="container">
         <div class="row mt-3 mb-3">
             <div class="col-md-12">
-                    <h1>Проекты</h1>
-                <hr>
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
                         <thead>
@@ -50,6 +49,7 @@
                 </div><!-- ./table-responsive-->
             </div><!-- ./col-md-12-->
         </div><!-- ./row-->
+        </div>
     </div>
 
 @endsection

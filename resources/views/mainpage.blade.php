@@ -68,7 +68,7 @@
                         <p class="p2Main">Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
                             автоматизации и оптимизации бизнес-процессов  с <br>помощью мобильных приложений и
                             веб-сервисов.</p>
-                        <a href="#service" class="read_more2">  Рассчитать проект  </a>
+                        <a href="#feedback-form" class="read_more2">  Рассчитать проект  </a>
                         <img class="img2Main need-hide" src="img/groupimg.png">
                     </div>
                 </div>
@@ -329,7 +329,7 @@
                     <p class="pCons">Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-xs-offset-1 col-xs-11 ButtonCons">
-                    <a href="#service" class="read_more2 ">Рассчитать проект</a>
+                    <a href="#feedback-form" class="read_more2 ">Рассчитать проект</a>
                 </div>
             </div>
         </div>
@@ -405,36 +405,36 @@
 <div class="container newWidth">
     <div class="row" >
         <div class="col-xs-12 col-md-4 thumbnail2">
-            <a href="#" class="thumbnail">
+            <a href="#feedback-form" class="thumbnail">
                 <img class="imgHow" src="/img/Vector.png" alt="...">
                 <h2 class="align-center">Демоверсия</h2>
                 <p class="pNew">
                     Демоверсия включает в себя не только схемы и прототипы, но и живой функционал - реализованную механику работы приложения или важнейший функционал по бэклогу.
                     Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете потестировать функционал и показать его инвесторам.
                 </p>
-                <button href="#service" class="read_more2gray"> Рассчитать проект </button>
+                <button href="#feedback-form" class="read_more2gray"> Рассчитать проект </button>
             </a>
         </div>
         <div class="col-xs-12 col-md-4">
-            <a href="#" class="thumbnail">
+            <a href="#feedback-form" class="thumbnail">
                 <img class="imgHow" src="/img/Outline.png" alt="...">
                 <h2 class="align-center">Разработка <br> полного продукта</h2>
                 <p class="pNew" >
                     Это полный цикл создания продукта. Мы реализуем весь функционал, который согласовали в бэклоге. Вы получаете целостный продукт без "заглушек".
                     Пакет содержит анализ, описание требований, и обработку идеи, подготовку технической документации, проектирование, разработку фирменного стиля и всех интерфейсов, разработку мобильных приложений. После этого мы размещаем приложение на AppStore, Google Play, продвигаем в сети, помогаем собирать и анализировать статистику.
                 </p>
-                <button href="#service" class="read_more2">Рассчитать проект </button>
+                <button href="#feedback-form" class="read_more2">Рассчитать проект </button>
             </a>
         </div>
         <div class="col-xs-12 col-md-4 thumbnail2">
-            <a href="#" class="thumbnail">
+            <a href="#feedback-form" class="thumbnail">
                 <img class="imgHow" src="/img/Group.png" alt="...">
                 <h2 class="align-center">MVP</h2>
                 <p class="pNew">
                     Приложение с минимальным набором функционала, которое можно использовать на мобильных устройствах. К примеру, мессенджер, с помощью которого можно только переписываться, но не обмениваться файлами и тому подобное.
                     В отличие от демоверсии, это полноценная разработка, хотя и с минимальным дизайном и функционалом.
                 </p>
-                <button href="#service" class="read_more2gray">Рассчитать проект</button>
+                <button  class="read_more2gray">Рассчитать проект</button>
             </a>
         </div>
     </div>

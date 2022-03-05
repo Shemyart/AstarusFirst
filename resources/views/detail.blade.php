@@ -133,6 +133,7 @@
                                     </table>
                                 </div>
                                 <div class="col-4  d-lg-block">
+
                                     <div id="carousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                     @foreach ($splitArrayImg as $img)

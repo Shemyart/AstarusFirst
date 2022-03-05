@@ -41,9 +41,9 @@ class ProjectsObserver
         //Создание слага при обновлении записи и простановка даты в зависимости от статуса
         $this->setSlug($projectsModel);
         if ($projectsModel->status == 'Закрыт' and $projectsModel->isDirty('status')){
-            $projectsModel->finish_date = date('Y:m:d');
+            $projectsModel->finish_date = date('Y:m:d:h:i:s');
         }else{
-            $projectsModel->finish_date = date('Y:m:d', strtotime($projectsModel->finish_date) + 86400);
+            $projectsModel->finish_date = date('Y:m:d:h:i:s', strtotime($projectsModel->finish_date) + 86400);
         }
     }
 
