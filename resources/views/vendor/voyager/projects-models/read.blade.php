@@ -1,8 +1,8 @@
 @extends('voyager::master')
 @section('content')
-    <div class="page-content read container-fluid">
+    <div class="page-content read container-fluid ">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2">
 
                 <div class="panel panel-bordered" style="padding-bottom:5px;">
                     <!-- form start -->
@@ -13,14 +13,14 @@
                             }
                         @endphp
                         <div class="panel-heading" style="border-bottom:0;">
-                            <h3 class="panel-title">{{ $row->getTranslatedAttribute('display_name') }}</h3>
+                            <h3 class="panel-title" style="text-align: center">{{ $row->getTranslatedAttribute('display_name') }}</h3>
                         </div>
 
-                        <div class="panel-body" style="padding-top:0;">
+                        <div class="panel-body" style="padding-top:0; text-align: center; font-size: 18px;">
                             @if (isset($row->details->view))
                                 @include($row->details->view, ['row' => $row, 'dataType' => $dataType, 'dataTypeContent' => $dataTypeContent, 'content' => $dataTypeContent->{$row->field}, 'action' => 'read', 'view' => 'read', 'options' => $row->details])
                             @elseif($row->type == "image")
-                                <img class="img-responsive"
+                                <img class="img-responsive" style="max-width: 150px;"
                                      src="{{ filter_var($dataTypeContent->{$row->field}, FILTER_VALIDATE_URL) ? $dataTypeContent->{$row->field} : Voyager::image($dataTypeContent->{$row->field}) }}">
                             @elseif($row->type == 'multiple_images')
                                 @if(json_decode($dataTypeContent->{$row->field}))
@@ -33,14 +33,14 @@
                                                         @else
                                                             <div class="item active">
                                                                 @endif
-                                                                <img class="img-fluid" height="150" width="150" src="{{ filter_var($file, FILTER_VALIDATE_URL) ? $file : Voyager::image($file) }}" alt="Не найдено">
+                                                                <img class="img-fluid" style="max-width: 150px;" src="{{ filter_var($file, FILTER_VALIDATE_URL) ? $file : Voyager::image($file) }}" alt="Не найдено">
                                                             </div>
                                                             @php  $active = 0; @endphp
                                                             @endforeach
                                                     </div>
                                         </div>
                                 @else
-                                    <img class="img-responsive"
+                                    <img class="img-responsive" style="max-width: 150px;"
                                          src="{{ filter_var($dataTypeContent->{$row->field}, FILTER_VALIDATE_URL) ? $dataTypeContent->{$row->field} : Voyager::image($dataTypeContent->{$row->field}) }}">
                                 @endif
                             @elseif($row->type == 'relationship')

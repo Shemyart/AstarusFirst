@@ -1,12 +1,12 @@
 @extends('layout')
 @section('title')Детальный просмотр@endsection
 @section('content')
-    <div class="container">
-        <div class="row mt-3 mb-3">
+    <div class="container" style="padding-top: 30px;">
+        <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
                     <table class="table table-hover table-striped">
-                        <thead>
+                        <thead class="table-light" >
                             <tr>
                                 <td>Поле</td>
                                 <td>Значение</td>
@@ -72,7 +72,7 @@
                             @php
                                 $splitArrayImg = array();
                                 $splitArrayFile = array();
-                                $active = 0;
+                                $active = 1;
                                 $splitImg = explode(',', $elem->image);
                                 $splitFile = explode(',', $elem->file);
                                     foreach ($splitImg as $splitelem){
@@ -127,39 +127,53 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <a class="btn btn-danger" href="javascript:void(0)" data-token="{{ csrf_token() }}" onclick="destroy({{$elem->id}}, '{{$slug}}')">Удалить</a>
+                                                <a class="btn btn-danger" href="javascript:void(0)" data-token="{{ csrf_token() }}"  onclick="destroy({{$elem->id}}, '{{$slug}}')">Удалить</a>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
-                                <div class="col-4  d-lg-block">
-
-                                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                    @foreach ($splitArrayImg as $img)
-                                        @if ($active == 0)
-                                            <div class="carousel-item active">
-                                        @else
-                                            <div class="carousel-item">
-                                        @endif
-                                                <img class="img-fluid" width="250" height="250" src="/storage/{{$img}}" alt="Не найдено">
+                                <div class="col-3 d-lg-block">
+                                            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner" style="width: 250px; height: 250px;">
+                                                    @foreach ($splitArrayImg as $img)
+                                                        @if ($active == 1)
+                                                            <div class="carousel-item active">
+                                                        @else
+                                                            <div class="carousel-item">
+                                                        @endif
+                                                                <img class="d-block" width="300px" height="300px" src="/storage/{{$img}}" alt="Не найдено">
+                                                            </div>
+                                                        @php  $active = 0; @endphp
+                                                    @endforeach
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Предыдущий</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Следующий</span>
+                                                </button>
                                             </div>
-                                        @php  $active = 1;@endphp
-                                    @endforeach
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+
                         @endforeach
+
                    @endif
                 </div><!-- ./table-responsive-->
+            </div>
             </div><!-- ./col-md-12-->
+
         </div><!-- ./row-->
+
     </div>
         <script>
             function destroy(id, slug)
             {
+
                 if(confirm('Вы действительно хотите удалить?'))
                 {
                     $.ajax({
