@@ -22955,13 +22955,13 @@ function cleanUpNextTick() {
             const questions = document.getElementById('questions');
             const indicator = document.getElementById('indicator');
             const results = document.getElementById('results');
-            const next = document.getElementById('next');
+            const nextBtn = document.getElementById('nextBtn');
             const back = document.getElementById('back');
             const restart = document.getElementById('restart');
 
 
             const renderQuestions = (index) => {
-                //Закинуть разветвление по полям, если не только чекбоксы будут использоваться.
+
                 renderIndicator(index + 1);
                 questions.dataset.currentStep = index;
 
@@ -22969,8 +22969,9 @@ function cleanUpNextTick() {
                     DATA[index].answers
                     .map((answer)=> `
                         <li>
-                            <label>
-                                    <input class="answer-input" type="radio" name=${index} value=${answer.id}>  ${answer.value}
+                            <label style="white-space: nowrap;">
+                                    <input class="answer-input" id="answer-input1" type="radio" name=${index} value=${answer.id}><label style="padding-left: 20px;" for="answer-input1"> ${answer.value}</label>
+
                              </label>
                         </li>`)
                     .join('');
@@ -23057,15 +23058,12 @@ function cleanUpNextTick() {
                         <div class="quiz-results-item">
                             <label>
                                 <div class="quiz-questions-item__question">
-                                    <h2 class="marginFeedbackResult">
-                                        Спасибо, с Вами обязательно свяжутся
-                                    </h2>
-                                    <form method="GET"  action="/submitform" id="form" hidden>
-                                        @csrf
-                                       <input name="forwhat" value="${localResults[0]}">
-                                       <input name="name" value="${localResults[1]}">
-                                       <input name="phone" value="${localResults[2]}">
-                                       <input name="email" value="${localResults[3]}">
+                                       <form method="GET"  action="/submitform" id="form" >
+                                       <input hidden id="forwhat" name="forwhat" value="${localResults[0]}">
+                                       <input hidden  id="name" name="name" value="${localResults[1]}">
+                                       <input hidden id="phone" name="phone" value="${localResults[2]}">
+                                       <input hidden id="email" name="email" value="${localResults[3]}">
+                                       <h2 id="erconts" class="marginFeedbackResult"></h2>
                                     </form>
                                 </div>
                             </label>
@@ -23073,11 +23071,34 @@ function cleanUpNextTick() {
                         `;
                 results.innerHTML = content;
 
-                const form = document.getElementById('form');
-                form.submit();
+                $(function(){
+                   /*При включении окна результатов отправляем данные*/
+                   let forwhat = $("#forwhat").val();
+                   let name = $("#name").val();
+                   let phone = $("#phone").val();
+                   let email = $("#email").val();
 
-                console.log(localResults);
-
+                   $.ajax({
+                       url: "/submitform" /*url here*/,
+                       type: "GET",
+                       headers: {
+                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                       },
+                       data: {
+                           "forwhat": forwhat,
+                           "name": name,
+                           "phone": phone,
+                           "email": email,
+                       },
+                       error: function(){$("#erconts").html("Произошла ошибка!");},
+                       beforeSend: function(){
+                           $("#erconts").html("Отправляем данные...");
+                       },
+                       success: function(result){
+                           $('#erconts').html("Спасибо, мы обязательно свяжемся с Вами");
+                       }
+                   });
+                });
             };
 
             const renderIndicator = (currentStep) => {
@@ -23089,7 +23110,7 @@ function cleanUpNextTick() {
                 if(event.target.classList.contains('answer-input')){
 
                     localResults[event.target.name] = event.target.value;
-                    next.disabled = false;
+                    nextBtn.disabled = false;
                     back.disabled = false;
 
                 }
@@ -23097,7 +23118,7 @@ function cleanUpNextTick() {
 
             quiz.addEventListener('click', (event) => {
                 //Вперед или сначала
-                if(event.target.classList.contains('next')){
+                if(event.target.classList.contains('nextBtn')){
                     const nextQuestionIndex = Number(questions.dataset.currentStep) +1 ;
 
                     if(DATA.length === nextQuestionIndex){
@@ -23105,7 +23126,7 @@ function cleanUpNextTick() {
                         questions.classList.add('questions--hidden');
                         indicator.classList.add('indicator--hidden');
                         results.classList.add('results--visible');
-                        next.classList.add('next--hidden');
+                        nextBtn.classList.add('nextBtn--hidden');
                         back.classList.add('back--hidden');
                         restart.classList.add('restart--hidden');
                         renderResults();
@@ -23113,7 +23134,7 @@ function cleanUpNextTick() {
                         //следующий вопрос
                         renderQuestions(nextQuestionIndex);
                     }
-                    next.disabled = false;
+                    nextBtn.disabled = false;
                 }
                 if(event.target.classList.contains('back')){
                     const nextQuestionIndex = Number(questions.dataset.currentStep) - 1 ;
@@ -23133,7 +23154,7 @@ function cleanUpNextTick() {
                     questions.classList.remove('questions--hidden');
                     indicator.classList.remove('indicator--hidden');
                     results.classList.remove('results--visible');
-                    next.classList.remove('next--hidden');
+                    nextBtn.classList.remove('nextBtn--hidden');
                     restart.classList.remove('restart--visible');
                     renderQuestions(0);
                 }

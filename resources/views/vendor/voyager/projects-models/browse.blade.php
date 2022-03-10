@@ -224,9 +224,9 @@
                                                                 <img src="@if( !filter_var($file, FILTER_VALIDATE_URL)){{ Voyager::image( $file ) }}@else{{ $file }}@endif" style="width:50px">
                                                             @endforeach
                                                         @else
-                                                            <ul>
+                                                            <ul style="list-style-type: none;">
                                                                 @foreach (array_slice($files, 0, 3) as $file)
-                                                                    <li>{{ $file }}</li>
+                                                                    <li style="list-style-type: none;">{{ $file }}</li>
                                                                 @endforeach
                                                             </ul>
                                                         @endif

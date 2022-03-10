@@ -85,7 +85,7 @@ h2 {
 
 }
 .marginFeedbackTitle{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 70px;
 }
 .marginFeedbackResult{
@@ -116,6 +116,9 @@ h6 {
 .align-center{
     text-align: center;
     margin:15%;
+    margin-bottom: 30px;
+    font-family: 'MuseoSansCyrl700';
+    font-size: 36px;
 }
 p {
     line-height: 24px;
@@ -124,10 +127,11 @@ p {
     color: #0e0d0d;
 }
 .pFeed{
-    font-family: 'MuseoSansCyrl500';
+    font-family: 'MuseoSansCyrl700';
     margin-top: 30px;
     margin-bottom: 30px;
-
+    font-size: 24px;
+    line-height: 24px;
 }
 
 /* Header Styles
@@ -197,7 +201,7 @@ p {
     display: block;
     font-size: 14px;
     color: #222222;
-    font-family: 'MuseoSansCyrl300', sans-serif;
+    font-family: 'MuseoSansCyrl300';
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -282,7 +286,8 @@ p {
 .top_cont_outer {
     background-image: url("../img/bgImg.png") ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top center;
+    background-size: auto auto;
     width: 100%;
     height: 1080px;
     position: relative;
@@ -296,7 +301,7 @@ p {
 
 .carousel {
     margin: 80px auto;
-    padding: 0 70px;
+
 }
 .carousel .item {
     min-height: 100px;
@@ -512,6 +517,7 @@ button.read_more2 {
     margin-left: auto;
     padding-left: 40px;
     padding-right: 40px;
+
     font-weight: 400;
     box-shadow: 1px 5px 1em #d1e4de;
     transition: all 0.2s ease-in-out;
@@ -576,6 +582,7 @@ button.read_more2:hover {
     background-color: #FFFFFF;
     margin-right: 150px;
     margin-left: 170px;
+
 }
 .marginFeedText{
     margin-top: 50px;
@@ -600,6 +607,7 @@ button.read_more2:hover {
 .quiz-controls{
     margin: 40px;
     text-align: right;
+    padding-top: 60px;
 }
 .quiz-results{
     display: none;
@@ -640,7 +648,7 @@ label{
 
 }
 
-.next{
+.nextBtn{
     font-family: 'MuseoSansCyrl700';
     font-size: 16px;
     width: 150px;
@@ -675,7 +683,7 @@ label{
 
 .questions--hidden,
 .indicator--hidden,
-.next--hidden {
+.nextBtn--hidden {
     display: none;
 }
 .back--hidden {
@@ -690,6 +698,8 @@ label{
 .answer-input{
 
 }
+
+
 .indicator--visible,
 .results--visible,
 .restart--visible{
@@ -1294,14 +1304,55 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #000000;
 }
 .supportEmail p{
-
     color: #2FE99C;
+}
+input[type='radio'],
+label {
+    cursor: pointer;
 
+}
+
+input[type='radio'] {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #53e3a4;
+}
+
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #53e3a4;
+    transform: translate(-50%, -50%);
+    visibility: visible;
 }
 .contact_info p {
     line-height: 28px;
     display: block;
     margin: 0 0 10px;
+    font-family: 'MuseoSansCyrl700';
 }
 
 
@@ -2083,8 +2134,9 @@ div.mc-image {
 /*От 768 применяются стили*/
 @media (min-width: 768px) {
     p{
-        font-size: 20px;
+        font-size: 16px;
         color: black;
+        line-height: 20px;
     }
     .pCons{
         font-size: 26px;
@@ -2093,8 +2145,12 @@ div.mc-image {
     .pNew{
         font-size: 20px;
         color: black;
-        text-align: center;
-        padding: 30px;
+        text-align: left;
+
+        padding-left: 45px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
     .newWidth{
         width: 85%;
@@ -2123,6 +2179,12 @@ p{
     font-size: 20px;
     color: black;
 }
+    .feedback_window{
+        background-color: #FFFFFF;
+        margin-right: 30px;
+        margin-left: 30px;
+
+    }
     .quiz-controls{
         margin: 20px;
         text-align: center;
@@ -2133,7 +2195,7 @@ p{
     .back{
         width: 100px;
     }
-    .next{
+    .nextBtn{
         width:100px;
     }
     .pCons{
@@ -2172,7 +2234,7 @@ p{
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
-        height: 1080px;
+        height: 1180px;
         position: relative;
     }
 .controls{

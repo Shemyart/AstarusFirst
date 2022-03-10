@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title')Детальный просмотр@endsection
+
 @section('content')
     <div class="container" style="padding-top: 30px;">
         <div class="row">
@@ -22,6 +22,8 @@
                                         $newSplit = trim($splitelem, '"[]');
                                         array_push($splitArrayImg, $newSplit);
                                     }
+                                    $title = $elem->name;
+                                    $description = $elem->description;
                             @endphp
                             <tr>
                                 <td>Название</td>
@@ -195,3 +197,5 @@
             }
         </script>
 @endsection
+@section('title'){{$title}}@endsection
+@section('description'){{$description}}@endsection

@@ -13,6 +13,7 @@
                             <th scope="col" class="tablehead">№</th>
                             <th scope="col" class="tablehead">Наименование</th>
                             <th scope="col" class="tablehead">Количество</th>
+                            <th scope="col" class="tablehead">Изображение</th>
                             <th scope="col" class="tablehead">Активность</th>
                             <th scope="col" class="tablehead">Действие</th>
                         </tr>
@@ -20,10 +21,33 @@
                         <tbody>
                         @php $sch=1; @endphp
                             @foreach($equipments as $elem)
+                                @php
+                                    $splitArrayImg = array();
+                                    $splitArrayFile = array();
+                                    $active = 1;
+                                    $splitImg = explode(',', $elem->image);
+                                    $splitFile = explode(',', $elem->file);
+                                        foreach ($splitImg as $splitelem){
+                                            $newSplit = trim($splitelem, '"[]');
+                                            array_push($splitArrayImg, $newSplit);
+                                        }
+                                        foreach ($splitFile as $splitelem){
+                                            $newSplit = trim($splitelem, '"[]');
+                                            array_push($splitArrayFile, $newSplit);
+                                        }
+                                        $linkFile = substr($splitArrayFile[0],18);
+                                @endphp
                                 <tr>
                                     <td class="">{{$sch++}}</td>
                                     <td>{{$elem->name}}</td>
                                     <td>{{$elem->volume}}</td>
+                                    <td>
+                                        <p>
+                                        @foreach ($splitArrayImg as $img)
+                                            <img class="img" style="display: inline;" width="50px" height="50px" src="/storage/{{$img}}" alt="Не найдено">
+                                        @endforeach
+                                        </p>
+                                    </td>
                                     <td>
                                     @if($elem->activity == 0)
                                         <p class="d-inline-block mb-2 text">Неактивно</p>

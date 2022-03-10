@@ -33,9 +33,9 @@ class MainpageController extends Controller
         $sendToDatabase->email=$email;
         $sendToDatabase->forwhat=$forwhat;
         $sendToDatabase->save();
-
+        /*
         return redirect() -> route('mainpage')
-            ->with(['success' => 'Спасибо, в ближайшее время мы с Вами свяжемся.']);
+            ->with(['success' => '1']);*/
     }
 
 }

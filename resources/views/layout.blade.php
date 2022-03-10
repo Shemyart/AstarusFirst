@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     <script src="https://kit.fontawesome.com/23f3e04a5b.js" crossorigin="anonymous"></script>
     <title>@yield('title')</title>
+   <meta name="description" content="@yield('description')">
     @livewireStyles
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>

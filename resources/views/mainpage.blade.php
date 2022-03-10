@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Astarus Projects</title>
     <link rel="icon" src="img/logo.png" type="image/png">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/stylename.css" rel="stylesheet" type="text/css">
 
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -24,7 +24,6 @@
 <body>
 
 <!--Первый слайд-->
-@include('result_message')
 <section id="hero_section"  class="top_cont_outer">
     <div class="hero_wrapper top_cont_outer">
         <div class="container-fluid" >
@@ -69,7 +68,7 @@
                             автоматизации и оптимизации бизнес-процессов  с <br>помощью мобильных приложений и
                             веб-сервисов.</p>
                         <a href="#feedback-form" class="read_more2">  Рассчитать проект  </a>
-                        <img class="img2Main need-hide" src="img/groupimg.png">
+                        <img class="img2Main need-hide need-hideDesc" src="img/groupimg.png">
                     </div>
                 </div>
             </div>
@@ -85,7 +84,7 @@
             <img class="img2MainSecond need-hide" src="img/Group263.png">
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-11 col-md-offset-1 col-xs-offset-1 col-xs-10">
+                <div class="col-md-10 col-md-offset-2 col-xs-offset-1 col-xs-10">
                     <h2 class="h2Sec"><strong>Проекты</strong></h2>
                     <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
                         <!-- Wrapper for carousel items -->
@@ -410,6 +409,8 @@
                 <h2 class="align-center">Демоверсия</h2>
                 <p class="pNew">
                     Демоверсия включает в себя не только схемы и прототипы, но и живой функционал - реализованную механику работы приложения или важнейший функционал по бэклогу.
+                </p>
+                <p class="pNew">
                     Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете потестировать функционал и показать его инвесторам.
                 </p>
                 <button href="#feedback-form" class="read_more2gray"> Рассчитать проект </button>
@@ -421,6 +422,8 @@
                 <h2 class="align-center">Разработка <br> полного продукта</h2>
                 <p class="pNew" >
                     Это полный цикл создания продукта. Мы реализуем весь функционал, который согласовали в бэклоге. Вы получаете целостный продукт без "заглушек".
+                </p>
+                <p class="pNew">
                     Пакет содержит анализ, описание требований, и обработку идеи, подготовку технической документации, проектирование, разработку фирменного стиля и всех интерфейсов, разработку мобильных приложений. После этого мы размещаем приложение на AppStore, Google Play, продвигаем в сети, помогаем собирать и анализировать статистику.
                 </p>
                 <button href="#feedback-form" class="read_more2">Рассчитать проект </button>
@@ -432,6 +435,8 @@
                 <h2 class="align-center">MVP</h2>
                 <p class="pNew">
                     Приложение с минимальным набором функционала, которое можно использовать на мобильных устройствах. К примеру, мессенджер, с помощью которого можно только переписываться, но не обмениваться файлами и тому подобное.
+                </p>
+                <p class="pNew">
                     В отличие от демоверсии, это полноценная разработка, хотя и с минимальным дизайном и функционалом.
                 </p>
                 <button  class="read_more2gray">Рассчитать проект</button>
@@ -689,8 +694,6 @@
 <!-- Отзывы -->
 <!--Форма обратной связи-->
 
-
-
 <section id="feedback-form">
 
     <div class="feedback-form">
@@ -719,7 +722,7 @@
                         <div class="quiz-controls">
                             <button class="restart" id="restart">С начала</button>
                             <button class=" back " id="back" disabled>Назад</button>
-                            <button class=" next " id="next" disabled>Далее</button>
+                            <button class=" nextBtn " id="nextBtn" disabled>Далее</button>
                         </div>
                     </div>
                 </div>
