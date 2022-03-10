@@ -95,6 +95,7 @@
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
+
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
@@ -298,7 +299,7 @@
                         </div>
                         <!-- Carousel indicators -->
                         <div class="row">
-                            <div class="col-xs-12 col-md-3 col-xs-offset-1 col-md-offset-3">
+                            <div class="col-xs-8 col-md-3 col-xs-offset-3 col-md-offset-3">
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel1" data-slide-to="1" ></li>
