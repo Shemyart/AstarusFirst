@@ -18,49 +18,80 @@ ul {
     list-style: none;
     padding-left: 0px;
 }
+.ArrowUp{
+    margin-top: -130px;
+     min-height: 0px;
+}
+.backgroundImgBot{
+    z-index: 5;
+    margin: -80px 0 0 280px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+
+}
+.backgroundImgTop{
+    z-index: 10;
+    margin: -110px 0 0 280px;
+    position: fixed;
+
+}
+.clientsarrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 35px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
 
 .figure {
-    margin: 0px;
+margin: 0px;
 }
 
 img {
-    max-width: 100%;
+max-width: 100%;
 
 
 }
 .imgHow {
-    text-align: center;
-    margin: 20%;
+text-align: center;
+margin: 20%;
 
 
 }
 .WhiteBack{
-    background-color: #FFF;
+background-color: #FFF;
 }
 
 a, a:hover, a:active {
-    outline: 0px !important;
+outline: 0px !important;
 }
 .clear {
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+clear: both;
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
 }
 .clearfix:before,
 .clearfix:after {
-    content: '\0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+content: '\0020';
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
 }
 
 .clearfix:after {
-    clear: both;
+clear: both;
 }
 
 
@@ -320,7 +351,7 @@ p {
     display: inline-block;
 
     bottom: 0;
-    margin: 0 auto;
+
     left: 0;
     right: 0;
 }
@@ -373,7 +404,7 @@ p {
 
 }
 .carousel .carousel-control i {
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
     top: 50%;
     display: inline-block;
@@ -381,7 +412,7 @@ p {
     z-index: 5;
     left: 0;
     right: 0;
-    color: rgba(0, 0, 0, 0.8);
+    color: #bcbaba;
     text-shadow: none;
     font-weight: bold;
 }
@@ -412,15 +443,17 @@ p {
     border-radius: 50%;
     border-color: #aaaaaa;
     color: #ffffff;
+
 }
 
 .carousel-indicators li.active {
-    background: #2FE99C;
+    width: 18px;
+    background: radial-gradient(circle closest-side, #15dd8e 5px, white 1px, white 1px, white 1px);
     width: 18px;
     height: 18px;
     margin: 4px;
     border-radius: 50%;
-    border-color: #aaaaaa;
+    border-color: #24ea95;
 
 }
 
@@ -573,15 +606,15 @@ button.read_more2:hover {
     width: 100%;
 }
 #feedback-form {
-    padding: 20px 0px 170px 0px;
+    padding: 20px 0px 10px 0px;
 
     background: #F9F9F9;
-    height: auto;
+    height: 950px;
     width: 100%;
 }
 .feedback_window{
     background-color: #FFFFFF;
-    margin-right: 150px;
+    margin-right: 170px;
     margin-left: 170px;
 
 }
@@ -661,7 +694,6 @@ label{
     text-decoration: none;
     background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-
     border: 1px solid #2FE99C;
 }
 .back{
@@ -873,7 +905,7 @@ a.contact_btn:hover {
 
 
 #Portfolio {
-    padding: 60px 60px;
+
     width:100%;
     height: 1259px;
 }
@@ -2147,7 +2179,6 @@ div.mc-image {
         font-size: 20px;
         color: black;
         text-align: left;
-
         padding-left: 45px;
         padding-right: 30px;
         padding-top: 15px;
@@ -2155,14 +2186,15 @@ div.mc-image {
     }
     .newWidth{
         width: 85%;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .col-sm-3 {
         width: 60%;
     }
     .carousel-indicators{
-        padding: 20px;
+        padding: 0px;
         bottom: -80px;
     }
     .thumbnail2 {
@@ -2186,6 +2218,24 @@ p{
         margin-left: 30px;
 
     }
+
+    .indicatorMobile{
+        bottom: 50px;
+    }
+
+    .carousel .carousel-control i {
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        margin: -16px 0 0 0;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        color: #2FE99C;
+        text-shadow: none;
+        font-weight: bold;
+    }
     .size{
         width: 100%;
         height: 1200px;
@@ -2198,11 +2248,13 @@ p{
         margin: 30px;
     }
     .back{
-        width: 100px;
+        width: 150px;
     }
     .nextBtn{
-        width:100px;
+        width:150px;
+        margin-left: 90px;
     }
+
     .pCons{
         font-size: 26px;
         color: black;
@@ -2228,9 +2280,9 @@ p{
         width: 60%;
     }
     .carousel-indicators{
-        padding: 20px;
+        padding: 0px;
         bottom: -80px;
-        width: 100%;
+
         text-align: left;
     }
     .need-hide{
@@ -2378,7 +2430,7 @@ background: #F9F9F9;
     .carousel-indicators {
         padding: 0;
         bottom: -80px;
-        width: 100%;
+
         text-align: left;
     }
     .h2Main {
@@ -2420,6 +2472,27 @@ background: #F9F9F9;
     }
     .page_section.contact {
         padding: 40px 0 30px;
+    }
+    .carousel .carousel-control i {
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        margin: -16px 0 0 0;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        color: #2FE99C;
+        text-shadow: none;
+        font-weight: bold;
+    }
+    .nextBtn{
+        width:100px;
+        margin-left: 10px;
+    }
+    .back{
+        width:100px;
+        margin-left: 10px;
     }
 }
 blockquote {

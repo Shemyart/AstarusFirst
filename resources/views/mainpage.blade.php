@@ -12,17 +12,14 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/stylename.css" rel="stylesheet" type="text/css">
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
-
     <![endif]-->
 </head>
 <body>
-
 <!--Первый слайд-->
 <section id="hero_section"  class="top_cont_outer">
     <div class="hero_wrapper top_cont_outer">
@@ -31,7 +28,6 @@
                 <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-3">
                     <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
-
                 <div class="col-md-offset-10 col-md-2 col-xs-offset-10 col-xs-2 ">
                     <div class="dropdown marginDrop">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -84,18 +80,21 @@
             <img class="img2MainSecond need-hide" src="img/Group263.png">
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-10 col-md-offset-2 col-xs-offset-1 col-xs-10">
+                <div class="col-md-11 col-md-offset-1 col-xs-offset-1 col-xs-10">
                     <h2 class="h2Sec"><strong>Проекты</strong></h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1 col-xs-offset-1 col-xs-10 need-hide">
                     <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
                         <!-- Wrapper for carousel items -->
-                        <div class="carousel-inner need-hide">
+                        <div class="carousel-inner ">
                             <div class="item active">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
-
+                                                <!--<img src="img/Rectangle.png" class="img-responsive backgroundImgBot" alt="">
+                                                <img src="img/arrow.png" class="img-responsive backgroundImgTop" alt="">-->
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
@@ -103,18 +102,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4><strong>Castrol</strong></h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -125,33 +113,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4><strong>Castrol</strong></h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4><strong>Castrol</strong></h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -166,45 +128,66 @@
                             </div>
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4 >Castrol</h4>
+                                                <h4><strong>Castrol</strong></h4>
                                                 <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4 >Castrol</h4>
+                                                <h4><strong>Castrol</strong></h4>
                                                 <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4 >Castrol</h4>
+                                                <h4><strong>Castrol</strong></h4>
                                                 <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-3">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
@@ -218,75 +201,10 @@
 
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4 >Castrol</h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="carousel-inner need-hideDesc">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4><strong>Castrol</strong></h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4><strong>Castrol</strong></h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="img/image8.png" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4 >Castrol</h4>
-                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <!-- Carousel controls -->
                             <div class="row need-hideDesc">
-                                <div class="col-xs-4  col-xs-offset-3  controls"  >
+                                <div class="col-xs-8  col-xs-offset-2  controls"  >
                                     <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
                                         <i class="fa fa-angle-left"></i>
                                     </a>
@@ -296,15 +214,87 @@
                                 </div>
                             </div>
 
-                        </div>
                         <!-- Carousel indicators -->
                         <div class="row">
-                            <div class="col-xs-8 col-md-3 col-xs-offset-3 col-md-offset-3">
+                            <div class="col-xs-8 col-md-4 col-xs-offset-3 col-md-offset-4">
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel1" data-slide-to="1" ></li>
                                     <li data-target="#myCarousel1" data-slide-to="2" ></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1 col-xs-offset-1 col-xs-10 need-hideDesc" >
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner ">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4><strong>Castrol</strong></h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/image8.png" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 >Castrol</h4>
+                                                <p class="item-price">A weekly round-up for Web and app developers spanning the mobile-facing Web and native apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="row need-hideDesc">
+                            <div class="col-xs-8  col-xs-offset-2  controls"  >
+                                <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
 
+                        <!-- Carousel indicators -->
+                        <div class="row">
+                            <div class="col-xs-8 col-md-4 col-xs-offset-3 col-md-offset-4">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel2" data-slide-to="1" ></li>
+                                    <li data-target="#myCarousel2" data-slide-to="2" ></li>
                                 </ol>
                             </div>
                         </div>
@@ -450,8 +440,15 @@
 <!--Наши клиенты -->
 <section class="page_section" id="clients">
     <div class="container-fluid">
-        <div class="col-md-11 col-xs-11 col-md-offset-1 col-xs-offset-1">
-        <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
+        <div class="row">
+            <div class="col-md-8 col-xs-7 col-md-offset-1 col-xs-offset-1">
+                <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
+            </div>
+            <div class="col-xs-1 col-xs-offset-9 need-hideDesc ArrowUp">
+                    <!-- Кнопки След.Пред. -->
+                    <a data-slide="prev" href="#quote-carousel3" class="left carousel-control clientsarrows"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel3" class="right carousel-control clientsarrows"><i class="fa fa-chevron-right"></i></a>
+            </div>
         </div>
         <div class='row need-hideDesc'>
             <div class="container-fluid">
@@ -522,7 +519,7 @@
                                 </blockquote>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
+                        <div class="col-xs-5 col-md-4 col-xs-offset-4 col-md-offset-4">
                             <!-- Точечные индикаторы -->
                             <ol class="carousel-indicators myIndicator">
                                 <li data-target="#quote-carousel3" data-slide-to="0" class="active"></li>
@@ -674,7 +671,7 @@
                         </blockquote>
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4">
+                <div class="col-xs-5 col-md-4 col-xs-offset-4 col-md-offset-4">
                     <!-- Точечные индикаторы -->
                     <ol class="carousel-indicators myIndicator">
                         <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
@@ -696,39 +693,39 @@
 <!--Форма обратной связи-->
 
 <section id="feedback-form">
-
     <div class="feedback-form">
-            <div class="container-fluid portfolio_title">
-                <div class="col-md-8  col-xs-10 col-md-offset-1 col-xs-offset-1">
-                    <h2 class="h2Sec"><strong>Оставьте заявку</strong></h2>
+        <div class="container-fluid portfolio_title">
+            <div class="col-md-8  col-xs-10 col-md-offset-1 col-xs-offset-1">
+                <h2 class="h2Sec"><strong>Оставьте заявку</strong></h2>
+            </div>
+        </div>
+        <div class="container-fluid feedback_window">
+            <div class="row">
+                <div class="col-md-11">
+                    <h2 class="marginFeedbackTitle">
+                        Заполните небольшой бриф и получите рассчет стоимости Вашего приложения
+                    </h2>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                    <div class="quiz-indicator indicatorMobile" id="indicator">1/2</div>
                 </div>
             </div>
-            <div class="container-fluid feedback_window">
-                <div class="row">
-                    <div class="col-md-11">
-                        <h2 class="marginFeedbackTitle">
-                            Заполните небольшой бриф и получите рассчет стоимости Вашего приложения
-                        </h2>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="quiz-indicator" id="indicator">1/2</div>
-                    </div>
-                </div>
-                    <hr>
-                <div class="row">
-                    <div class="quiz" id="quiz">
-                        <div class="quiz-questions" id="questions"></div>
-                        <div class="quiz-results" id="results"></div>
-
-                        <div class="quiz-controls">
-                            <button class="restart" id="restart">С начала</button>
-                            <button class=" back " id="back" disabled>Назад</button>
-                            <button class=" nextBtn " id="nextBtn" disabled>Далее</button>
-                        </div>
+                <hr>
+            <div class="row">
+                <div class="quiz" id="quiz">
+                    <div class="quiz-questions" id="questions"></div>
+                    <div class="quiz-results" id="results"></div>
+                    <div class="quiz-controls">
+                        <button class="restart" id="restart">С начала</button>
+                        <button class=" back " id="back" disabled>Назад</button>
+                        <button class=" nextBtn " id="nextBtn" disabled>Далее</button>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="col-md-offset-11">
+        <img class="img2Main need-hide" src="img/Group266.png">
     </div>
 </section>
 <!--Форма обратной связи-->
@@ -789,9 +786,7 @@
         <div class="col-md-11 col-xs-11 col-md-offset-1 center">
         <section class="page_section contact" id="contact">
             <div class="contact_section">
-
                 <h2 class="fontNew center">Есть проект? Напишите нам!</h2>
-
                 </div>
             <div class="row">
                 <div class="col-lg-4 wow fadeInLeft">
@@ -803,7 +798,6 @@
                             <p class="pCons">support@sitename.com</p>
                         </div>
                     </div>
-
                     <ul class="social_links center">
                         <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                         <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
@@ -811,7 +805,6 @@
                         <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="footer_bottom"><span>© 2022</span> </div>
         </section>
