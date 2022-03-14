@@ -85,7 +85,7 @@ class ProjectsObserver
      */
     public function restored(ProjectsModel $projectsModel)
     {
-
+        //
     }
 
     /**

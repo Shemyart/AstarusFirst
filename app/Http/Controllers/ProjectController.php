@@ -38,7 +38,6 @@ class ProjectController extends Controller
         }else{
             return view('mainpage');
         }
-
     }
 
     public function detail($slug)
@@ -46,14 +45,11 @@ class ProjectController extends Controller
         //Детальный просмотр
         Log::debug('Детальный просмотр: '.$slug);
 
-            $record = ProjectsModel::where('slug', $slug )
+        $record = ProjectsModel::where('slug', $slug )
                 ->get();
-
         if (setting('projects.project_equip') == 1) {
             $equiprec = EquipmentModel::where('project_id', $record[0]->id )->where('activity', 1)
                 ->get();
-
-
             return view('detail', [
                 'record' => $record,
                 'equiprec' => $equiprec,
@@ -73,7 +69,8 @@ class ProjectController extends Controller
             if (Auth::user()->role_id == 3)
             {
                 $projects = new ProjectsModel();
-                return view('projects', ['projects'=>$projects->all()]);
+                return view('projects',
+                    ['projects'=>$projects->all()]);
             }else{
                 return view('dashboard');
             }

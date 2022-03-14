@@ -645,7 +645,7 @@ button.read_more2:hover {
 /*Feedback*/
 .quiz{
     margin: 0 auto;
-    width: 100%px;
+    width: 100%;
 }
 .quiz-indicator{
     margin-right: 40px;
@@ -667,16 +667,13 @@ button.read_more2:hover {
     display: none;
 }
 .quiz-questions-item,
-.quiz-results-item{
-        &__question {
-         }
-        &__answers {
+.quiz-results-item__question,
+.quiz-results-item__answers {
      margin: 0;
      padding: 0;
      list-style: none;
-
- }
 }
+
 label{
     width: 100%;
     font-family: 'MuseoSansCyrl100';
@@ -751,14 +748,11 @@ label{
 .answer-input{
 
 }
-
-
 .indicator--visible,
 .results--visible,
 .restart--visible{
     display: block;
 }
-
 /*Feedback*/
 
 .ButtonCons{

@@ -35,7 +35,7 @@
             <div class="flex items-center justify-center mt-8">
 
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <a class=" text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Забыли пароль?') }}
                     </a>
                 @endif
@@ -45,7 +45,8 @@
                 </x-jet-button>
 
                 @if (Route::has('register'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+
+                    <a class=" text-sm text-gray-600 hover:text-gray-900" style="margin: 20px;" href="{{ route('register') }}">
                         {{ __('Регистрация') }}
                     </a>
                 @endif

@@ -87,6 +87,7 @@
                                 $splitArrayImg = array();
                                 $splitArrayFile = array();
                                 $active = 1;
+                                $countPic = 0;
                                 $splitImg = explode(',', $elem->image);
                                 $splitFile = explode(',', $elem->file);
                                     foreach ($splitImg as $splitelem){
@@ -153,6 +154,7 @@
                                             <div class="slider__wrapper">
                                                 <div class="slider__items">
                                                     @foreach ($splitArrayImg as $img)
+                                                        @php $countPic++  @endphp
                                                         <div class="slider__item center">
                                                             <img class="d-block" width="250px" height="250px" src="/storage/{{$img}}" alt="Не найдено">
                                                         </div>
@@ -161,7 +163,9 @@
                                             </div>
                                         </div>
                                         <a href="#" class="slider__control" data-slide="prev"></a>
+                                        @if($countPic > 1)
                                         <a href="#" class="slider__control" data-slide="next"></a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

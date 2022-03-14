@@ -34,8 +34,16 @@
                             <img src="img/GroupDrop.png">
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/dashboard">Личный кабинет</a></li>
-                            <li><a href="/admin">Панель администратора</a></li>
+                            @if(Auth::user())
+                                <li><a href="/dashboard">Личный кабинет</a></li>
+                            @else
+                                <li><a href="/login">Войти</a></li>
+                            @endif
+                            @if(Auth::user())
+                                @if(Auth::user()->role_id == 1)
+                                        <li><a href="/admin">Панель администратора</a></li>
+                                @endif
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -50,8 +58,16 @@
                             <img src="img/GroupDrop.png">
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/dashboard"><h2>Личный кабинет</h2></a></li>
-                            <li><a href="/admin"><h2>Панель администратора</h2></a></li>
+                            @if(Auth::user())
+                                <li><a href="/dashboard"><h2>Личный кабинет</h2></a></li>
+                            @else
+                                <li><a href="/login"><h2>Войти</h2></a></li>
+                            @endif
+                            @if(Auth::user())
+                                @if(Auth::user()->role_id == 1 or Auth::user()->role_id == 3)
+                                    <li><a href="/admin"><h2>Панель администратора</h2></a></li>
+                                @endif
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -132,6 +148,7 @@
                                         <div class="thumb-wrapper">
                                             <div class="img-box">
                                                 <img src="img/image8.png" class="img-responsive" alt="">
+
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><strong>Castrol</strong></h4>
