@@ -20,7 +20,27 @@ ul {
 }
 .ArrowUp{
     margin-top: -130px;
-     min-height: 0px;
+     min-height: 0px !important;
+    width: 11% !important;
+}
+.carousel-control:hover, .carousel-control:focus {
+    color: #2fe99c;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+}
+.chevron{
+    border: 2px solid #c9caca;
+    width: 40px;
+    height: 50px;
+    padding-top: 7px;
+}
+.chevron:hover{
+    border: 2px solid #53e3a4;
+    width: 40px;
+    height: 50px;
+    padding-top: 7px;
 }
 .backgroundImgBot{
     z-index: 5;
@@ -43,7 +63,7 @@ ul {
     left: 0;
     width: 15%;
     font-size: 35px;
-    color: #000;
+    color: #d6d4d4;
     text-align: center;
     text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
     filter: alpha(opacity=50);
@@ -694,7 +714,7 @@ label{
     text-decoration: none;
     background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-    border: 1px solid #2FE99C;
+    border: 1px #2FE99C;
 }
 .back{
     font-family: 'MuseoSansCyrl700';
@@ -703,12 +723,12 @@ label{
     height: 50px;
     line-height: 30px;
     text-align: center;
-    box-shadow: 2px 8px 1em #d4e3d9;
+    box-shadow: 2px 8px 1em #e9e9e9;
     font-weight: 400;
     text-decoration: none;
     background: linear-gradient( 90deg, #f4f5f5, #eeecec);
     color: #000000;
-    border: 1px solid #F5F5F5;
+    border: 1px #F5F5F5;
     margin-right: 20px;
 
 
@@ -1419,6 +1439,10 @@ input[type='radio']:checked::after {
     text-decoration: none;
     border-radius: 80px;
 }
+.links {
+    text-decoration: none;
+    border-radius: 80px;
+}
 
 .twitter a:hover {
     color: #55acee;
@@ -1504,7 +1528,7 @@ input[type='radio']:checked::after {
 .footer_bottom span {
     display: block;
     font-size: 14px;
-    color: #cccccc;
+    color: #000000;
     text-align: right;
     margin-right: 250px;
 

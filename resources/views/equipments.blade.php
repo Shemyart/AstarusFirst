@@ -44,7 +44,7 @@
                                     <td>
                                         <p>
                                         @foreach ($splitArrayImg as $img)
-                                            <img class="img" style="display: inline;" width="50px" height="50px" src="/storage/{{$img}}" alt="Не найдено">
+                                            <img class="img" style="display: inline; width: 50px; height: 50px;" src="/storage/{{$img}}" alt="Не найдено">
                                         @endforeach
                                         </p>
                                     </td>

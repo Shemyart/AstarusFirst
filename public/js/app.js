@@ -22906,12 +22906,10 @@ function cleanUpNextTick() {
                         {
                             id: '1',
                             value: 'Действующий бизнес',
-                            correct: false,
                         },
                         {
                             id: '2',
                             value: 'Стартап',
-                            correct: false,
                         },
                     ]
                 },
@@ -22921,7 +22919,6 @@ function cleanUpNextTick() {
                         {
                             id: '3',
                             value: 'Имя',
-                            correct: false,
                         },
 
                     ]
@@ -22932,7 +22929,6 @@ function cleanUpNextTick() {
                         {
                             id: '5',
                             value: 'Телефон',
-                            correct: false,
                         },
 
                     ]
@@ -22943,7 +22939,6 @@ function cleanUpNextTick() {
                         {
                             id: '7',
                             value: 'Email',
-                            correct: false,
                         },
 
                     ]
@@ -23091,7 +23086,7 @@ function cleanUpNextTick() {
                            "phone": phone,
                            "email": email,
                        },
-                       error: function(){$("#erconts").html("Произошла ошибка!");},
+                       error: function(){$("#erconts").html("Произошла ошибка, проверьте правильность введенных данных");},
                        beforeSend: function(){
                            $("#erconts").html("Отправляем данные...");
                        },

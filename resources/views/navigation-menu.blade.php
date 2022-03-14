@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="/">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                        <img style="width: 50px; height: 50px;" src="/img/Outline.png">
                     </a>
                 </div>
                 <!-- Navigation Links -->
@@ -51,6 +51,7 @@
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Профиль') }}
                             </x-jet-dropdown-link>
+                            
                             @if(Auth::user()->role_id == 3)
                             <x-jet-dropdown-link href="{{ route('tester') }}">
                                 {{ __('Тестовая страница') }}
@@ -115,6 +116,12 @@
                 <!-- Account Management -->
                 <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Профиль') }}
+                </x-jet-responsive-nav-link>
+                <x-jet-responsive-nav-link href="{{ route('equipment') }}" :active="request()->routeIs('equipment')">
+                    {{ __('Оборудование') }}
+                </x-jet-responsive-nav-link>
+                <x-jet-responsive-nav-link href="{{ route('projects') }}" :active="request()->routeIs('projects')">
+                    {{ __('Проекты') }}
                 </x-jet-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

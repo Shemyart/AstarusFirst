@@ -446,8 +446,8 @@
             </div>
             <div class="col-xs-1 col-xs-offset-9 need-hideDesc ArrowUp">
                     <!-- Кнопки След.Пред. -->
-                    <a data-slide="prev" href="#quote-carousel3" class="left carousel-control clientsarrows"><i class="fa fa-chevron-left"></i></a>
-                    <a data-slide="next" href="#quote-carousel3" class="right carousel-control clientsarrows"><i class="fa fa-chevron-right"></i></a>
+                    <a data-slide="prev" href="#quote-carousel3" class="left carousel-control clientsarrows"><i class="fa fa-chevron-left chevron"></i></a>
+                    <a data-slide="next" href="#quote-carousel3" class="right carousel-control clientsarrows"><i class="fa fa-chevron-right chevron"></i></a>
             </div>
         </div>
         <div class='row need-hideDesc'>
@@ -738,42 +738,42 @@
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">О нас</p>
+                                <a class="links" href="#contact"><p class="pLeft">О нас</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">Блог</p>
+                                <a class="links" href="#contact"><p class="pLeft">Блог</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">Поддержка</p>
+                                <a class="links" href="#contact"><p class="pLeft">Поддержка</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">Контакты</p>
+                                <a class="links" href="#contact"><p class="pLeft">Контакты</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">Портфолио</p>
+                                <a class="links" href="#contact"><p class="pLeft">Портфолио</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 wow fadeInLeft">
                         <div class="contact_info center">
                             <div class="detail">
-                                <p class="pLeft">Карьера</p>
+                                <a class="links" href="#contact"><p class="pLeft">Карьера</p></a>
                             </div>
                         </div>
                     </div>
