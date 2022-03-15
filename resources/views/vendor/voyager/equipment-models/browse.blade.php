@@ -1,7 +1,5 @@
 @extends('voyager::master')
 
-
-
 @section('page_header')
     <div class="container-fluid">
         <h1 class="page-title">
@@ -9,7 +7,7 @@
         </h1>
         @can('add', app($dataType->model_name))
             <a href="{{ route('voyager.'.$dataType->slug.'.create') }}" class="btn btn-success btn-add-new">
-                <i class="voyager-plus"></i> <span>{{ __('voyager::generic.add_new') }}</span>
+                <i class="voyager-plus"></i> <span>{{ __('Добавить') }}</span>
             </a>
         @endcan
         @can('delete', app($dataType->model_name))
@@ -56,12 +54,12 @@
                                     </div>
                                     <div class="col-2">
                                         <select id="filter" name="filter">
-                                            <option value="contains" @if($search->filter == "contains") selected @endif>contains</option>
+                                            <option value="contains" @if($search->filter == "contains") selected @endif>Содержит</option>
                                             <option value="equals" @if($search->filter == "equals") selected @endif>=</option>
                                         </select>
                                     </div>
                                     <div class="input-group col-md-12">
-                                        <input type="text" class="form-control" placeholder="{{ __('voyager::generic.search') }}" name="s" value="{{ $search->value }}">
+                                        <input type="text" class="form-control" placeholder="{{ __('Поиск') }}" name="s" value="{{ $search->value }}">
                                         <span class="input-group-btn">
                                             <button class="btn btn-info btn-lg" type="submit">
                                                 <i class="voyager-search"></i>
@@ -103,7 +101,7 @@
                                             @endif
                                         </th>
                                     @endforeach
-                                    <th class="actions text-right dt-not-orderable">{{ __('voyager::generic.actions') }}</th>
+                                    <th class="actions text-right dt-not-orderable">{{ __('Действия') }}</th>
                                 </tr>
                                 </thead>
                                 <tbody>

@@ -23,7 +23,9 @@
                     <h4>{{ ucwords(Auth::user()->name) }}</h4>
                     <p>{{ Auth::user()->email }}</p>
 
-                    <a href="{{ route('voyager.profile') }}" class="btn btn-primary">{{ __('voyager::generic.profile') }}</a>
+
+
+                    <a href="{{ route('voyager.profile') }}" class="btn btn-primary">{{ __('Профиль') }}</a>
                     <div style="clear:both"></div>
                 </div>
             </div>
