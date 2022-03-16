@@ -2,7 +2,7 @@
 @section('content')
     <div class="page-content read container-fluid ">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-5">
 
                 <div class="panel panel-bordered" style="padding-bottom:5px;">
                     <!-- form start -->
