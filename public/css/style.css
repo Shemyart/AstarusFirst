@@ -19,9 +19,12 @@ ul {
     padding-left: 0px;
 }
 .ArrowUp{
-    margin-top: -130px;
+    margin-top: -80px;
      min-height: 0px !important;
     width: 11% !important;
+}
+.marginsQuote{
+    margin: 30px 0 10px 0;
 }
 .carousel-control:hover, .carousel-control:focus {
     color: #2fe99c;
@@ -34,7 +37,7 @@ ul {
     border: 2px solid #c9caca;
     width: 40px;
     height: 50px;
-    padding-top: 7px;
+    padding-top: 5px;
 }
 .chevron:hover{
     border: 2px solid #53e3a4;
@@ -69,7 +72,9 @@ ul {
     filter: alpha(opacity=50);
     opacity: .5;
 }
-
+.clientsMargin{
+    margin: 30px 20px 10px 10px;
+}
 .figure {
 margin: 0px;
 }
@@ -81,12 +86,14 @@ max-width: 100%;
 }
 .imgHow {
 text-align: center;
-margin: 10%;
-
-
+margin: 10% 10% 0 10%;
+}
+.clientsMarginMobile{
+    padding: 30px;
 }
 .WhiteBack{
 background-color: #FFF;
+    height: 100px;
 }
 
 a, a:hover, a:active {
@@ -153,7 +160,7 @@ h3 {
     font-weight: 900;
     color: #222222;
     font-size: 26px;
-    margin: 30px 5px 10px 40px;
+
 }
 
 h6 {
@@ -166,7 +173,7 @@ h6 {
 }
 .align-center{
     text-align: center;
-    margin:15%;
+    margin:10%;
     margin-bottom: 30px;
     font-family: 'MuseoSansCyrl700';
     font-size: 36px;
@@ -179,10 +186,9 @@ p {
 }
 .pFeed{
     font-family: 'MuseoSansCyrl700';
-    margin-top: 30px;
-    margin-bottom: 30px;
     font-size: 24px;
     line-height: 24px;
+    margin: 30px 10px 30px 0;
 }
 
 
@@ -308,13 +314,16 @@ p {
     line-height: 67px;
 
 
+
 }
 .h2Sec{
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
-    padding-bottom: 60px;
-    padding-top: 60px;
+
+    padding-top: 70px;
+    margin: 20px 40px 40px 0;
+
 
 }
 .h2Third{
@@ -330,6 +339,7 @@ p {
     line-height: 29px;
     /*text-shadow: 0px 0px 2px black;
 */
+
     padding-bottom: 30px;
     padding-top: 15px;
 }
@@ -468,12 +478,12 @@ p {
 
 .carousel-indicators li.active {
     width: 18px;
-    background: radial-gradient(circle closest-side, #15dd8e 5px, white 1px, white 1px, white 1px);
+    background: radial-gradient(circle closest-side, #62D6B3 5px, white 1px, white 1px, white 1px);
     width: 18px;
     height: 18px;
     margin: 4px;
     border-radius: 50%;
-    border-color: #24ea95;
+    border-color: #62D6B3;
 
 }
 
@@ -486,6 +496,19 @@ p {
     border: 1px solid #f5f2f2;
     border-radius: 4px;
     box-shadow: 0px -2px 20px 0px rgb(221 215 215 / 60%);
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.thumbnailGray {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #f5f2f2;
+    border-radius: 4px;
+
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
@@ -547,6 +570,7 @@ a.read_more2 {
     height: 60px;
     line-height: 60px;
     text-align: center;
+
     box-shadow: 2px 8px 1em #d4e3d9;
     font-weight: 400;
     padding-bottom: 20px;
@@ -562,7 +586,7 @@ button.read_more2 {
     font-family: 'MuseoSansCyrl500';
     display: block;
     font-size: 18px;
-    width: auto;
+    width: 350px;
     height: 60px;
     line-height: 26px;
     margin-bottom: 40px;
@@ -571,7 +595,7 @@ button.read_more2 {
     margin-left: auto;
     padding-left: 40px;
     padding-right: 40px;
-
+    margin-top: 40px;
     font-weight: 400;
     box-shadow: 1px 5px 1em #d1e4de;
     transition: all 0.2s ease-in-out;
@@ -579,13 +603,13 @@ button.read_more2 {
     -webkit-transition: all 0.2s ease-in-out;
     background: linear-gradient( 90deg, #33B8B6, #2FE99C);
     color: #000000;
-    border: 1px solid #2FE99C;
+    border: 1px #2FE99C;
 }
 button.read_more2gray {
     font-family: 'MuseoSansCyrl500';
     display: block;
     font-size: 18px;
-    width: auto;
+    width: 350px;
     height: 60px;
     line-height: 26px;
     margin-bottom: 40px;
@@ -594,10 +618,11 @@ button.read_more2gray {
     margin-left: auto;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 40px;
     font-weight: 400;
-    background: #F5F5F5;
+    background: #FBFBFB;
     color: #000000;
-    border: 1px solid #F5F5F5;
+    border: 1px #FBFBFB;
 }
 
 a.read_more2:hover {
@@ -659,9 +684,9 @@ button.read_more2:hover {
     margin-left: 50px;
 }
 .quiz-controls{
-    margin: 40px;
+    margin: 50px;
     text-align: right;
-    padding-top: 60px;
+
 }
 .quiz-results{
     display: none;
@@ -757,6 +782,7 @@ label{
 
 .ButtonCons{
     padding-top: 45px;
+
 }
 
 .service_wrapper {
@@ -911,7 +937,7 @@ a.contact_btn:hover {
     background: transparent;
 }
 .morePad{
-    padding-top: 50px ;
+    padding-top: 30px ;
 }
 
 /* Portfolio
@@ -1082,12 +1108,11 @@ img {
 
 .client_logos {
     background: #FFFFFF;
-    padding: 60px 0;
-
+    padding: 40px 10px 30px 60px;
     border-color: #6b7280;
 }
 .bs-callout {
-    padding: 20px;
+    padding: 40px;
     margin: 20px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
@@ -1117,7 +1142,7 @@ img {
 }
 
 .page_section.team {
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .page_section.team h6 {
@@ -1246,7 +1271,7 @@ img {
 }
 
 #aboutUs {
-    padding: 60px 0 150px 0;
+    padding: 0 0 60px 0;
     width:100%;
 
 }
@@ -1254,7 +1279,7 @@ img {
 /* Contact
 ---------------------------------*/
 .page_section.contact {
-    padding: 90px 0 100px;
+    padding: 90px 20px 20px 100px;
 }
 
 .contact_section {
@@ -1337,6 +1362,16 @@ img {
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     border-color: #2FE99C;
     text-decoration: none;
+}
+a.thumbnailGray:hover, a.thumbnailGray:focus, a.thumbnailGray.active {
+    border-color: #d4e3d9;
+    text-decoration: none;
+    box-shadow: 0px -2px 20px 0px rgb(221 215 215 / 60%);
+}
+.thumbnailGray>img, .thumbnailGray a>img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 .contact_info {
     font-size: 15px;
@@ -2173,9 +2208,7 @@ div.mc-image {
     width: 93px;
     margin-top: -60px;
 }
-.marginForCons{
-    margin-top: -40px
-}
+
 
 
 
@@ -2192,18 +2225,20 @@ div.mc-image {
     .pCons{
         font-size: 26px;
         color: black;
+        line-height: 26px;
     }
     .pNew{
         font-size: 20px;
         color: black;
         text-align: left;
-        padding-left: 45px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom: 20px;
+        padding: 15px 30px 20px 45px;
+        line-height: 28px;
+    }
+    .thumbnail3{
+        padding-top: 120px;
     }
     .newWidth{
-        width: 85%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2212,11 +2247,12 @@ div.mc-image {
         width: 60%;
     }
     .carousel-indicators{
-        padding: 0px;
+        padding: 10px;
         bottom: -80px;
     }
     .thumbnail2 {
         padding-top: 80px;
+
     }
     .need-hideDesc{
         display:none;
@@ -2236,9 +2272,27 @@ p{
         margin-left: 30px;
 
     }
-
+    .ButtonCons{
+        padding-top: 45px;
+        margin-left: 30px;
+    }
+    h3 {
+        font-family: 'MuseoSansCyrl900', sans-serif;
+        font-weight: 900;
+        color: #222222;
+        font-size: 26px;
+        margin: 0px 5px 20px 0;
+    }
+    .marginForCons{
+        margin-top: -60px;
+        margin-left: 30px;
+    }
     .indicatorMobile{
         bottom: 50px;
+    }
+    .thumbnail3 {
+        padding: 0 50px 10px 50px;
+
     }
 
     .carousel .carousel-control i {
@@ -2250,7 +2304,7 @@ p{
         z-index: 5;
         left: 0;
         right: 0;
-        color: #2FE99C;
+        color: #62D6B3;
         text-shadow: none;
         font-weight: bold;
     }
@@ -2259,7 +2313,7 @@ p{
         height: 1200px;
     }
     .quiz-controls{
-        margin: 20px;
+        margin: 40px;
         text-align: center;
     }
     .quiz-indicator{
@@ -2276,6 +2330,11 @@ p{
     .pCons{
         font-size: 26px;
         color: black;
+        line-height: 26px;
+    }
+    .pCons2{
+        font-size: 26px;
+        font-family: 'MuseoSansCyrl300' !important;
     }
     .pLeft{
         font-size: 26px;
@@ -2286,13 +2345,11 @@ p{
         text-align: center;
     }
     .pNew{
-        font-size: 20px;
+        font-size: 16px;
         color: black;
-        text-align: left;
-        padding-left: 45px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom: 20px;
+        text-align: center;
+        line-height: 28px;
+        padding: 15px 70px 20px 70px;
     }
     .col-sm-3 {
         width: 60%;
@@ -2318,17 +2375,20 @@ p{
 .controls{
     bottom: -35px;
 }
-    .marginImg{
-        margin-top:10px;
-        margin-bottom:10px;
+
+    .marginImg {
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        width: 80px;
     }
     .marginDrop{
-        margin-top:-60px;
+        margin-top:-50px;
     }
 
 .hero_section {
-position: relative;
-padding-top: 300px;
+    position: relative;
+    padding-top: 370px;
 }
 .top_left_cont {
 padding: 38px 0;
@@ -2401,7 +2461,7 @@ font-size: 25px;
 }
 
 .page_section.contact {
-padding: 60px 0 50px;
+padding: 30px 40px;
 }
 .navbar-inverse .navbar-toggle .icon-bar{
 background:#df0031;
@@ -2436,19 +2496,50 @@ background: #F9F9F9;
         padding-right: 0;
         padding-left: 0;
     }
+    .client_logos {
+        background: #FFFFFF;
+        padding: 40px 10px 30px 10px;
+        border-color: #6b7280;
+    }
+    .hero_section {
+        position: relative;
+        padding-top: 250px;
+        height: 1080px;
+    }
+    .top_cont_outer {
+        background-color: #F8F8FA;
+        background-image: url(../img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        background-position: 100% 10%;
+    }
+    .h2Sec {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        padding-top: 50px;
+        margin-left: 40px;
+
+    }
     .size {
         width: 100%;
         height: 1511px;
     }
     #Portfolio {
-        padding: 10px 10px;
+        padding: 250px 10px;
         width: 100%;
-        height: 1259px;
+
+    }
+    .portfolio_title{
+        padding: 50px 0 50px 0;
     }
     .carousel-indicators {
         padding: 0;
         bottom: -80px;
-
+        inline-size: auto;
         text-align: left;
     }
     .h2Main {
@@ -2489,7 +2580,7 @@ background: #F9F9F9;
         left: -150px;
     }
     .page_section.contact {
-        padding: 40px 0 30px;
+        padding: 20px;
     }
     .carousel .carousel-control i {
         font-size: 40px;
@@ -2506,13 +2597,18 @@ background: #F9F9F9;
     }
     .nextBtn{
         width:100px;
-        margin-left: 10px;
+        margin-left: 0;
     }
     .back{
         width:100px;
         margin-left: 10px;
     }
+    #clients {
+        padding: 40px 0 40px 0;
+    }
 }
+
+
 blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;

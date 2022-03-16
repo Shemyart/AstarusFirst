@@ -23,9 +23,9 @@ class MainpageController extends Controller
         $phone = $request->phone;
         $email = $request->email;
         if($request->forwhat == 1){
-            $forwhat = 'Бизнес';
+            $forwhat = 'Стартап';
         }else{
-            $forwhat = 'Cтартап';
+            $forwhat = 'Бизнес';
         }
         $sendToDatabase = new FeedbackModel();
         $sendToDatabase->name=$name;

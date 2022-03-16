@@ -22904,12 +22904,12 @@ function cleanUpNextTick() {
                     question: 'Приложение нужно для действующего бизнеса или стартапа?',
                     answers: [
                         {
-                            id: '1',
-                            value: 'Действующий бизнес',
-                        },
-                        {
                             id: '2',
                             value: 'Стартап',
+                        },
+                        {
+                            id: '1',
+                            value: 'Действующий бизнес',
                         },
                     ]
                 },
@@ -22961,16 +22961,17 @@ function cleanUpNextTick() {
                 renderIndicator(index + 1);
                 questions.dataset.currentStep = index;
 
+
                 const renderAnswers0 = () =>
                     DATA[index].answers
                     .map((answer)=> `
                         <li>
                             <label style="white-space: nowrap;">
-                                    <input class="answer-input" id="answer-input1" type="radio" name=${index} value=${answer.id}><label style="padding-left: 20px;" for="answer-input1"> ${answer.value}</label>
-
+                                 <input class="answer-input" id="answer-input1" type="radio" checked name=${index} value=${answer.id}><label style="padding-left: 20px;" for="answer-input1"> ${answer.value}</label>
                              </label>
                         </li>`)
                     .join('');
+
                 const renderAnswers1 = () =>
                     DATA[index].answers
                         .map((answer)=> `
@@ -22999,8 +23000,7 @@ function cleanUpNextTick() {
                         </li>`)
                         .join('');
 
-
-                if(index==0){
+                if(index==0) {
                     questions.innerHTML = `
                     <div class="quiz-questions-item">
                           <div class="quiz-questions-item__question"><p class="pFeed">${DATA[index].question}</p></div>

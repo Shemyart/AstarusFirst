@@ -28,7 +28,7 @@
                 <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-3">
                     <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
-                <div class="col-md-offset-10 col-md-2 col-xs-offset-10 col-xs-2 ">
+                <div class="col-md-offset-10 col-md-2 col-xs-offset-9 col-xs-2 ">
                     <div class="dropdown marginDrop">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
                             <img src="img/GroupDrop.png">
@@ -52,7 +52,7 @@
                 <div class="col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-3">
                     <a href="/"><img class="marginImg" src="img/logo.png" alt="logo"></a>
                 </div>
-                <div class="col-md-offset-10 col-md-2 col-xs-offset-10 col-xs-3 ">
+                <div class="col-md-offset-10 col-md-2 col-xs-offset-9 col-xs-3 ">
                     <div class="dropdown marginDrop">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
                             <img src="img/GroupDrop.png">
@@ -76,7 +76,7 @@
                 <div class="row justify-left">
                     <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
                         <h2 class="h2Main"><strong>Разработка мобильных<br> приложений и веб-сервисов</strong> </h2>
-                        <p class="p2Main">Повышаем лояльность и продажи, улучшаем сервис,<br> снижаем расходы за счет
+                        <p class="p2Main">Повышаем лояльность и продажи, улучшаем сервис, снижаем <br> расходы за счет
                             автоматизации и оптимизации бизнес-процессов  с <br>помощью мобильных приложений и
                             веб-сервисов.</p>
                         <a href="#feedback-form" class="read_more2">  Рассчитать проект  </a>
@@ -96,7 +96,7 @@
             <img class="img2MainSecond need-hide" src="img/Group263.png">
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-11 col-md-offset-1 col-xs-offset-1 col-xs-10">
+                <div class="col-md-11 col-md-offset-1 col-xs-10">
                     <h2 class="h2Sec"><strong>Проекты</strong></h2>
                 </div>
                 <div class="col-md-10 col-md-offset-1 col-xs-offset-1 col-xs-10 need-hide">
@@ -331,11 +331,11 @@
 
         <div class="service_wrapper">
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-xs-11 col-xs-offset-1 marginForCons">
+                <div class="col-md-5 col-md-offset-1 col-xs-11  marginForCons">
                     <h2 class="h2Third">Получить консультацию</h2>
                     <p class="pCons">Краткий текст информация, описание акции или просто призыв к действию</p>
                 </div>
-                <div class="col-md-4 col-md-offset-2 col-xs-offset-1 col-xs-11 ButtonCons">
+                <div class="col-md-4 col-md-offset-1 col-xs-offset-1 col-xs-11 ButtonCons">
                     <a href="#feedback-form" class="read_more2 ">Рассчитать проект</a>
                 </div>
             </div>
@@ -350,7 +350,7 @@
          <div class="col-md-offset-10">
              <img class="img2Main need-hide" src="img/Group266.png">
          </div>
-         <div class="col-md-11  col-xs-11 col-md-offset-1 col-xs-offset-1">
+         <div class="col-md-11  col-xs-11 col-md-offset-1">
              <h2 class="morePad h2Third"><strong>Как мы работаем</strong></h2>
          </div>
      </div>
@@ -405,14 +405,14 @@
 <!-- Выбор пакета -->
 <section id="Portfolio" class="content">
     <div class="container-fluid portfolio_title">
-        <div class="col-md-11  col-xs-11 col-md-offset-1 col-xs-offset-1">
+        <div class="col-md-11  col-xs-11 col-md-offset-1 ">
             <h2 class="h2Sec"><strong>Выбор пакета</strong></h2>
         </div>
     </div>
 <div class="container newWidth">
     <div class="row" >
-        <div class="col-xs-12 col-md-4 thumbnail2">
-            <a href="#feedback-form" class="thumbnail">
+        <div class="col-xs-12 col-md-4 thumbnail3">
+            <a href="#feedback-form" class="thumbnailGray">
                 <img class="imgHow" src="/img/Vector.png" alt="...">
                 <h2 class="align-center">Демоверсия</h2>
                 <p class="pNew">
@@ -424,7 +424,7 @@
                 <button href="#feedback-form" class="read_more2gray"> Рассчитать проект </button>
             </a>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 thumbnail2 thumbnail3">
             <a href="#feedback-form" class="thumbnail">
                 <img class="imgHow" src="/img/Outline.png" alt="...">
                 <h2 class="align-center">Разработка <br> полного продукта</h2>
@@ -437,8 +437,8 @@
                 <button href="#feedback-form" class="read_more2">Рассчитать проект </button>
             </a>
         </div>
-        <div class="col-xs-12 col-md-4 thumbnail2">
-            <a href="#feedback-form" class="thumbnail">
+        <div class="col-xs-12 col-md-4 thumbnail3 ">
+            <a href="#feedback-form" class="thumbnailGray">
                 <img class="imgHow" src="/img/Group.png" alt="...">
                 <h2 class="align-center">MVP</h2>
                 <p class="pNew">
@@ -458,13 +458,13 @@
 <section class="page_section" id="clients">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-xs-7 col-md-offset-1 col-xs-offset-1">
+            <div class="col-md-8 col-xs-7 col-md-offset-1">
                 <h2 class="h2Sec"><strong>Наши клиенты</strong></h2>
             </div>
             <div class="col-xs-1 col-xs-offset-9 need-hideDesc ArrowUp">
                     <!-- Кнопки След.Пред. -->
-                    <a data-slide="prev" href="#quote-carousel3" class="left carousel-control clientsarrows"><i class="fa fa-chevron-left chevron"></i></a>
-                    <a data-slide="next" href="#quote-carousel3" class="right carousel-control clientsarrows"><i class="fa fa-chevron-right chevron"></i></a>
+                    <a data-slide="prev" href="#quote-carousel3" class="left carousel-control clientsarrows"><i class="fa fa-angle-left chevron"></i></a>
+                    <a data-slide="next" href="#quote-carousel3" class="right carousel-control clientsarrows"><i class="fa fa-angle-right chevron"></i></a>
             </div>
         </div>
         <div class='row need-hideDesc'>
@@ -476,18 +476,18 @@
                             <div class="item active">
                                 <blockquote>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
@@ -497,18 +497,18 @@
                             <div class="item">
                                 <blockquote>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
@@ -518,18 +518,18 @@
                             <div class="item">
                                 <blockquote>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a>
                                         </div>
-                                        <div class="col-xs-6 marginImg">
+                                        <div class="col-xs-6 clientsMarginMobile">
                                             <a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a>
                                         </div>
                                     </div>
@@ -546,8 +546,8 @@
                         </div>
                         <div class="need-hide">
                             <!-- Кнопки След.Пред. -->
-                            <a data-slide="prev" href="#quote-carousel3" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                            <a data-slide="next" href="#quote-carousel3" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                            <a data-slide="prev" href="#quote-carousel3" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel3" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -557,55 +557,55 @@
     <!-- Логотипы -->
         <div class="client_logos need-hide">
             <div class="container-fluid">
-                <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
+                <div class=" col-md-2 col-md-offset-1 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
             <!-- Второй ряд -->
-            <div class="container-fluid">
-                <div class="col-md-offset-1 col-xs-offset-1 col-md-2">
+            <div class="container-fluid ">
+                <div class=" col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/1c-bitrix-logo 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 clientsMargin">
                     <ul class="fadeInRight animated wow">
                         <li><a href="javascript:void(0)"><img src="img/amocrm-logo-white 1.png" alt=""></a></li>
                     </ul>
@@ -619,8 +619,8 @@
 <section class="page_section team" id="team">
     <div class="row">
         <div class="container-fluid" style="width: 100%">
-            <div class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1">
-                <h2 class="h2Sec"><strong>Отзывы</strong></h2>
+            <div class="col-md-6 col-xs-6 col-md-offset-1 ">
+                <h2 class="h2Sec" style="padding-top: 0;"><strong>Отзывы</strong></h2>
             </div>
         </div>
     </div>
@@ -641,7 +641,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-12 col-xs-12">
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-                                    <small>Someone famous</small>
+                                    <small class="marginsQuote">Someone famous</small>
                                     <div class="col-md-12 col-xs-12">
                                         <img  src="img/1c-bitrix-logo 1.png" alt="" width="25%" height="25%">
                                     </div>
@@ -698,8 +698,8 @@
                 </div>
                 <div class="need-hide">
                     <!-- Кнопки След.Пред. -->
-                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
                 </div>
                 </div>
         </div>
@@ -712,7 +712,7 @@
 <section id="feedback-form">
     <div class="feedback-form">
         <div class="container-fluid portfolio_title">
-            <div class="col-md-8  col-xs-10 col-md-offset-1 col-xs-offset-1">
+            <div class="col-md-8  col-xs-10 col-md-offset-1">
                 <h2 class="h2Sec"><strong>Оставьте заявку</strong></h2>
             </div>
         </div>
@@ -733,9 +733,9 @@
                     <div class="quiz-questions" id="questions"></div>
                     <div class="quiz-results" id="results"></div>
                     <div class="quiz-controls">
-                        <button class="restart" id="restart">С начала</button>
+                        <button class="restart" id="restart" disabled>С начала</button>
                         <button class=" back " id="back" disabled>Назад</button>
-                        <button class=" nextBtn " id="nextBtn" disabled>Далее</button>
+                        <button class=" nextBtn " id="nextBtn">Далее</button>
                     </div>
                 </div>
             </div>
@@ -749,7 +749,7 @@
 <!--Подвал-->
 <footer class="footer_wrapper" id="contact">
     <div class="container-fluid need-hideDesc">
-        <div class="col-md-11 col-xs-11 col-md-offset-1 col-xs-offset-1">
+        <div class="col-md-11 col-xs-11 col-md-offset-1 ">
             <section class="page_section contact" id="contact">
                 <div class="row">
                     <div class="col-xs-6 wow fadeInLeft">
@@ -812,7 +812,7 @@
                             <p class="pCons">+1 234 567890</p>
                         </div>
                         <div class="detail supportEmail">
-                            <p class="pCons">support@sitename.com</p>
+                            <p class="pCons2">support@sitename.com</p>
                         </div>
                     </div>
                     <ul class="social_links center">
