@@ -347,7 +347,7 @@ p {
 
 .top_cont_outer {
     background-image: url("../img/bgImg.png") ;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: top center;
     background-size: auto auto;
     width: 100%;
@@ -2512,7 +2512,7 @@ background: #F9F9F9;
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
-        height: 1000px;
+
         position: relative;
         background-position: 100% 10%;
     }
