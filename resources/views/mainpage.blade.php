@@ -357,7 +357,7 @@
     <div class="client_logos newWidth">
         <div class="container-fluid">
             <div class="bs-callout bs-callout-active" id="callout-glyphicons-dont-mix">
-                <div class="row">
+                <div class="row " >
                     <div class="col-md-2">
                         <h3 ><strong>Анализ</strong></h3>
                     </div>
@@ -410,7 +410,7 @@
         </div>
     </div>
 <div class="container newWidth">
-    <div class="row" >
+    <div class="row" style="margin: 0;">
         <div class="col-xs-12 col-md-4 thumbnail3">
             <a href="#feedback-form" class="thumbnailGray">
                 <img class="imgHow" src="/img/Vector.png" alt="...">
